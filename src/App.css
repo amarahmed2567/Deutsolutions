@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --primary-color: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
+  --font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+}
+.AppContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}

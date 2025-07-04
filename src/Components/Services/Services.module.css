@@ -1,0 +1,119 @@
+.servicesSection {
+  width:max-content;
+  padding: 3rem 0 4rem 0;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.gradient {
+  background: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+  font-weight: 800;
+  display: inline-block;
+}
+.bold {
+  font-weight: 800;
+  color: #000000;
+  font-size: 2.1rem;
+}
+.subtext {
+  font-size: 1.1rem;
+  color: #5b5b5b;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
+}
+  
+.SwaperContenar{
+  margin: 0 ;
+  width: 100%;
+  overflow: hidden !important;
+}
+.mySwiper{
+  overflow: hidden !important;
+}
+.card {
+  background: #fff;
+  color: #181818;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  min-width: 270px; 
+  max-width: 300px;
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.cardImg {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.cardContent {
+  padding: 1.1rem 1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.cardIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.cardDesc {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 0.7rem;
+}
+.cardBtn {
+  background: linear-gradient(90deg, #222 60%, #888 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.cardBtn:hover {
+  background: linear-gradient(90deg, #d90429 60%, #ff6600 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+
+@media (max-width: 900px) {
+  .carousel {
+    width: 98vw;
+    gap: 1rem;
+  }
+  .card {
+    min-width: 220px;
+    max-width: 240px;
+    flex: 0 0 240px;
+  }
+  .arrowLeft, .arrowRight {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+} 

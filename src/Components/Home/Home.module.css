@@ -1,0 +1,103 @@
+/* ,,,,,, */
+
+.HeroSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0rem 0 0 0;
+    gap: 2rem;
+  }
+  
+  .HeroContent {
+    flex: 1 1 350px;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .HeroContent h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #111;
+  }
+  
+  /* .Highlight {
+
+  } */
+  
+  .Subtext {
+    font-size: 1.05rem;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .CtaButton {
+    background: linear-gradient(90deg, #222 60%, #888 100%);
+    width: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 8px;
+    margin: 0.5rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .CtaButton:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px) scale(1.03);
+  }
+  
+  .StatsRow {
+    margin-top: 5rem;
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: auto;
+  }
+  .StatsNumber {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .StatsNumberText{
+    background: linear-gradient(180deg, #474444 0%, #ADA5A5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+
+  .HeroImage {
+    flex: 1 1 350px;
+    min-width: 320px;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+  }
+  
+  
+  
+  @media (max-width: 900px) {
+    .HeroSection {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+    }
+    .HeroImage {
+      min-width: 220px;
+      min-height: 220px;
+      max-width: 100%;
+    }
+  } 
