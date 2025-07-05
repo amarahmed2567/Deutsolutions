@@ -3,6 +3,7 @@ import style from "./Home.module.css"
 import AnimatedText from "./AnimatedSubText/AnimatedText"
 import Map from "../../assets/svg/map.svg"
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const {HeroSection,HeroContent,Highlight,Subtext,CtaButton,StatsRow,StatsNumber,StatsNumberText,HeroImage} = style
 const Home = () => {
     return(
@@ -21,7 +22,7 @@ const Home = () => {
           <p className={Subtext}>
             Professional German Translation, Immigration Support, and AI-Powered Solutions.
           </p>
-          <a href="//sgin-up" className={CtaButton}>Start Your Journey</a>
+          <Link to={'/sign-up'} className={CtaButton}>Start Your Journey</Link>
           <div className={StatsRow}>
             <div>
               <span className={StatsNumber}>100+</span><br /> <span className={StatsNumberText}>Clients</span>
