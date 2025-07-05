@@ -9,7 +9,7 @@ const About = () => (
       <p className={styles.aboutText}>
         We're a smart, multilingual agency helping people and businesses connect with new opportunities through AI-powered tools, expert translation, and migration support. From individuals seeking a fresh start to enterprises building across borders — we build solutions that move people forward.
       </p>
-      <button className={styles.learnMoreBtn}>Learn more</button>
+      <a href="/about-us" className={styles.learnMoreBtn}>Learn more</a>
     </div>
     <div className={styles.aboutImageWrapper}>
       <div className={styles.topShape}></div>

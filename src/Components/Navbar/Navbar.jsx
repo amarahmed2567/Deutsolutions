@@ -31,7 +31,9 @@ const { scrollYProgress } = useScroll();
           }}>
     <nav className={styles.NavbarSection}>
       <div className={styles.NavbarLogo}>
+        <a href="/">
         <img src={Logo} alt="DEUTSOLUTIONS logo" />
+        </a>
       </div>
       <div className={`${styles.navbarLinks} ${menuOpen ? styles.active : ""}`}>
         <NavLink

@@ -7,7 +7,7 @@ const HomeSlider = () => (
     <div className={styles.gradientPill + ' ' + styles.leftPill}></div>
     <div className={styles.content}>
       <h2 className={styles.heading}>Ready to <span>Take the Next Step?</span></h2>
-      <button className={styles.ctaButton}>Start Your Journey</button>
+      <a href='/sgin-up' className={styles.ctaButton}>Start Your Journey</a>
     </div>
     <div className={styles.gradientPill + ' ' + styles.rightPill}></div>
   </div>

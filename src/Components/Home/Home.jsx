@@ -21,7 +21,7 @@ const Home = () => {
           <p className={Subtext}>
             Professional German Translation, Immigration Support, and AI-Powered Solutions.
           </p>
-          <button className={CtaButton}>Start Your Journey</button>
+          <a href="//sgin-up" className={CtaButton}>Start Your Journey</a>
           <div className={StatsRow}>
             <div>
               <span className={StatsNumber}>100+</span><br /> <span className={StatsNumberText}>Clients</span>
