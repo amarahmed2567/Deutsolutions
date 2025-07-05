@@ -87,17 +87,157 @@
     min-height: 320px;
   }
   
-  
-  
+  /* Tablet Responsive */
+  @media (max-width: 1024px) {
+    .HeroContent h1 {
+      font-size: 2rem;
+    }
+    .CtaButton {
+      width: 60%;
+      font-size: 1rem;
+      padding: 0.6em 1.8em;
+    }
+    .StatsRow {
+      gap: 2rem;
+    }
+  }
+
   @media (max-width: 900px) {
     .HeroSection {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 2.5rem;
+      min-height: auto;
+      padding: 2rem 0;
+    }
+    .HeroContent {
+      max-width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+    .HeroContent h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .Subtext {
+      text-align: center;
+    }
+    .CtaButton {
+      width: 70%;
+    }
+    .StatsRow {
+      justify-content: center;
     }
     .HeroImage {
       min-width: 220px;
       min-height: 220px;
       max-width: 100%;
+    }
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .HeroSection {
+      gap: 2rem;
+      padding: 1rem 0;
+      align-items: center;
+    }
+    .HeroContent {
+      text-align: center;
+      align-items: center;
+    }
+    .HeroContent h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .Subtext {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .CtaButton {
+      width: 70%;
+      font-size: 0.95rem;
+      padding: 0.5em 1.5em;
+    }
+    .StatsRow {
+      margin-top: 3rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .StatsNumber {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .HeroImage {
+      min-width: 200px;
+      min-height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .HeroSection {
+      padding-top: 5rem;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .HeroContent {
+      text-align: center;
+      align-items: center;
+    }
+    .HeroContent h1 {
+      font-size: 1.7rem;
+      text-align: center;
+    }
+    .Subtext {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .CtaButton {
+      width: 70%;
+      font-size: 0.9rem;
+      padding: 0.5em 1.2em;
+    }
+    .StatsRow {
+      margin-top: 2rem;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .StatsNumber {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .HeroImage {
+      min-width: 180px;
+      min-height: 180px;
+    }
+  }
+
+  /* Small Mobile */
+  @media (max-width: 360px) {
+    .HeroContent {
+      text-align: center;
+      align-items: center;
+    }
+    .HeroContent h1 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .Subtext {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .CtaButton {
+      width: 70%;
+      font-size: 0.85rem;
+      padding: 0.4em 1em;
+    }
+    .StatsRow {
+      gap: 0.8rem;
+      justify-content: center;
+    }
+    .StatsNumber {
+      font-size: 0.9rem;
+      text-align: center;
     }
   } 

@@ -8,13 +8,122 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body{
   font-family: var(--font-family);
+  overflow-x: hidden;
+  
 }
+
 .AppContainer {
   max-width: 1200px;
+  min-height: 90.7vh;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 84px 16px  24px 16px;
+}
+
+/* Responsive Container */
+@media (max-width: 1200px) {
+  .AppContainer {
+    max-width: 100%;
+    padding: 84px 20px 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AppContainer {
+    padding: 84px 16px 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AppContainer {
+    padding: 84px 12px 24px 12px;
+  }
+}
+
+.btnlight{
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #d90429 60%, #ff6600 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cardBtn {
+  background: linear-gradient(90deg, #222 60%, #888 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cardBtn:hover,.btnlight:hover {
+  background: linear-gradient(90deg, #d90429 60%, #ff6600 100%);
+  transform: translateY(-2px) scale(1.03);
+  color: #fff;
+}
+
+/* Responsive Buttons */
+@media (max-width: 768px) {
+  .btnlight, .cardBtn {
+    font-size: 0.75rem;
+    padding: 0.4em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnlight, .cardBtn {
+    font-size: 0.7rem;
+    padding: 0.35em 0.8em;
+  }
+}
+
+/* Global Responsive Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Hide scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -1,16 +1,21 @@
 .servicesSection {
-  width:max-content;
-  padding: 3rem 0 4rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
   color: #000000;
   min-height: 100vh;
 }
-
+.header{
+  text-align: start;
+}
 .headline {
   font-size: 2rem;
   font-weight: 700;
+  font-style: italic;
   margin-bottom: 0.5rem;
   line-height: 1.2;
-}
+  }
 .gradient {
   background: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
   -webkit-background-clip: text;
@@ -19,11 +24,14 @@
   font-style: italic;
   font-weight: 800;
   display: inline-block;
+  margin-bottom: 0.5rem;
+
 }
 .bold {
   font-weight: 800;
   color: #000000;
   font-size: 2.1rem;
+  margin-bottom: 0.5rem;
 }
 .subtext {
   font-size: 1.1rem;
@@ -31,89 +39,83 @@
   font-style: italic;
   margin-bottom: 2.5rem;
   margin-top: 0.5rem;
+  width: 60%;
 }
   
 .SwaperContenar{
-  margin: 0 ;
+  margin: 0 auto;
   width: 100%;
   overflow: hidden !important;
 }
-.mySwiper{
-  overflow: hidden !important;
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .servicesSection {
+    padding: 4rem 0;
+  }
+  .headline {
+    font-size: 1.8rem;
+  }
+  .bold {
+    font-size: 1.9rem;
+  }
+  .subtext {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 }
-.card {
-  background: #fff;
-  color: #181818;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  min-width: 270px; 
-  max-width: 300px;
-  flex: 0 0 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  overflow: hidden !important;
-  transition: transform 0.2s, box-shadow 0.2s;
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .servicesSection {
+    padding: 3rem 0;
+    min-height: auto;
+  }
+  .headline {
+    font-size: 1.6rem;
+  }
+  .bold {
+    font-size: 1.7rem;
+  }
+  .subtext {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
 }
-.card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+
+@media (max-width: 480px) {
+  .servicesSection {
+    padding: 2rem 0;
+  }
+  .header{
+    text-align: center;
+  }
+  .headline {
+    font-size: 1.4rem;
+  }
+  .bold {
+    font-size: 1.5rem;
+  }
+  .subtext {
+
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
 }
-.cardImg {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-.cardContent {
-  padding: 1.1rem 1rem 1.2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-.cardIcon {
-  font-size: 1.5rem;
-  margin-bottom: 0.2rem;
-}
-.cardTitle {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.2rem;
-}
-.cardDesc {
-  font-size: 0.98rem;
-  color: #444;
-  margin-bottom: 0.7rem;
-}
-.cardBtn {
-  background: linear-gradient(90deg, #222 60%, #888 100%);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.5em 1.2em;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-}
-.cardBtn:hover {
-  background: linear-gradient(90deg, #d90429 60%, #ff6600 100%);
-  transform: translateY(-2px) scale(1.03);
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .headline {
+    font-size: 1.3rem;
+  }
+  .bold {
+    font-size: 1.4rem;
+  }
+  .subtext {
+    font-size: 0.85rem;
+  }
 }
 
 
-@media (max-width: 900px) {
-  .carousel {
-    width: 98vw;
-    gap: 1rem;
-  }
-  .card {
-    min-width: 220px;
-    max-width: 240px;
-    flex: 0 0 240px;
-  }
-  .arrowLeft, .arrowRight {
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-  }
-} 
+

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import styles from "./Services.module.css";
-import SwaperServicesSection from "./SwaperServicesSection/SwaperServicesSection"
+import SwaperServicesSection from "../Swapers/HomeSwaper/SwaperServicesSection/SwaperServicesSection"
 
 
 const Services = () => {
@@ -14,18 +14,22 @@ const Services = () => {
 
   return (
     <section className={styles.servicesSection} id="#services">
-      <h2 className={`scroll-animate ${styles.headline}`}>
-        <span className={styles.gradient}>Services</span>
-        <br />
-        <span className={styles.bold}>Explore Our Core Services</span>
-      </h2>
-      <p className={`scroll-animate ${styles.subtext}`}>
-        From smart translation to AI-powered automation and full migration support —<br />
-        we're here to make things simple, fast, and human.
-      </p>
+      <div className={styles.header}>
+          <h2 className={styles.headline}>
+            <span className={styles.gradient}>Services</span>
+            <br />
+            <span className={styles.bold}>Explore Our Core Services</span>
+          </h2>
+          <p className={styles.subtext}>
+            From smart translation to AI-powered automation and full migration support
+            we're here to make things simple, fast, and human.
+          </p>
+        </div>
+
       <div className={styles.SwaperContenar}> 
          <SwaperServicesSection/>
       </div>
+
     </section>
   );
 };

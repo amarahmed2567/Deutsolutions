@@ -2,10 +2,17 @@ import React from "react";
 import style from "./Home.module.css"
 import AnimatedText from "./AnimatedSubText/AnimatedText"
 import Map from "../../assets/svg/map.svg"
+import { motion } from "framer-motion";
 const {HeroSection,HeroContent,Highlight,Subtext,CtaButton,StatsRow,StatsNumber,StatsNumberText,HeroImage} = style
 const Home = () => {
     return(
-        <section className={HeroSection}>
+        <motion.section
+          className={HeroSection}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
         <div className={HeroContent}>
           <h1>
             Real impact. Real solutions.<br />
@@ -30,7 +37,7 @@ const Home = () => {
         <div className={HeroImage}>
         <img  src={Map} alt="Map Image for Deut" />
         </div>
-      </section>
+      </motion.section>
     )
 }
 export default Home

@@ -28,4 +28,31 @@
       height: 100%;
     }
   }
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .MainText {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .MainText {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .MainText {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .MainText {
+    font-size: 1.2rem;
+  }
+}
   

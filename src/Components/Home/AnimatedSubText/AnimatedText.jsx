@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./AnimatedText.module.css"; 
 
-const {MainText,AnimatedWord} =styles
+const {MainText,AnimatedWord} = styles
 const words = ["Translation", "AI", "Education", "Automation"];
 
 export default function AnimatedText() {
@@ -15,10 +15,10 @@ export default function AnimatedText() {
   }, []);
 
   return (
-    <h1 className={MainText}>
+    <div className={MainText}>
       <span key={index} className={AnimatedWord}>
         {words[index]}
       </span>
-    </h1>
+    </div>
   );
 }
