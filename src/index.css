@@ -113,6 +113,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .container {
+  direction: rtl;
+}
+
+[dir="rtl"] .flex-responsive {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .grid-responsive {
+  direction: rtl;
+}
+
+/* Language switcher positioning for RTL */
+[dir="rtl"] .languageSwitcherContainer {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 
 /* Loading states */
 .loading {

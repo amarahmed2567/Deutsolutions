@@ -2,11 +2,14 @@ import React, { useState,useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Logo from "../../assets/images/logo.svg"
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import styles from "./Navbar.module.css"; 
 
 const Navbar = () => {
-const { scrollYProgress } = useScroll();
+  const { t } = useTranslation();
+  const { scrollYProgress } = useScroll();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -41,27 +44,30 @@ const { scrollYProgress } = useScroll();
           end
           className={({ isActive }) => isActive ? styles.active : undefined}
         >
-          Home
+          {t('navigation.home')}
         </NavLink>
         <NavLink
           to="/about-us"
           className={({ isActive }) => isActive ? styles.active : undefined}
         >
-          About Us
+          {t('navigation.aboutUs')}
         </NavLink>
         <NavLink
           to="/services"
           className={({ isActive }) => isActive ? styles.active : undefined}
         >
-          Services
+          {t('navigation.services')}
         </NavLink>
         <NavLink
           to="/contact-us"
           className={({ isActive }) => isActive ? styles.active : undefined}
         >
-          Contact us
+          {t('navigation.contactUs')}
         </NavLink>
-      </div>
+        <div className={styles.languageSwitcherContainer}>
+          <LanguageSwitcher />
+        </div>
+              </div>
       <div className={styles.navbarMenuIcon} onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>

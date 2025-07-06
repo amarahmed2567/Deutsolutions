@@ -1,8 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './NotFound.module.css';
 import { Link } from 'react-router-dom';
 
-const NotFound = () => (
+const NotFound = () => {
+  const { t } = useTranslation();
+  
+  return (
   <div className={styles.container}>
     <div className={styles.illustration}>
       {/* Retro TV SVG illustration */}
@@ -24,11 +28,12 @@ const NotFound = () => (
       </svg>
     </div>
     <div className={styles.textSection}>
-      <h1 className={styles.title}>Oops!</h1>
-      <p className={styles.subtitle}>We couldn't find the page you were looking for</p>
-      <Link to="/" className={styles.homeBtn}>&larr; Go home</Link>
+      <h1 className={styles.title}>{t('notFound.title')}</h1>
+      <p className={styles.subtitle}>{t('notFound.subtitle')}</p>
+      <Link to="/" className={styles.homeBtn}>&larr; {t('notFound.goHome')}</Link>
     </div>
   </div>
-);
+  );
+};
 
 export default NotFound; 

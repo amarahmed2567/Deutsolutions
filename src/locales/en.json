@@ -1,0 +1,159 @@
+{
+  "navigation": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contactUs": "Contact us"
+  },
+  "home": {
+    "hero": {
+      "title": "Digitally German. Globally Smart. Human-Centered.",
+      "subtitle": "Your Solution Partner from Dubai to Europe",
+      "min-var-text":"Excellence in",
+      "description": "Professional German Translation, Immigration Support, and AI-Powered Solutions.",
+      "cta": "Start Your Journey"
+    },
+    "stats": {
+      "clients": "Clients",
+      "translations": "Translations",
+      "countries": "Countries"
+    },
+    "animatedWords": ["Translation", "AI", "Education", "Automation"]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We're a smart, multilingual agency helping people and businesses connect with new opportunities through AI-powered tools, expert translation, and migration support. From individuals seeking a fresh start to enterprises building across borders — we build solutions that move people forward.",
+    "learnMore": "Learn more"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Explore Our Core Services",
+    "description": "From smart translation to AI-powered automation and full migration support we're here to make things simple, fast, and human.",
+    "items": {
+      "translation": {
+        "title": "Translation",
+        "description": "Culturally relevant translation between Arabic, English, and German.",
+        "button": "Start Now"
+      },
+      "migration": {
+        "title": "Migration Support",
+        "description": "Visa guidance, document translation, and full support to help you move to Germany smoothly.",
+        "button": "Start Now"
+      },
+      "ai": {
+        "title": "AI Agent Development",
+        "description": "We build custom AI assistants that help businesses automate support, sales, and data.",
+        "button": "Start Now"
+      },
+      "german": {
+        "title": "German Language Coaching",
+        "description": "Beginner-friendly German lessons, tailored for migrants.",
+        "button": "Start Now"
+      }
+    },
+    "learnMore": "learn more"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What Our Clients Say",
+    "description": "Real stories from people we've helped — in migration, translation, and tech.",
+    "items": [
+      {
+        "name": "Ahmed S.",
+        "country": "Egypt",
+        "text": "Your team helped me move to Germany without stress. Everything was smooth and professional. Thank you!"
+      },
+      {
+        "name": "Lisa M.",
+        "country": "Germany",
+        "text": "The AI agent you built saved us hours every day. Highly efficient and easy to use!"
+      },
+      {
+        "name": "Khalid R.",
+        "country": "Dubai",
+        "text": "We needed urgent certified translations — got them fast and spot on. Excellent service!"
+      }
+    ]
+  },
+  "footer": {
+    "subscribeTitle": "Stay Updated with DEUTSOLUTIONS",
+    "subscribeDesc": "Get the latest insights on AI, digital transformation, and German migration opportunities.",
+    "subscribePlaceholder": "Enter your email",
+    "subscribeBtn": "Subscribe",
+    "services": {
+      "title": "Services",
+      "items": [
+        "AI & Digital Solutions",
+        "Legal Translation",
+        "German Migration",
+        "Language Learning",
+        "Corporate Training",
+        "Quality Assurance"
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "items": [
+        "About Us",
+        "Our Process",
+        "Success Stories",
+        "Careers",
+        "Partners",
+        "Blog"
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "items": [
+        "Help Center",
+        "Documentation",
+        "API Reference",
+        "System Status",
+        "Contact Support",
+        "Community"
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "items": [
+        "Privacy Policy",
+        "Terms of Service",
+        "Cookie Policy",
+        "GDPR Compliance",
+        "Data Protection",
+        "Disclaimer"
+      ]
+    },
+    "brandDesc": "Bridging Dubai, the Middle East, and Europe with next-generation digital, AI, and language transformation solutions. Founded by German excellence, powered by innovation.",
+    "copyright": "All rights reserved.",
+    "availableIn": "Available in:"
+  },
+  "notFound": {
+    "title": "Oops!",
+    "subtitle": "We couldn't find the page you were looking for",
+    "goHome": "Go home"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!"
+  },
+  "cards": {
+    "ai": {
+      "title": "AI Your Work",
+      "desc": "Automation & Intelligence"
+    },
+    "legal": {
+      "title": "Legal Translation",
+      "desc": "Certified & Precise"
+    },
+    "study": {
+      "title": "Study in Germany",
+      "desc": "Migration Support"
+    },
+    "corporate": {
+      "title": "Corporate Solutions",
+      "desc": "Digital Transformation"
+    }
+  }
+} 

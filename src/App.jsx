@@ -9,6 +9,7 @@ import NotFound from "./Pages/NotFound";
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
 import { AnimatePresence, motion } from "framer-motion";
+import ScrollToTop from "./Components/Utils/ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <div className="AppContainer">
         <AnimatePresence mode="wait">
+        <ScrollToTop />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={
               <motion.div

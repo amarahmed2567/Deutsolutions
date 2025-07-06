@@ -1,0 +1,160 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "contactUs": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "EDigital made in Germany. Global gedacht. Am Menschen orientiert.",
+      "subtitle": "Ihr zuverlässiger Lösungspartner von Dubai bis nach Europa",
+      "min-var-text":"Exzellenz in der",
+      "description": "Professionelle deutsche Übersetzung, Einwanderungsunterstützung und KI-gestützte Lösungen.",
+      "cta": "Starten Sie Ihre Reise"
+    },
+    "stats": {
+      "clients": "Kunden",
+      "translations": "Übersetzungen",
+      "countries": "Länder"
+    },
+    "animatedWords": ["Übersetzung", "KI", "Bildung", "Automatisierung"]
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Wir sind eine intelligente, mehrsprachige Agentur, die Menschen und Unternehmen dabei hilft, durch KI-gestützte Tools, professionelle Übersetzung und Einwanderungsunterstützung neue Möglichkeiten zu erschließen. Von Einzelpersonen, die einen Neuanfang suchen, bis hin zu Unternehmen, die grenzüberschreitend aufbauen — wir entwickeln Lösungen, die Menschen voranbringen.",
+    "learnMore": "Mehr erfahren"
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "subtitle": "Entdecken Sie unsere Kernleistungen",
+    "description": "Von intelligenter Übersetzung bis hin zu KI-gestützter Automatisierung und vollständiger Einwanderungsunterstützung sind wir hier, um Dinge einfach, schnell und menschlich zu machen.",
+    "items": {
+      "translation": {
+        "title": "Übersetzung",
+        "description": "Kulturell relevante Übersetzung zwischen Arabisch, Englisch und Deutsch.",
+        "button": "Jetzt starten"
+      },
+      "migration": {
+        "title": "Einwanderungsunterstützung",
+        "description": "Visaberatung, Dokumentenübersetzung und vollständige Unterstützung, um Ihnen einen reibungslosen Umzug nach Deutschland zu ermöglichen.",
+        "button": "Jetzt starten"
+      },
+      "ai": {
+        "title": "KI-Agentenentwicklung",
+        "description": "Wir entwickeln maßgeschneiderte KI-Assistenten, die Unternehmen bei der Automatisierung von Support, Vertrieb und Daten helfen.",
+        "button": "Jetzt starten"
+      },
+      "german": {
+        "title": "Deutschunterricht",
+        "description": "Anfängerfreundliche Deutschstunden, maßgeschneidert für Einwanderer.",
+        "button": "Jetzt starten"
+      }
+    },
+    "learnMore": "Mehr erfahren"
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "subtitle": "Was unsere Kunden sagen",
+    "description": "Echte Geschichten von Menschen, denen wir geholfen haben — bei Einwanderung, Übersetzung und Technologie.",
+    "items": [
+      {
+        "name": "Ahmed S.",
+        "country": "Ägypten",
+        "text": "Ihr Team hat mir beim Umzug nach Deutschland ohne Stress geholfen. Alles war reibungslos und professionell. Vielen Dank!"
+      },
+      {
+        "name": "Lisa M.",
+        "country": "Deutschland",
+        "text": "Der KI-Agent, den Sie entwickelt haben, spart uns täglich Stunden. Hocheffizient und einfach zu bedienen!"
+      },
+      {
+        "name": "Khalid R.",
+        "country": "Dubai",
+        "text": "Wir brauchten dringend beglaubigte Übersetzungen — bekamen sie schnell und punktgenau. Ausgezeichneter Service!"
+      }
+    ]
+  },
+  "footer": {
+    "subscribeTitle": "Bleiben Sie mit DEUTSOLUTIONS auf dem Laufenden",
+    "subscribeDesc": "Erhalten Sie die neuesten Einblicke zu KI, digitaler Transformation und Migrationsmöglichkeiten nach Deutschland.",
+    "subscribePlaceholder": "Ihre E-Mail eingeben",
+    "subscribeBtn": "Abonnieren",
+    "services": {
+      "title": "Dienstleistungen",
+      "items": [
+        "KI- & Digital-Lösungen",
+        "Juristische Übersetzungen",
+        "Deutschland Migration",
+        "Sprachkurse",
+        "Firmentrainings",
+        "Qualitätssicherung"
+      ]
+    },
+    "company": {
+      "title": "Unternehmen",
+      "items": [
+        "Über uns",
+        "Unser Prozess",
+        "Erfolgsgeschichten",
+        "Karriere",
+        "Partner",
+        "Blog"
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "items": [
+        "Hilfe-Center",
+        "Dokumentation",
+        "API-Referenz",
+        "Systemstatus",
+        "Kundensupport",
+        "Community"
+      ]
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "items": [
+        "Datenschutzrichtlinie",
+        "Nutzungsbedingungen",
+        "Cookie-Richtlinie",
+        "GDPR-Konformität",
+        "Datenschutz",
+        "Haftungsausschluss"
+      ]
+    },
+    "brandDesc": "Wir verbinden Dubai, den Nahen Osten und Europa mit digitalen Lösungen der nächsten Generation, KI und Sprachdienstleistungen. Gegründet auf deutscher Exzellenz, angetrieben von Innovation.",
+    "copyright": "Alle Rechte vorbehalten.",
+    "availableIn": "Verfügbar in:",
+    "quickLinks": "Schnelllinks"
+  },
+  "notFound": {
+    "title": "Hoppla!",
+    "subtitle": "Wir konnten die gesuchte Seite nicht finden",
+    "goHome": "Zur Startseite"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich!"
+  },
+  "cards": {
+    "ai": {
+      "title": "KI in Ihrer Arbeit",
+      "desc": "Automatisierung & Intelligenz"
+    },
+    "legal": {
+      "title": "Juristische Übersetzung",
+      "desc": "Zertifiziert & Präzise"
+    },
+    "study": {
+      "title": "Studium in Deutschland",
+      "desc": "Migrationsunterstützung"
+    },
+    "corporate": {
+      "title": "Unternehmenslösungen",
+      "desc": "Digitale Transformation"
+    }
+  }
+} 

@@ -2,9 +2,10 @@ import React from "react";
 import Home from "../Components/Home/Home";
 import About from "../Components/About/About";
 import Services from "../Components/Services/Services";
-import HomeSlider from "../Components/Sliders/HomeSlider";
+import StartNowSlider from "../Components/Sliders/HomeSliders/StartNowSlider/StartNowSlider";
 import Testimonials from "../Components/Testimonials/Testimonials";
 import { motion } from "framer-motion";
+import CardsSlider from "../Components/Sliders/HomeSliders/CardsSlider/CardsSlider";
 
 const sectionAnim = {
   initial: { opacity: 0, y: 60 },
@@ -17,9 +18,10 @@ const HomePage = () => {
   return (
     <>
       <Home />
+      <motion.div {...sectionAnim}><CardsSlider/></motion.div>
       <motion.div {...sectionAnim}><About/></motion.div>
       <motion.div {...sectionAnim}><Services/></motion.div>
-      <motion.div {...sectionAnim}><HomeSlider/></motion.div>
+      <motion.div {...sectionAnim}><StartNowSlider/></motion.div>
       <motion.div {...sectionAnim}><Testimonials/></motion.div>
     </>
   );

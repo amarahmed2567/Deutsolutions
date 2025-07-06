@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import styles from "./AnimatedText.module.css"; 
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "./AnimatedText.module.css";
 
-const {MainText,AnimatedWord} = styles
-const words = ["Translation", "AI", "Education", "Automation"];
-
-export default function AnimatedText() {
+const AnimatedText = () => {
+  const { t, i18n } = useTranslation();
+  // كلمات متغيرة حسب اللغة
+  const words = t('home.animatedWords', { returnObjects: true });
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -12,13 +13,13 @@ export default function AnimatedText() {
       setIndex((prev) => (prev + 1) % words.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
-    <div className={MainText}>
-      <span key={index} className={AnimatedWord}>
-        {words[index]}
-      </span>
-    </div>
+    <span className={styles.AnimatedWord}>
+      {words[index]}
+    </span>
   );
-}
+};
+
+export default AnimatedText;

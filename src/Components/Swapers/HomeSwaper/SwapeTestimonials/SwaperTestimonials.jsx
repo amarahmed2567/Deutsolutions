@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import"./SwaperTestimonials.css";
-
+import "../Swipe.css";
 const testimonials = [
   {
     text: `Your team helped me move to Germany without stress. Everything was smooth and professional. Thank you!`,
@@ -45,7 +45,7 @@ const SwaperTestimonials = () => {
       768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 },
     }}
-    className={"swiper" + " " + "testimonialsSwiper"} // أضف هذا الكلاس
+    className={"swiper" + " " + "testimonialsSwiper"}
   >
         {testimonials.map((t, idx) => (
           <SwiperSlide key={idx} className="slide">

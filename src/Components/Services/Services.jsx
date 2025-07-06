@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./Services.module.css";
 import SwaperServicesSection from "../Swapers/HomeSwaper/SwaperServicesSection/SwaperServicesSection"
 
 
 const Services = () => {
+  const { t } = useTranslation();
   const carouselRef = useRef(null);
 
   const scroll = (dir) => {
@@ -14,22 +16,17 @@ const Services = () => {
 
   return (
     <section className={styles.servicesSection} id="#services">
-      <div className={styles.header}>
+              <div className={styles.header}>
           <h2 className={styles.headline}>
-            <span className={styles.gradient}>Services</span>
+            <span className={styles.gradient}>{t('services.title')}</span>
             <br />
-            <span className={styles.bold}>Explore Our Core Services</span>
+            <span className={styles.bold}>{t('services.subtitle')}</span>
           </h2>
           <p className={styles.subtext}>
-            From smart translation to AI-powered automation and full migration support
-            we're here to make things simple, fast, and human.
+            {t('services.description')}
           </p>
         </div>
-
-      <div className={styles.SwaperContenar}> 
          <SwaperServicesSection/>
-      </div>
-
     </section>
   );
 };

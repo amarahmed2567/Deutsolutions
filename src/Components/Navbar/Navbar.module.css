@@ -30,6 +30,8 @@
   
   .navbarLinks {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
   
@@ -68,6 +70,12 @@
     }
   }
   
+  .languageSwitcherContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
   .navbarMenuIcon{
     display: none;
     font-size: 1.7rem;
@@ -97,6 +105,9 @@
     }
     .NavbarLogo img {
       width: 120px;
+    }
+    .languageSwitcherContainer {
+      margin-left: 1rem;
     }
     .navbarLinks {
       position: absolute;

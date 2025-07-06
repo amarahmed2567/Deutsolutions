@@ -1,16 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styles from "./About.module.css";
 import teamImg from "../../assets/images/About.jpg"; 
 import { Link } from "react-router-dom";
 
-const About = () => (
+const About = () => {
+  const { t } = useTranslation();
+  
+  return (
   <section className={styles.aboutSection} id="#about-us">
     <div className={styles.aboutContent}>
-      <h2 className={styles.aboutHeadline}><span>About</span> <span className={styles.highlight}>Us</span></h2>
+      <h2 className={styles.aboutHeadline}><span>{t('about.title').split(' ')[0]}</span> <span className={styles.highlight}>{t('about.title').split(' ')[1]}</span></h2>
       <p className={styles.aboutText}>
-        We're a smart, multilingual agency helping people and businesses connect with new opportunities through AI-powered tools, expert translation, and migration support. From individuals seeking a fresh start to enterprises building across borders — we build solutions that move people forward.
+        {t('about.description')}
       </p>
-      <Link to={'/about-us'}  className={styles.learnMoreBtn}>Learn more</Link>
+      <Link to={'/about-us'}  className={styles.learnMoreBtn}>{t('about.learnMore')}</Link>
 
     </div>
     <div className={styles.aboutImageWrapper}>
@@ -21,6 +25,7 @@ const About = () => (
       <div className={styles.bottomShape}></div>
     </div>
   </section>
-);
+  );
+};
 
 export default About;

@@ -44,6 +44,25 @@ body{
   }
 }
 
+/* Buttons  */
+.btn-larg {
+  background: linear-gradient(90deg, #222 60%, #888 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.7em 2em;
+  border: none;
+  border-radius: 8px;
+  margin: 0.5rem 0 1.5rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.4s cubic-bezier(.4,0,.2,1);
+  max-width: 40%;
+  min-width: max-content;
+  position: relative;
+  overflow: hidden;
+}
+
 .btnlight{
   border: 2px solid transparent;
   border-radius: 6px;
@@ -57,7 +76,17 @@ body{
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
 }
-
+.Btn-small{
+  background: linear-gradient(90deg, #222 60%, #888 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: .8rem;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
 .cardBtn {
   background: linear-gradient(90deg, #222 60%, #888 100%);
   color: #fff;
@@ -70,9 +99,9 @@ body{
   transition: background 0.2s, transform 0.2s;
 }
 
-.cardBtn:hover,.btnlight:hover {
+.cardBtn:hover,.btnlight:hover,.Btn-small:hover,.btn-larg:hover {
   background: linear-gradient(90deg, #d90429 60%, #ff6600 100%);
-  transform: translateY(-2px) scale(1.03);
+  transform: translateY(-2px) scale(.99);
   color: #fff;
 }
 
