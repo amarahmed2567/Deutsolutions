@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
-import ServicesPage from "./Pages/ServicesPage";
+import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import ContactUs from "./Pages/ContactUs";
 import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
@@ -45,7 +45,8 @@ function App() {
                 <AboutPage />
               </motion.div>
             } />
-            <Route path="" element={
+            //ServicesPage
+            <Route path="services" element={
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
                 animate={{ opacity: 1, x: 0 }}

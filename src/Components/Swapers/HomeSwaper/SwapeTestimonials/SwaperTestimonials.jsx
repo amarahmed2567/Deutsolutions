@@ -3,32 +3,44 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import"./SwaperTestimonials.css";
+import Testimonials1 from "../../../../assets/images/men-1.jpeg"
+import Testimonials2 from "../../../../assets/images/men-2.jpeg"
+import Testimonials3 from "../../../../assets/images/women-1.jpeg"
+import Testimonials4 from "../../../../assets/images/women-2.jpeg"
 import "../Swipe.css";
 const testimonials = [
   {
     text: `Your team helped me move to Germany without stress. Everything was smooth and professional. Thank you!`,
     name: "Ahmed S., Egypt",
     rating: 4,
+    img:Testimonials1
   },
   {
     text: `The AI agent you built saved us hours every day. Highly efficient and easy to use!`,
     name: "Lisa M., Germany",
     rating: 4,
+    img:Testimonials3
+
   },
   {
     text: `We needed urgent certified translations — got them fast and spot on. Excellent service!`,
     name: "Khalid R., Dubai",
     rating: 4,
+    img:Testimonials2
+
   },
   {
     text: `We needed urgent certified translations — got them fast and spot on. Excellent service!`,
     name: "Khalid R., Dubai",
     rating: 4,
+    img:Testimonials1
+
   },
   {
     text: `We needed urgent certified translations — got them fast and spot on. Excellent service!`,
     name: "Khalid R., Dubai",
     rating: 4,
+    img:Testimonials4
   },
 ];
 
@@ -50,7 +62,9 @@ const SwaperTestimonials = () => {
         {testimonials.map((t, idx) => (
           <SwiperSlide key={idx} className="slide">
             <div className="Testimonialscard">
-              <div className="avatar" />
+              <div className="avatar" >
+                <img src={t.img} alt={t.text} />
+              </div>
               <p className="text">"{t.text}"</p>
               <div className="name">{t.name}</div>
               <div className="stars">

@@ -88,7 +88,7 @@ body{
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
 }
-.Btn-small{
+/* .Btn-small{
   background: linear-gradient(90deg, #222 60%, #888 100%);
   color: #fff;
   font-weight: 600;
@@ -98,7 +98,7 @@ body{
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
-}
+} */
 .cardBtn {
   background: linear-gradient(90deg, #222 60%, #888 100%);
   color: #fff;

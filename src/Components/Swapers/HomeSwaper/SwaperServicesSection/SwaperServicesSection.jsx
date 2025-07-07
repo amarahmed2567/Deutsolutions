@@ -8,7 +8,8 @@ import "../Swipe.css"
 // import { EffectCoverflow, Autoplay } from 'swiper/modules';
 
 //react Icons
-import { MdAirplaneTicket } from "react-icons/md";
+import { MdAirplaneTicket, MdTranslate } from "react-icons/md";
+import { FaRobot, FaBookOpen } from "react-icons/fa";
 
 //css styles
 import "./SwaperServicesSection.css"
@@ -28,7 +29,7 @@ import { Link } from 'react-router-dom';
     {
       title: t('services.items.translation.title'),
       img: translationImg,
-      icon: "🌐",
+      icon: <MdTranslate className="Icon" style={{color: '#0070f3'}} />,
       desc: t('services.items.translation.description'),
       btn: t('services.items.translation.button'),
       link:"/translation"
@@ -36,7 +37,7 @@ import { Link } from 'react-router-dom';
     {
       title: t('services.items.migration.title'),
       img: migrationImg,
-      icon: "🧳",
+      icon: <MdAirplaneTicket className="Icon" style={{color: '#e67700'}} />,
       desc: t('services.items.migration.description'),
       btn: t('services.items.migration.button'),
       link:"/migration"
@@ -44,7 +45,7 @@ import { Link } from 'react-router-dom';
     {
       title: t('services.items.ai.title'),
       img: aiImg,
-      icon: "🤖",
+      icon: <FaRobot className="Icon" style={{color: '#d90429'}} />,
       desc: t('services.items.ai.description'),
       btn: t('services.items.ai.button'),
       link:"/ai"
@@ -52,7 +53,7 @@ import { Link } from 'react-router-dom';
     {
       title: t('services.items.german.title'),
       img: germanImg,
-      icon: "📚",
+      icon: <FaBookOpen className="Icon" style={{color: '#009e60'}} />,
       desc: t('services.items.german.description'),
       btn: t('services.items.german.button'),
       link:"/german"
@@ -82,10 +83,9 @@ import { Link } from 'react-router-dom';
           <img src={s.img} alt={s.title} className="cardImg" />
           <div className="cardContent">
               <h3 className="cardTitle"> 
-                  <span className="cardIcon">
-                  <MdAirplaneTicket className='Icon'></MdAirplaneTicket>
-                  </span>
-              {s.title}</h3>
+                <span className="cardIcon">{s.icon}</span>
+                {s.title}
+              </h3>
               <p className="cardDesc">{s.desc}</p>
               <div className="btn-contenar">
               <Link to={s.link} className="btnlight">{t('services.learnMore')}</Link>
