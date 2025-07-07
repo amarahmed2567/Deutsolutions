@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
-import ContactUs from "./Pages/ContactUs";
+import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
@@ -56,14 +56,15 @@ function App() {
                 <ServicesPage />
               </motion.div>
             } />
-            <Route path=" " element={
+            //ContactUs Page
+            <Route path="/contact-us" element={
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -80 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
-                <ContactUs />
+                <ContactUsPage />
               </motion.div>
             } />
             <Route path="*" element={

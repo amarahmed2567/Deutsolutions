@@ -22,7 +22,9 @@
   },
   "about": {
     "title": "Über uns",
+    "title2": "Wer wir sind",
     "subtitle":"Kulturen verbinden, Zukunft gestalten",
+    "subtitle2": "Lernen Sie das Team hinter der Vision kennen.",
     "description": "Gegründet auf deutschem unternehmerischen Spitzengeist und mit Sitz im Herzen Dubais, schlagen wir eine Brücke zwischen drei Welten: der Innovation Europas, dem Ehrgeiz des Nahen Ostens und der Präzision deutscher Ingenieurskunst.",
     "learnMore": "Mehr erfahren",
     "stats": {
@@ -40,21 +42,25 @@
       "translation": {
         "title": "Übersetzung",
         "description": "Kulturell relevante Übersetzung zwischen Arabisch, Englisch und Deutsch.",
+        "longDescription": "Von der Visaberatung bis zur Dokumentenvorbereitung unterstützen wir Sie bei jedem Schritt Ihrer Migrationsreise nach Deutschland. Unsere Experten sorgen dafür, dass der Prozess reibungslos und stressfrei verläuft. Wir bieten zertifizierte und kulturell präzise Übersetzungsdienste für juristische, technische und geschäftliche Dokumente. Unser Team stellt sicher, dass Ihre Botschaft auf Arabisch, Englisch und Deutsch klar und wirkungsvoll ist. Unser Deutschunterricht ist für alle Niveaus geeignet und legt den Fokus auf praktische Kommunikation und kulturelles Verständnis. Starten Sie Ihre Sprachreise mit uns.\n\nWir bieten außerdem schnelle Bearbeitungszeiten und wettbewerbsfähige Preise, um Ihre dringenden Anforderungen zu erfüllen. Unsere erfahrenen Linguisten und Berater sind bestrebt, qualitativ hochwertige Ergebnisse zu liefern – egal ob Sie Privatperson, Unternehmen oder Institution sind. Vertrauen Sie uns, Sprach- und Kulturbarrieren zu überwinden und Ihre Kommunikation über Grenzen hinweg nahtlos und effektiv zu gestalten.",
         "button": "Jetzt starten"
       },
       "migration": {
-        "title": "Einwanderungsunterstützung",
+        "title": "Migrationsunterstützung",
         "description": "Visaberatung, Dokumentenübersetzung und vollständige Unterstützung, um Ihnen einen reibungslosen Umzug nach Deutschland zu ermöglichen.",
+        "longDescription": "Visaberatung, Dokumentenübersetzung und umfassende Unterstützung, damit Ihr Umzug nach Deutschland reibungslos verläuft. Unser Team begleitet Sie in jeder Phase – von der Vorbereitung Ihrer Unterlagen bis zur Eingewöhnung in Ihrem neuen Zuhause. Wir bieten persönliche Beratung, aktuelle rechtliche Hinweise und Schritt-für-Schritt-Begleitung für einen stressfreien Migrationsprozess. Dank unserer langjährigen Erfahrung und unseres Netzwerks gestalten wir Ihren Übergang nach Deutschland effizient und erfolgreich – egal ob Sie zum Arbeiten, Studieren oder für den Familiennachzug kommen.",
         "button": "Jetzt starten"
       },
       "ai": {
-        "title": "KI-Agentenentwicklung",
+        "title": "KI-Agenten-Entwicklung",
         "description": "Wir entwickeln maßgeschneiderte KI-Assistenten, die Unternehmen bei der Automatisierung von Support, Vertrieb und Daten helfen.",
+        "longDescription": "Wir entwickeln maßgeschneiderte KI-Assistenten, die Unternehmen bei der Automatisierung von Support, Vertrieb und Daten unterstützen. Unsere Lösungen sind individuell auf Ihre Bedürfnisse zugeschnitten und helfen Ihnen, Zeit zu sparen, Kosten zu senken und bessere Kundenerlebnisse zu bieten. Von intelligenten Chatbots bis hin zu fortschrittlicher Datenanalyse – unsere KI-Tools ermöglichen Innovation und Wachstum. Vertrauen Sie unserem Expertenteam für sichere, skalierbare und zukunftsfähige KI-Lösungen, die Sie der Konkurrenz immer einen Schritt voraus sein lassen.",
         "button": "Jetzt starten"
       },
       "german": {
         "title": "Deutschunterricht",
         "description": "Anfängerfreundliche Deutschstunden, maßgeschneidert für Einwanderer.",
+        "longDescription": "Deutschkurse für Anfänger, speziell für Migranten konzipiert. Unsere Kurse decken alle Niveaus ab und legen den Fokus auf praktische Kommunikation und kulturelles Verständnis. Lernen Sie mit erfahrenen Lehrkräften, modernen Methoden und interaktiven Materialien. Ob für Arbeit, Studium oder Alltag in Deutschland – unser Coaching hilft Ihnen, Selbstvertrauen und Sprachgewandtheit in Deutsch zu gewinnen.",
         "button": "Jetzt starten"
       }
     },
@@ -178,6 +184,47 @@
     "innovation": {
       "title": "Innovation zuerst",
       "desc": "Einsatz modernster KI und Technologie zur Lösung komplexer Herausforderungen."
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit für Ihre Reise? Lassen Sie uns besprechen, wie wir Ihnen bei der Erreichung Ihrer Ziele helfen können.",
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "subtitle": "Füllen Sie das Formular unten aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Worum geht es?",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns mehr über Ihre Anfrage...",
+      "send": "Nachricht senden",
+      "sending": "Wird gesendet..."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "subtitle": "Kontaktieren Sie uns über einen dieser Kanäle."
+    },
+    "social": {
+      "title": "Folgen Sie uns"
+    },
+    "map": {
+      "title": "Finden Sie uns"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Welche Dienstleistungen bieten Sie an?",
+      "a1": "Wir bieten deutsche Übersetzungen, Migrationsunterstützung, KI-Entwicklung und Deutschunterricht an.",
+      "q2": "Wie lange dauert eine Übersetzung?",
+      "a2": "Die Übersetzungszeit hängt von der Länge und Komplexität des Dokuments ab. Wir liefern normalerweise innerhalb von 1-3 Werktagen.",
+      "q3": "Bieten Sie beglaubigte Übersetzungen an?",
+      "a3": "Ja, wir bieten beglaubigte Übersetzungen an, die von deutschen Behörden und Institutionen akzeptiert werden.",
+      "q4": "Was sind Ihre Arbeitszeiten?",
+      "a4": "Wir arbeiten von Sonntag bis Donnerstag, 9:00 bis 18:00 Uhr UAE-Zeit. Notfallservices sind 24/7 verfügbar."
     }
   }
 } 

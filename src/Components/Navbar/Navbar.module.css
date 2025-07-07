@@ -76,6 +76,17 @@
     margin-left: 2rem;
   }
   
+  .mobileControls {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobileLanguageSwitcher {
+    display: flex;
+    align-items: center;
+  }
+  
   .navbarMenuIcon{
     display: none;
     font-size: 1.7rem;
@@ -107,7 +118,10 @@
       width: 120px;
     }
     .languageSwitcherContainer {
-      margin-left: 1rem;
+      display: none;
+    }
+    .mobileControls {
+      display: flex;
     }
     .navbarLinks {
       position: absolute;
@@ -156,6 +170,9 @@
     .navbarMenuIcon {
       font-size: 1.5rem;
     }
+    .mobileControls {
+      gap: 0.8rem;
+    }
   }
 
   /* Small Mobile */
@@ -165,6 +182,9 @@
     }
     .navbarLinks {
       width: 160px;
+    }
+    .mobileControls {
+      gap: 0.6rem;
     }
   }
   

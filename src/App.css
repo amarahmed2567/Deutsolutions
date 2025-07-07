@@ -32,7 +32,29 @@ body{
   margin: 0 auto;
   padding: 84px 16px  24px 16px;
 }
-
+/* Section Teitles */
+.minTeitle {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+.minTeitle::after {
+  content: "";
+  display: block;
+  margin: 0.7rem auto 0 auto;
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #F9B434 14%, #E90004 87%);
+}
+.minSubtitle {
+  font-size: 1.15rem;
+  color: #444d5c;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
 /* Responsive Container */
 @media (max-width: 1200px) {
   .AppContainer {
@@ -45,11 +67,41 @@ body{
   .AppContainer {
     padding: 84px 16px 24px 16px;
   }
+  
+  /* Responsive Titles */
+  .minTeitle {
+    font-size: 1.8rem;
+  }
+  
+  .minSubtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .AppContainer {
     padding: 84px 12px 24px 12px;
+  }
+  
+  .minTeitle {
+    font-size: 1.5rem;
+  }
+  
+  .minSubtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .minTeitle {
+    font-size: 1.3rem;
+  }
+  
+  .minSubtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
   }
 }
 

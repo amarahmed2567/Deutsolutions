@@ -67,9 +67,14 @@ const Navbar = () => {
         <div className={styles.languageSwitcherContainer}>
           <LanguageSwitcher />
         </div>
-              </div>
+      </div>
+      <div className={styles.mobileControls}>
       <div className={styles.navbarMenuIcon} onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        <div className={styles.mobileLanguageSwitcher}>
+          <LanguageSwitcher />
+        </div>
       </div>
           <motion.div
         style={{

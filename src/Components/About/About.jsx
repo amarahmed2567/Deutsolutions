@@ -10,7 +10,7 @@ const About = () => {
   return (
   <section className={styles.aboutSection} id="#about-us">
     <div className={styles.aboutContent}>
-      <h2 className={styles.aboutHeadline}> <span className={styles.highlight}>{t('about.title')}</span></h2>
+      <h2 className={styles.aboutHeadline}> <span className={styles.highlight}>{t('about.title2')}</span></h2>
       <h2 className={styles.aboutSubTitle}>{t('about.subtitle')}  </h2>
       <p className={styles.aboutText}>
         {t('about.description')}
