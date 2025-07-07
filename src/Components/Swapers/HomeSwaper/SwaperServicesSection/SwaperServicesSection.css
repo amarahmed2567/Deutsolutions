@@ -127,9 +127,14 @@
   }
   .card {
     min-width: 200px;
-    max-width: 98vw;
+    max-width: 70vw;
     flex: 0 0 98vw;
     padding-bottom: 0.2rem;
+  }
+  .cardImg {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
   }
   .cardContent {
     padding: 0.9rem 0.7rem 1rem 0.7rem;
