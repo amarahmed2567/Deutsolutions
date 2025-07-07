@@ -15,7 +15,9 @@
   flex-direction: column;
   gap: 1.5rem;
 }
-
+:lang(ar) .aboutContent  {
+  line-height: 1;
+}
 .aboutHeadline {
   font-size: 2rem;
   font-weight: 700;

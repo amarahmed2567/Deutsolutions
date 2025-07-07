@@ -66,12 +66,15 @@ body{
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: all 0.4s cubic-bezier(.4,0,.2,1);
-  max-width: 40%;
+  max-width: 30%;
   min-width: max-content;
   position: relative;
   overflow: hidden;
 }
-
+:lang(ar) .btn-larg{
+  padding: 0.4em 2em;
+  background: linear-gradient(240deg, #222 60%, #888 100%);
+} 
 .btnlight{
   border: 2px solid transparent;
   border-radius: 6px;
