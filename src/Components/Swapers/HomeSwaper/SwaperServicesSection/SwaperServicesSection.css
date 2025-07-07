@@ -10,7 +10,6 @@
     flex: 0 0 300px;
     display: flex;
     flex-direction: column;
-
     align-items: stretch;
     overflow: hidden !important;
     transition: transform 0.2s, box-shadow 0.2s;

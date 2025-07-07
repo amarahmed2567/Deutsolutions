@@ -1,10 +1,9 @@
 /* Swaper init */
 .swiper {
-    padding: 5rem 0 ;
+    padding: 1rem 0 ;
     max-width: 1100px;
     overflow: visible !important;
     margin: 0 auto;
-    padding: 4rem 3rem;
     direction: ltr;
   }
   

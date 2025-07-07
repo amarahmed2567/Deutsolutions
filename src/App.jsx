@@ -1,25 +1,29 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import HomePage from "./Pages/HomePage";
-import AboutUs from "./Pages/AboutUs";
+import HomePage from "./Pages/HomePage/HomePage";
+import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
 import ContactUs from "./Pages/ContactUs";
-import NotFound from "./Pages/NotFound";
+import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const location = useLocation();
+  const {i18n} = useTranslation()
   return (
-    <>
+    <div lang={i18n.language}>
       <Navbar />
       <div className="AppContainer">
         <AnimatePresence mode="wait">
         <ScrollToTop />
           <Routes location={location} key={location.pathname}>
+
+            //HomePage
             <Route path="/" element={
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
@@ -30,14 +34,15 @@ function App() {
                 <HomePage />
               </motion.div>
             } />
-            <Route path="" element={
+            //AboutPage
+            <Route path="about-us" element={
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -80 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
-                <AboutUs />
+                <AboutPage />
               </motion.div>
             } />
             <Route path="" element={
@@ -74,7 +79,7 @@ function App() {
         </AnimatePresence>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

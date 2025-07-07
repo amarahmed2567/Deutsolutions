@@ -22,8 +22,15 @@
   },
   "about": {
     "title": "About Us",
-    "description": "We're a smart, multilingual agency helping people and businesses connect with new opportunities through AI-powered tools, expert translation, and migration support. From individuals seeking a fresh start to enterprises building across borders — we build solutions that move people forward.",
-    "learnMore": "Learn more"
+    "subtitle":"Connecting Cultures, Transforming Futures",
+    "description": "Founded by German entrepreneurial excellence and based in the heart of Dubai, we bridge three worlds: the innovation of Europe, the ambition of the Middle East, and the precision of German engineering.",
+    "learnMore": "Learn more",
+    "stats": {
+      "projects": "Projects Completed",
+      "countries": "Countries Served",
+      "clients": "Happy Clients",
+      "success": "Success Rate"
+    }
   },
   "services": {
     "title": "Services",
@@ -154,6 +161,22 @@
     "corporate": {
       "title": "Corporate Solutions",
       "desc": "Digital Transformation"
+    }
+  },
+  "mission": {
+    "title": "Our Mission",
+    "intro": "To be the digital bridge that connects businesses, individuals, and institutions across Dubai, the Middle East, and Europe through innovative AI solutions, precise legal translations, and comprehensive migration support.",
+    "human": {
+      "title": "Human-Centered",
+      "desc": "Every solution starts with understanding human needs and cultural nuances."
+    },
+    "precision": {
+      "title": "German Precision",
+      "desc": "Meticulous attention to detail and quality in everything we deliver."
+    },
+    "innovation": {
+      "title": "Innovation First",
+      "desc": "Leveraging cutting-edge AI and technology to solve complex challenges."
     }
   }
 } 

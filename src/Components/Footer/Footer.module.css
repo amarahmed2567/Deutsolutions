@@ -250,42 +250,130 @@
   }
 }
 @media (max-width: 600px) {
+  .footer {
+    padding: 0;
+  }
+  .subscribeSection {
+    padding: 14px 0 8px 0;
+  }
+  .subscribeTitle {
+    font-size: 1.3rem;
+  }
+  .subscribeDesc {
+    font-size: 0.98rem;
+    margin-bottom: 18px;
+  }
+  .subscribeForm {
+    gap: 8px;
+  }
+  .subscribeInput {
+    min-width: 0;
+    font-size: 0.98rem;
+    padding: 10px 12px;
+  }
+  .subscribeBtn {
+    font-size: .8rem;
+    padding: 5px 10px;
+    justify-content: center;
+  }
   .mainFooter {
     flex-direction: column;
-    gap: 18px;
-    padding: 12px 0 8px 0;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .brandCol {
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+  .logoRow {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .logo {
+    width: 90px;
+  }
+  .brandDesc {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .contactInfo {
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .socials {
+    justify-content: center;
+    gap: 10px;
+  }
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
   }
   .linksCol {
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    width: 100%;
   }
   .linksBlock {
-    min-width: 100px;
+    min-width: 80px;
+    margin-bottom: 0.7rem;
+    align-items: center;
+    text-align: center;
+    font-size: 0.93rem;
   }
-  .subscribeSection {
-    padding: 18px 0 10px 0;
+  .linksBlock h4 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+  }
+  .linksBlock li {
+    font-size: 0.93rem;
+    margin-bottom: 5px;
   }
   .bottomFooter {
-    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.93rem;
     padding: 6px 0 2px 0;
+    gap: 6px;
+    text-align: center;
   }
   .languages {
-    gap: 6px;
-    font-size: 0.95rem;
+    gap: 4px;
+    font-size: 0.93rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .langBtn {
+    width: 32px;
+    height: 32px;
+    margin: 0 2px 2px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 400px) {
-  .languages {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    margin-top: 8px;
+  .logo {
+    width: 70px;
   }
-  .langBtn {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 4px;
-    text-align: center;
+  .linksBlock {
+    min-width: 60px;
+    font-size: 0.85rem;
+  }
+  .brandCol {
+    font-size: 0.85rem;
+  }
+  .bottomFooter {
+    font-size: 0.85rem;
   }
 }
 
@@ -315,53 +403,5 @@
     margin-bottom: 1.5rem;
     align-items: center;
     text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .mainFooter {
-    padding: 0.5rem 0 0.5rem 0;
-    gap: 1.2rem;
-  }
-  .linksCol {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  .linksBlock {
-    min-width: 100px;
-    margin-bottom: 1rem;
-  }
-  .brandCol {
-    gap: 1rem;
-  }
-  .logoRow {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .socials {
-    justify-content: center;
-  }
-  .contactInfo {
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 400px) {
-  .mainFooter {
-    padding: 0.2rem 0 0.2rem 0;
-    gap: 0.7rem;
-  }
-  .linksBlock {
-    min-width: 80px;
-    font-size: 0.85rem;
-  }
-  .brandCol {
-    font-size: 0.9rem;
-  }
-  .logo {
-    width: 100px;
   }
 } 

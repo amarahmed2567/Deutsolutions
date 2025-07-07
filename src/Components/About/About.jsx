@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./About.module.css";
-import teamImg from "../../assets/images/About.jpg"; 
+import teamImg from "../../assets/videos/about-us-video.mp4"; 
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -10,17 +10,28 @@ const About = () => {
   return (
   <section className={styles.aboutSection} id="#about-us">
     <div className={styles.aboutContent}>
-      <h2 className={styles.aboutHeadline}><span>{t('about.title').split(' ')[0]}</span> <span className={styles.highlight}>{t('about.title').split(' ')[1]}</span></h2>
+      <h2 className={styles.aboutHeadline}> <span className={styles.highlight}>{t('about.title')}</span></h2>
+      <h2 className={styles.aboutSubTitle}>{t('about.subtitle')}  </h2>
       <p className={styles.aboutText}>
         {t('about.description')}
       </p>
-      <Link to={'/about-us'}  className={styles.learnMoreBtn}>{t('about.learnMore')}</Link>
+      <Link to={'/about-us'}  
+      className={styles.learnMoreBtn}
+      style={location.pathname === "/about-us" ? { display: "none" } : {}}
+      >{t('about.learnMore')}</Link>
 
     </div>
     <div className={styles.aboutImageWrapper}>
       <div className={styles.topShape}></div>
       <div className={styles.aboutImage}>
-        <img src={teamImg} alt="Team DEUTSOLUTIONS "  />
+        <video 
+        className={styles.aboutVideo}
+         src={teamImg} 
+         autoPlay
+         muted
+         loop
+         playsInline 
+          />
       </div>
       <div className={styles.bottomShape}></div>
     </div>

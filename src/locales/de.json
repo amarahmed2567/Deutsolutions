@@ -22,8 +22,15 @@
   },
   "about": {
     "title": "Über uns",
-    "description": "Wir sind eine intelligente, mehrsprachige Agentur, die Menschen und Unternehmen dabei hilft, durch KI-gestützte Tools, professionelle Übersetzung und Einwanderungsunterstützung neue Möglichkeiten zu erschließen. Von Einzelpersonen, die einen Neuanfang suchen, bis hin zu Unternehmen, die grenzüberschreitend aufbauen — wir entwickeln Lösungen, die Menschen voranbringen.",
-    "learnMore": "Mehr erfahren"
+    "subtitle":"Kulturen verbinden, Zukunft gestalten",
+    "description": "Gegründet auf deutschem unternehmerischen Spitzengeist und mit Sitz im Herzen Dubais, schlagen wir eine Brücke zwischen drei Welten: der Innovation Europas, dem Ehrgeiz des Nahen Ostens und der Präzision deutscher Ingenieurskunst.",
+    "learnMore": "Mehr erfahren",
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "countries": "Länder bedient",
+      "clients": "Zufriedene Kunden",
+      "success": "Erfolgsquote"
+    }
   },
   "services": {
     "title": "Dienstleistungen",
@@ -155,6 +162,22 @@
     "corporate": {
       "title": "Unternehmenslösungen",
       "desc": "Digitale Transformation"
+    }
+  },
+  "mission": {
+    "title": "Unsere Mission",
+    "intro": "Die digitale Brücke sein, die Unternehmen, Einzelpersonen und Institutionen in Dubai, dem Nahen Osten und Europa durch innovative KI-Lösungen, präzise juristische Übersetzungen und umfassende Migrationsunterstützung verbindet.",
+    "human": {
+      "title": "Mensch im Mittelpunkt",
+      "desc": "Jede Lösung beginnt mit dem Verständnis menschlicher Bedürfnisse und kultureller Nuancen."
+    },
+    "precision": {
+      "title": "Deutsche Präzision",
+      "desc": "Sorgfältige Liebe zum Detail und Qualität in allem, was wir liefern."
+    },
+    "innovation": {
+      "title": "Innovation zuerst",
+      "desc": "Einsatz modernster KI und Technologie zur Lösung komplexer Herausforderungen."
     }
   }
 } 

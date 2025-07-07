@@ -1,7 +1,11 @@
+/* English Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Arabic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --primary-color: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
   --font-family: 'Noto Sans', sans-serif;
+  
 }
 
 * {
@@ -16,7 +20,12 @@ body{
   overflow-x: hidden;
   
 }
-
+:lang(ar) {
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+:lang(de){
+  font-family: var(--font-family);
+}
 .AppContainer {
   max-width: 1200px;
   min-height: 90.7vh;
@@ -80,8 +89,8 @@ body{
   background: linear-gradient(90deg, #222 60%, #888 100%);
   color: #fff;
   font-weight: 600;
-  font-size: .8rem;
-  padding: 0.6em 1.2em;
+  font-size: 1.2rem;
+  padding: 0.6em 1.4em;
   border: none;
   border-radius: 6px;
   cursor: pointer;

@@ -32,9 +32,7 @@ const CardsSlider = () => {
     <div className="cards-slider-wrapper">
       {cards.map((card, idx) => (
         <div className="card-slider-item" key={idx}>
-            <span className='gradient-icon'> 
             {card.icon}
-            </span>
           <div className="card-title">{t(card.titleKey)}</div>
           <div className="card-desc">{t(card.descKey)}</div>
         </div>
