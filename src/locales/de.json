@@ -207,7 +207,13 @@
     },
     "info": {
       "title": "Kontaktinformationen",
-      "subtitle": "Kontaktieren Sie uns über einen dieser Kanäle."
+      "subtitle": "Kontaktieren Sie uns über einen dieser Kanäle.",
+      "addressTitle": "Adresse",
+      "emailTitle": "E-Mail",
+      "phoneTitle": "Telefon",
+      "phoneValue": "+49 123 456789",
+      "emailValue": "info@deutsolutions.com",
+      "addressValue": "Mainstraße 123, Berlin, Deutschland"
     },
     "social": {
       "title": "Folgen Sie uns"

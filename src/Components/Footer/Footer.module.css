@@ -141,7 +141,7 @@
   margin-bottom: 8px;
 }
 .contactIcon {
-  color: #ff5e00;
+  color: #e67700;
   margin-right: 8px;
   font-size: 1.1em;
   vertical-align: middle;
@@ -492,5 +492,18 @@
     margin-bottom: 1.5rem;
     align-items: center;
     text-align: center;
+  }
+} 
+
+@media (max-width: 600px) {
+  .subscribeTitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .subscribeTitle {
+    font-size: 1rem;
+    margin-bottom: 6px;
   }
 } 

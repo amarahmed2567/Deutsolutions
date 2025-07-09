@@ -1,0 +1,32 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to start your journey? Let's discuss how we can help you achieve your goals.",
+    "form": {
+      "infoTitle": "Contact Information",
+      "infoDesc": "Ready to start your journey? Let's discuss how we can help you achieve your goals.",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "info": {
+      "addressTitle": "Address",
+      "addressValue": "123 Main St, Berlin, Germany",
+      "emailTitle": "Email",
+      "emailValue": "info@deutsolutions.com",
+      "phoneTitle": "Phone",
+      "phoneValue": "+49 123 456789",
+      "linkedinTitle": "LinkedIn",
+      "linkedinValue": "linkedin.com/company/deutsolutions",
+      "facebookTitle": "Facebook",
+      "facebookValue": "facebook.com/deutsolutions",
+      "instagramTitle": "Instagram",
+      "instagramValue": "instagram.com/deutsolutions",
+      "twitterTitle": "Twitter",
+      "twitterValue": "twitter.com/deutsolutions"
+    }
+  }
+} 

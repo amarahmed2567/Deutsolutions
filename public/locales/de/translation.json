@@ -1,0 +1,32 @@
+{
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Bereit, Ihre Reise zu beginnen? Lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+    "form": {
+      "infoTitle": "Kontaktinformation",
+      "infoDesc": "Bereit, Ihre Reise zu beginnen? Lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Senden",
+      "submitting": "Wird gesendet..."
+    },
+    "info": {
+      "addressTitle": "Adresse",
+      "addressValue": "123 Hauptstraße, Berlin, Deutschland",
+      "emailTitle": "E-Mail",
+      "emailValue": "info@deutsolutions.com",
+      "phoneTitle": "Telefon",
+      "phoneValue": "+49 123 456789",
+      "linkedinTitle": "LinkedIn",
+      "linkedinValue": "linkedin.com/company/deutsolutions",
+      "facebookTitle": "Facebook",
+      "facebookValue": "facebook.com/deutsolutions",
+      "instagramTitle": "Instagram",
+      "instagramValue": "instagram.com/deutsolutions",
+      "twitterTitle": "Twitter",
+      "twitterValue": "twitter.com/deutsolutions"
+    }
+  }
+} 

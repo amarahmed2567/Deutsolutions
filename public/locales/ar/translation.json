@@ -1,0 +1,32 @@
+{
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "جاهز لبدء رحلتك؟ دعنا نناقش كيف يمكننا مساعدتك في تحقيق أهدافك.",
+    "form": {
+      "infoTitle": "معلومات التواصل",
+      "infoDesc": "جاهز لبدء رحلتك؟ دعنا نناقش كيف يمكننا مساعدتك في تحقيق أهدافك.",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "subject": "الموضوع",
+      "message": "رسالتك",
+      "submit": "إرسال",
+      "submitting": "جاري الإرسال..."
+    },
+    "info": {
+      "addressTitle": "العنوان",
+      "addressValue": "123 شارع رئيسي، برلين، ألمانيا",
+      "emailTitle": "البريد الإلكتروني",
+      "emailValue": "info@deutsolutions.com",
+      "phoneTitle": "الهاتف",
+      "phoneValue": "+49 123 456789",
+      "linkedinTitle": "لينكدإن",
+      "linkedinValue": "linkedin.com/company/deutsolutions",
+      "facebookTitle": "فيسبوك",
+      "facebookValue": "facebook.com/deutsolutions",
+      "instagramTitle": "انستجرام",
+      "instagramValue": "instagram.com/deutsolutions",
+      "twitterTitle": "تويتر",
+      "twitterValue": "twitter.com/deutsolutions"
+    }
+  }
+} 

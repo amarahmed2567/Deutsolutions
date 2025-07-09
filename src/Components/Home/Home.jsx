@@ -5,7 +5,8 @@ import AnimatedText from "./AnimatedSubText/AnimatedText"
 import Map from "../../assets/svg/map.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const {HeroSection,HeroContent,Subtitle,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage} = style
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+const {HeroSection,HeroContent,Subtitle,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage,HerImg} = style
 const Home = () => {
   const { t } = useTranslation();
     return(
@@ -41,7 +42,12 @@ const Home = () => {
           </div>
         </div>
         <div className={HeroImage}>
-        <img  src={Map} alt="Map Image for Deut" />
+        <DotLottieReact
+         className={HerImg}
+          src="https://lottie.host/f57517fb-64dd-431b-b9a3-4a80d070090e/ML7CF5MMxU.lottie"
+          loop
+          autoplay
+        />
         </div>
       </motion.section>
     )

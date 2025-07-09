@@ -30,7 +30,7 @@ const serviceData = [
     titleKey: 'services.items.migration.title',
     descKey: 'services.items.migration.description',
     btnKey: 'services.items.migration.button',
-    link: "/migration",
+    link: "migration",
     features: [
       { icon: <FaGlobe color="#00c6fb" />, value: '50+', label: 'Countries' },
       { icon: <FaPlane color="#00c6fb" />, value: '500+', label: 'Applications' },
@@ -42,7 +42,7 @@ const serviceData = [
     titleKey: 'services.items.ai.title',
     descKey: 'services.items.ai.description',
     btnKey: 'services.items.ai.button',
-    link: "/ai",
+    link: "ai",
     features: [
       { icon: <FaBrain color="#d90429" />, value: '30+', label: 'AI Projects' },
       { icon: <FaProjectDiagram color="#d90429" />, value: '10+', label: 'Years Exp.' },
@@ -54,7 +54,7 @@ const serviceData = [
     titleKey: 'services.items.german.title',
     descKey: 'services.items.german.description',
     btnKey: 'services.items.german.button',
-    link: "/german",
+    link: "german",
     features: [
       { icon: <FaUserGraduate color="#009e60" />, value: '1,000+', label: 'Students' },
       { icon: <FaLanguage color="#009e60" />, value: 'All Levels', label: 'Courses' },
@@ -80,6 +80,7 @@ const ServicesPage = () => {
         {serviceData.map((s, i) => (
           <div
             key={i}
+            id={s.link}
             className={styles.serviceRow}
             style={{ flexDirection: i % 2 === 0 ? 'row' : 'row-reverse' }}
           >

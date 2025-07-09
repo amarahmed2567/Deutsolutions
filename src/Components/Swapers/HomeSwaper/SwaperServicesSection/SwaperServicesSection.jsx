@@ -32,7 +32,7 @@ import { Link } from 'react-router-dom';
       icon: <MdTranslate className="Icon" style={{color: '#0070f3'}} />,
       desc: t('services.items.translation.description'),
       btn: t('services.items.translation.button'),
-      link:"/translation"
+      link:"/services#translation"
     },
     {
       title: t('services.items.migration.title'),
@@ -40,7 +40,7 @@ import { Link } from 'react-router-dom';
       icon: <MdAirplaneTicket className="Icon" style={{color: '#e67700'}} />,
       desc: t('services.items.migration.description'),
       btn: t('services.items.migration.button'),
-      link:"/migration"
+      link:"/services#migration"
     },
     {
       title: t('services.items.ai.title'),
@@ -48,7 +48,7 @@ import { Link } from 'react-router-dom';
       icon: <FaRobot className="Icon" style={{color: '#d90429'}} />,
       desc: t('services.items.ai.description'),
       btn: t('services.items.ai.button'),
-      link:"/ai"
+      link:"/services#ai"
     },
     {
       title: t('services.items.german.title'),
@@ -56,7 +56,7 @@ import { Link } from 'react-router-dom';
       icon: <FaBookOpen className="Icon" style={{color: '#009e60'}} />,
       desc: t('services.items.german.description'),
       btn: t('services.items.german.button'),
-      link:"/german"
+      link:"/services#german"
     }
   ];
   

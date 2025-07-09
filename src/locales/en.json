@@ -206,7 +206,13 @@
     },
     "info": {
       "title": "Contact Information",
-      "subtitle": "Get in touch with us through any of these channels."
+      "subtitle": "Get in touch with us through any of these channels.",
+      "addressTitle":"Address",
+      "emailTitle":"Email",
+      "phoneTitle":"phone",
+      "phoneValue":"+49 123 456789",
+      "emailValue":"info@deutsolutions.com",
+      "addressValue":"123 Main St, Berlin, Germany"
     },
     "social": {
       "title": "Follow Us"

@@ -207,7 +207,13 @@
     },
     "info": {
       "title": "معلومات التواصل",
-      "subtitle": "تواصل معنا من خلال أي من هذه القنوات."
+      "subtitle": "تواصل معنا من خلال أي من هذه القنوات.",
+      "addressTitle": "العنوان",
+      "emailTitle": "البريد الإلكتروني",
+      "phoneTitle": "الهاتف",
+      "phoneValue": "+٤٩ ١٢٣ ٤٥٦٧٨٩",
+      "emailValue": "info@deutsolutions.com",
+      "addressValue": "١٢٣ شارع مين، برلين، ألمانيا"
     },
     "social": {
       "title": "تابعنا"

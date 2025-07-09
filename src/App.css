@@ -52,7 +52,8 @@ body{
 .minSubtitle {
   font-size: 1.15rem;
   color: #444d5c;
-  margin-bottom: 2.5rem;
+  max-width: 60%;
+  margin: 0 auto 2.5rem auto;
   text-align: center;
 }
 /* Responsive Container */
