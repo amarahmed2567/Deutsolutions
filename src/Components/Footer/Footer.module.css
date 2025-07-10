@@ -302,7 +302,7 @@
     padding: 0;
   }
   .subscribeSection {
-    padding: 18px 0 10px 0;
+    padding: 18px 0 30px 0;
     width: 100%;
     text-align: center;
   }
@@ -327,13 +327,13 @@
     font-size: 0.95rem;
     padding: 12px 18px;
     min-width: 220px;
-    width: 80%;
+    width: 50%;
     max-width: 300px;
   }
   
   .subscribeBtn {
-    font-size: 0.85rem;
-    padding: 12px 24px;
+    font-size: 0.6rem;
+    padding: 2px 24px;
     width: 20%;
     max-width: 300px;
     justify-content: center;
@@ -362,6 +362,7 @@
   .logo {
     width: 150px;
     margin: 0 auto;
+    padding: 1rem;
   }
   .brandDesc {
     font-size: 0.95rem;
