@@ -6,7 +6,7 @@ import Map from "../../assets/svg/map.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-const {HeroSection,HeroContent,Subtitle,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage,HerImg} = style
+const {HeroSection,HeroContent,HeroContentText,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage,HerImg} = style
 const Home = () => {
   const { t } = useTranslation();
     return(
@@ -18,12 +18,11 @@ const Home = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
         <div className={HeroContent}>
-          <div className="HeroContent-text"> 
+          <div className={HeroContentText}> 
             <h1>
-              {t('home.hero.title')}
+              {t('home.hero.title')} <br />
+            <span className={MinVarText}>{t('home.hero.min-var-text')} &nbsp;<AnimatedText/></span>
             </h1>
-            <h2 className={Subtitle}>{t('home.hero.subtitle')}</h2>
-            <h3 className={MinVarText}>{t('home.hero.min-var-text')} &nbsp;<AnimatedText/></h3>
           </div>
           <p className={Subtext}>
             {t('home.hero.description')}

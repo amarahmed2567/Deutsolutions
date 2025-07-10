@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper/modules";
@@ -15,11 +16,10 @@ import { FaRobot, FaBookOpen } from "react-icons/fa";
 import "./SwaperServicesSection.css"
 
 //image
-import migrationImg from "../../../../assets/images/migration.png";
+import migrationImg from "../../../../assets/images/migration.jpg";
 import aiImg from "../../../../assets/images/ai.jpg";
-import translationImg from "../../../../assets/images/Trans.jpeg";
+import translationImg from "../../../../assets/images/Trans.jpg";
 import germanImg from "../../../../assets/images/DeutschKurs.jpg";
-import { Link } from 'react-router-dom';
 
 
   const SwaperServicesSection = () => {
@@ -88,8 +88,27 @@ import { Link } from 'react-router-dom';
               </h3>
               <p className="cardDesc">{s.desc}</p>
               <div className="btn-contenar">
-              <Link to={s.link} className="btnlight">{t('services.learnMore')}</Link>
-              <Link to={s.link} className="cardBtn">{s.btn}</Link>
+              <HashLink 
+              smooth  
+              to={s.link} 
+              className="btnlight"
+              scroll={el => {
+                const yOffset = -100;
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              >{t('services.learnMore')}</HashLink>
+              <HashLink  
+              smooth 
+              to={s.link} 
+              className="cardBtn"
+              scroll={el => {
+                const yOffset = -100; 
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              >{s.btn}</HashLink>
+              
               </div>
           </div>
           </div>

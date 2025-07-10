@@ -8,11 +8,12 @@
   "home": {
     "hero": {
       "title": "EDigital made in Germany. Global gedacht. Am Menschen orientiert.",
-      "subtitle": "Ihr zuverlässiger Lösungspartner von Dubai bis nach Europa",
       "min-var-text":"Exzellenz in der",
       "description": "Professionelle deutsche Übersetzung, Einwanderungsunterstützung und KI-gestützte Lösungen.",
       "cta": "Starten Sie Ihre Reise"
     },
+    "startYourJourney": "Starte deine Reise",
+    "takeTheNextStep": "Bereit für den nächsten Schritt?",
     "stats": {
       "clients": "Kunden",
       "translations": "Übersetzungen",

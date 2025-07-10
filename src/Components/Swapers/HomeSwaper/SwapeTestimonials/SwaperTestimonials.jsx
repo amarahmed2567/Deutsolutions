@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import"./SwaperTestimonials.css";
-import Testimonials1 from "../../../../assets/images/men-1.jpeg"
-import Testimonials2 from "../../../../assets/images/men-2.jpeg"
-import Testimonials3 from "../../../../assets/images/women-1.jpeg"
-import Testimonials4 from "../../../../assets/images/women-2.jpeg"
+import Testimonials1 from "../../../../assets/images/men-1.jpg"
+import Testimonials2 from "../../../../assets/images/men-2.jpg"
+import Testimonials3 from "../../../../assets/images/women-1.jpg"
+import Testimonials4 from "../../../../assets/images/women-2.jpg"
 import "../Swipe.css";
 const testimonials = [
   {
@@ -33,15 +33,8 @@ const testimonials = [
     text: `We needed urgent certified translations — got them fast and spot on. Excellent service!`,
     name: "Khalid R., Dubai",
     rating: 4,
-    img:Testimonials1
-
-  },
-  {
-    text: `We needed urgent certified translations — got them fast and spot on. Excellent service!`,
-    name: "Khalid R., Dubai",
-    rating: 4,
     img:Testimonials4
-  },
+  }
 ];
 
 const SwaperTestimonials = () => {

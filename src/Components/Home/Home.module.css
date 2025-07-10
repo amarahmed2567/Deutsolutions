@@ -20,19 +20,14 @@
   :lang(ar) .HeroContent {
       line-height: 1.6;
     }
-  .MinVarText{
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  .Subtitle{
-    font-size: 1.5rem;
+  .HeroContentText {
+    font-size: 1.2rem;
     font-weight: 800;
-  }
-  .HeroContent-text h1{
-    font-size: 1.5rem;
-    color: #111;
-  }
+    }
 
+    :lang(ar) .HeroContentText {
+      max-width: 80%;
+    }
   .Subtext {
     font-size: 1.05rem;
     color: #444;
@@ -131,11 +126,11 @@
       align-items: center;
     }
     .HeroContent {
-      text-align: center;
+      text-align: center; 
       align-items: center;
     }
-    .HeroContent h1 {
-      font-size: 2rem;
+    .HeroContent-text {
+      font-size: 1.3rem;
       text-align: center;
     }
     .Subtext {
@@ -159,7 +154,7 @@
     }
     .HeroImage {
       min-width: 200px;
-      min-height: 200px;
+      min-height: 100px;
     }
   }
 
@@ -173,8 +168,8 @@
       text-align: center;
       align-items: center;
     }
-    .HeroContent h1 {
-      font-size: 1.7rem;
+    .HeroContent-text {
+      font-size: 1.3rem;
       text-align: center;
     }
     .Subtext {

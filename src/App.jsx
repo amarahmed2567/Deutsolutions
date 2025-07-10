@@ -19,8 +19,8 @@ function App() {
     <div lang={i18n.language}>
       <Navbar />
       <div className="AppContainer">
-        <AnimatePresence mode="wait">
         <ScrollToTop />
+        <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
 
             //HomePage

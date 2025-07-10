@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { MdTranslate, MdAirplaneTicket, MdSchool } from "react-icons/md";
-import { FaRobot, FaBookOpen, FaGlobeEurope, FaCheckCircle, FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage } from "react-icons/fa";
-import translationImg from "../../assets/images/Trans.jpeg";
-import migrationImg from "../../assets/images/migration.png";
+import { FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage } from "react-icons/fa";
+import translationImg from "../../assets/images/Trans.jpg";
+import migrationImg from "../../assets/images/migration.jpg";
 import aiImg from "../../assets/images/ai.jpg";
 import germanImg from "../../assets/images/DeutschKurs.jpg";
 import { Link } from "react-router-dom";
@@ -17,7 +16,7 @@ const serviceData = [
     titleKey: 'services.items.translation.title',
     descKey: 'services.items.translation.description',
     btnKey: 'services.items.translation.button',
-    link: "/translation",
+    link: "translation",
 
     features: [
       { icon: <FaLanguage color="#f9b434" />, value: '100+', label: 'Languages' },
@@ -80,11 +79,10 @@ const ServicesPage = () => {
         {serviceData.map((s, i) => (
           <div
             key={i}
-            id={s.link}
             className={styles.serviceRow}
             style={{ flexDirection: i % 2 === 0 ? 'row' : 'row-reverse' }}
           >
-            <div className={styles.serviceImgWrapper} data-aos={i % 2 === 0 ? 'fade-right' : 'fade-left'}>
+            <div className={styles.serviceImgWrapper} id={s.link} data-aos={i % 2 === 0 ? 'fade-right' : 'fade-left'}>
               <img src={s.img} alt={t(s.titleKey)} className={styles.serviceImg} />
             </div>
             <div className={styles.serviceContent} data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}>

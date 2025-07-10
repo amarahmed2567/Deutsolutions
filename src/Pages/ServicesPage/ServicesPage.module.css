@@ -54,8 +54,6 @@
   background: #fff;
   border-radius: 18px;
   justify-content: flex-start;
-  /* min-width: 180px; */
-  /* max-width: 400px; */
 }
 .serviceContent > * {
   align-self: flex-start;
@@ -195,7 +193,7 @@
     padding: 1.2rem 0.7rem 1rem 0.7rem;
   }
   .serviceImg {
-    height: 110px;
+    height: 210px;
     border-radius: 12px 12px 0 0;
   }
   .serviceIcon {

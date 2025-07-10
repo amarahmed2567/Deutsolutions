@@ -25,17 +25,20 @@
 }
 
 .mission-title {
-  font-size: 2rem;
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
   font-weight: 800;
-  margin-bottom: 0.7rem;
-  color: #181818;
-  text-align: left;
+  margin-bottom: .4rem;
 }
 
 .mission-desc {
   font-size: 1.13rem;
   color: #444d5c;
   margin-bottom: 2.2rem;
+  font-style: italic;
   text-align: left;
   line-height: 1.6;
 }

@@ -8,11 +8,12 @@
   "home": {
     "hero": {
       "title": "Digitally German. Globally Smart. Human-Centered.",
-      "subtitle": "Your Solution Partner from Dubai to Europe",
       "min-var-text":"Excellence in",
       "description": "Professional German Translation, Immigration Support, and AI-Powered Solutions.",
       "cta": "Start Your Journey"
     },
+    "startYourJourney": "Start Your Journey",
+    "takeTheNextStep": "Ready to Take the Next Step?",
     "stats": {
       "clients": "Clients",
       "translations": "Translations",

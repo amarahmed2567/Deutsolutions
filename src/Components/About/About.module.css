@@ -14,30 +14,26 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-:lang(ar) .aboutContent  {
   line-height: 1;
 }
 .aboutHeadline {
   font-size: 2rem;
   font-weight: 700;
-  font-family: inherit;
 }
 .aboutSubTitle{
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 .aboutHeadline .highlight {
   background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-style: italic;
   font-weight: 800;
 }
 
 .aboutText {
-  font-size: 1.08rem;
+  font-size: 1rem;
   color: #222;
   font-style: italic;
   line-height: 1.6;

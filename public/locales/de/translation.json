@@ -28,5 +28,9 @@
       "twitterTitle": "Twitter",
       "twitterValue": "twitter.com/deutsolutions"
     }
+  },
+  "home": {
+    "takeTheNextStep": "Bereit für den nächsten Schritt?",
+    "startYourJourney": "Starte deine Reise"
   }
 } 

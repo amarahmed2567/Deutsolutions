@@ -28,5 +28,9 @@
       "twitterTitle": "تويتر",
       "twitterValue": "twitter.com/deutsolutions"
     }
+  },
+  "home": {
+    "takeTheNextStep": "هل أنت مستعد للانتقال للخطوة التالية؟",
+    "startYourJourney": "ابدأ رحلتك الآن"
   }
 } 
