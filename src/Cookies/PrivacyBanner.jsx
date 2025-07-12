@@ -8,25 +8,37 @@ const PrivacyBanner = () => {
     const consent = localStorage.getItem("cookie_consent");
     if (!consent) {
       setShowBanner(true);
+    } else {
+      // لو وافق قبل كده، حمّل Google Analytics
+      loadAnalytics();
     }
   }, []);
+
+  const loadAnalytics = () => {
+    if (window.gtag) {
+      // جاهز
+      window.gtag('config', 'G-NWCNB6N585');
+    } else {
+      // أول مرة
+      const script = document.createElement("script");
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-NWCNB6N585";
+      script.async = true;
+      document.head.appendChild(script);
+
+      script.onload = () => {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        window.gtag = gtag; // لحفظه لاستخدام لاحق
+        gtag('js', new Date());
+        gtag('config', 'G-NWCNB6N585');
+      };
+    }
+  };
 
   const handleAccept = () => {
     localStorage.setItem("cookie_consent", "true");
     setShowBanner(false);
-  
-    // Google Analytics 
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-NWCNB6N585"; // <-- حط ID بتاعك هنا
-    script.async = true;
-    document.head.appendChild(script);
-  
-    script.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-NWCNB6N585');
-    };
+    loadAnalytics();
   };
 
   if (!showBanner) return null;
@@ -42,3 +54,4 @@ const PrivacyBanner = () => {
 };
 
 export default PrivacyBanner;
+
