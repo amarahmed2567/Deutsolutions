@@ -6,7 +6,7 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import NotFound from "./Pages/NotFound/NotFound";
-import PrivacyBanner from "./Cookies/PrivacyBanner"
+// import PrivacyBanner from "./Cookies/PrivacyBanner"
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
 import { AnimatePresence, motion } from "framer-motion";
@@ -83,7 +83,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </div>
-      <PrivacyBanner />
+      {/* <PrivacyBanner /> */}
       <Footer />
     </div>
   );
