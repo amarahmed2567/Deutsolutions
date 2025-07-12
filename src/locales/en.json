@@ -232,5 +232,11 @@
       "q4": "What are your working hours?",
       "a4": "We work Sunday to Thursday, 9:00 AM to 6:00 PM UAE time. Emergency services available 24/7."
     }
+  },
+  "privacy": {
+    "banner": {
+      "message": "We use cookies to improve your experience. By using the site, you agree to this.",
+      "accept": "Accept"
+    }
   }
 } 

@@ -1,17 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import "./PrivacyBanner.css";
+import React, { useEffect } from 'react';
 
-const PrivacyBanner = () => {
-  const [showBanner, setShowBanner] = useState(false);
-  const { t } = useTranslation();
-
+const AnalyticsLoader = () => {
   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
-    if (!consent) {
-      setShowBanner(true);
-    } else {
-      // لو وافق قبل كده، حمّل Google Analytics
+    
+    if (consent === "true") {
       loadAnalytics();
     }
   }, []);
@@ -67,25 +60,7 @@ const PrivacyBanner = () => {
     }
   };
 
-  const handleAccept = () => {
-    localStorage.setItem("cookie_consent", "true");
-    setShowBanner(false);
-    loadAnalytics();
-  };
-
-  if (!showBanner) return null;
-
-  return (
-    <div className="cookie-banner">
-      <p>
-        {t('privacy.banner.message')}
-      </p>
-      <button onClick={handleAccept}>
-        {t('privacy.banner.accept')}
-      </button>
-    </div>
-  );
+  return null; // This component doesn't render anything
 };
 
-export default PrivacyBanner;
-
+export default AnalyticsLoader; 

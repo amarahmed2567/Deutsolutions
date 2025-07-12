@@ -233,5 +233,11 @@
       "q4": "Was sind Ihre Arbeitszeiten?",
       "a4": "Wir arbeiten von Sonntag bis Donnerstag, 9:00 bis 18:00 Uhr UAE-Zeit. Notfallservices sind 24/7 verfügbar."
     }
+  },
+  "privacy": {
+    "banner": {
+      "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung der Website stimmen Sie dem zu.",
+      "accept": "Akzeptieren"
+    }
   }
 } 
