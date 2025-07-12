@@ -14,6 +14,7 @@ import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
 import AnalyticsLoader from "./Components/Utils/AnalyticsLoader";
+import AnalyticsTest from "./Components/Utils/AnalyticsTest";
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
     <div lang={i18n.language}>
       <LanguageInitializer />
       <AnalyticsLoader />
+      <AnalyticsTest />
       <Navbar />
       <div className="AppContainer">
         <ScrollToTop />
