@@ -6,17 +6,20 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 import ServicesPage from "./Pages/ServicesPage/ServicesPage";
 import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import NotFound from "./Pages/NotFound/NotFound";
+import PrivacyBanner from "./Cookies/PrivacyBanner"
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
+import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
 
 function App() {
   const location = useLocation();
   const {i18n} = useTranslation()
   return (
     <div lang={i18n.language}>
+      <LanguageInitializer />
       <Navbar />
       <div className="AppContainer">
         <ScrollToTop />
@@ -80,6 +83,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </div>
+      <PrivacyBanner />
       <Footer />
     </div>
   );
