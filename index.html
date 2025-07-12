@@ -9,28 +9,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWCNB6N585"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      // إعدادات الموافقة الافتراضية (مرفوضة حتى يوافق المستخدم)
-      gtag('consent', 'default', {
-          'ad_storage': 'denied',
-          'ad_user_data': 'denied',
-          'ad_personalization': 'denied',
-          'analytics_storage': 'denied'
-      });
-
-      // تحقق من الموافقة المحفوظة
-      if (localStorage.getItem("cookie_consent") === "true") {
-        // إذا وافق المستخدم من قبل، فعّل Google Analytics
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'ad_user_data': 'granted',
-          'ad_personalization': 'granted',
-          'analytics_storage': 'granted'
-        });
-        gtag('config', 'G-NWCNB6N585');
-      }
+      gtag('config', 'G-NWCNB6N585');
     </script>
     <title>Deutsolutions</title>
   </head>
