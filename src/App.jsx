@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
 import GoogleAnalytics from "./Components/Utils/GoogleAnalytics";
 import AnalyticsTest from "./Components/Utils/AnalyticsTest";
+import GoogleAnalyticsDebug from "./Components/Utils/GoogleAnalyticsDebug";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
       <LanguageInitializer />
       <GoogleAnalytics />
       <AnalyticsTest />
+      <GoogleAnalyticsDebug />
       <Navbar />
       <div className="AppContainer">
         <ScrollToTop />
