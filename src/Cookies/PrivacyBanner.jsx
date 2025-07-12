@@ -12,7 +12,6 @@ const PrivacyBanner = () => {
   }, []);
 
   const handleAccept = () => {
-    
     localStorage.setItem("cookie_consent", "true");
     setShowBanner(false);
   
