@@ -13,9 +13,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
-import GoogleAnalytics from "./Components/Utils/GoogleAnalytics";
-import AnalyticsTest from "./Components/Utils/AnalyticsTest";
-import GoogleAnalyticsDebug from "./Components/Utils/GoogleAnalyticsDebug";
 
 function App() {
   const location = useLocation();
@@ -23,9 +20,6 @@ function App() {
   return (
     <div lang={i18n.language}>
       <LanguageInitializer />
-      <GoogleAnalytics />
-      <AnalyticsTest />
-      <GoogleAnalyticsDebug />
       <Navbar />
       <div className="AppContainer">
         <ScrollToTop />
