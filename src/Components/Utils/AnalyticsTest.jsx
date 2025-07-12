@@ -41,6 +41,17 @@ const AnalyticsTest = () => {
     testAnalytics();
   };
 
+  const checkConsent = () => {
+    const consent = localStorage.getItem("cookie_consent");
+    console.log('Cookie consent status:', consent);
+    
+    if (consent === "true") {
+      console.log('✅ User has consented to cookies');
+    } else {
+      console.log('❌ User has not consented to cookies');
+    }
+  };
+
   return (
     <div style={{ 
       position: 'fixed', 
@@ -63,10 +74,25 @@ const AnalyticsTest = () => {
           padding: '5px 10px',
           borderRadius: '3px',
           cursor: 'pointer',
-          marginTop: '5px'
+          marginTop: '5px',
+          marginRight: '5px'
         }}
       >
         Test GA
+      </button>
+      <button 
+        onClick={checkConsent}
+        style={{
+          background: '#007bff',
+          color: '#fff',
+          border: 'none',
+          padding: '5px 10px',
+          borderRadius: '3px',
+          cursor: 'pointer',
+          marginTop: '5px'
+        }}
+      >
+        Check Consent
       </button>
     </div>
   );

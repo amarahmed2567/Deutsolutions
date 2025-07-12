@@ -11,71 +11,50 @@ const PrivacyBanner = () => {
     if (!consent) {
       setShowBanner(true);
     } else {
-      // لو وافق قبل كده، حمّل Google Analytics
-      loadAnalytics();
+      // لو وافق قبل كده، فعّل Google Analytics
+      enableAnalytics();
     }
   }, []);
 
-  const loadAnalytics = () => {
-    console.log('Loading Google Analytics...');
+  const enableAnalytics = () => {
+    console.log('PrivacyBanner: Enabling Google Analytics...');
     
     // تحقق من وجود gtag
     if (window.gtag) {
-      console.log('gtag already exists, updating consent...');
-      // جاهز - قم بتحديث الإعدادات
+      // تحديث إعدادات الموافقة
       window.gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
         'ad_personalization': 'granted',
         'analytics_storage': 'granted'
       });
-      window.gtag('config', 'G-NWCNB6N585');
+      
+      // تكوين Google Analytics
+      window.gtag('config', 'G-NWCNB6N585', {
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'send_page_view': true
+      });
+      
+      // إرسال حدث page_view
+      window.gtag('event', 'page_view', {
+        'page_title': document.title,
+        'page_location': window.location.href
+      });
+      
+      console.log('PrivacyBanner: Google Analytics enabled successfully');
+      
+      // اختبار إرسال حدث
+      setTimeout(() => {
+        window.gtag('event', 'test_event', {
+          'event_category': 'test',
+          'event_label': 'privacy_banner_accept',
+          'value': 1
+        });
+        console.log('PrivacyBanner: Test event sent to Google Analytics');
+      }, 2000);
     } else {
-      console.log('Loading gtag script...');
-      // أول مرة - قم بتحميل Google Analytics
-      const script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-NWCNB6N585";
-      script.async = true;
-      document.head.appendChild(script);
-
-      script.onload = () => {
-        console.log('gtag script loaded successfully');
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { 
-          window.dataLayer.push(arguments); 
-        }
-        window.gtag = gtag;
-        
-        // تهيئة gtag
-        gtag('js', new Date());
-        
-        // تحديث إعدادات الموافقة
-        gtag('consent', 'update', {
-          'ad_storage': 'granted',
-          'ad_user_data': 'granted',
-          'ad_personalization': 'granted',
-          'analytics_storage': 'granted'
-        });
-        
-        // تكوين Google Analytics
-        gtag('config', 'G-NWCNB6N585', {
-          'page_title': document.title,
-          'page_location': window.location.href,
-          'send_page_view': true
-        });
-        
-        console.log('Google Analytics configured successfully');
-        
-        // إرسال حدث page_view
-        gtag('event', 'page_view', {
-          'page_title': document.title,
-          'page_location': window.location.href
-        });
-      };
-
-      script.onerror = (error) => {
-        console.error('Failed to load Google Analytics script:', error);
-      };
+      console.error('PrivacyBanner: gtag not found');
     }
   };
 
@@ -83,7 +62,7 @@ const PrivacyBanner = () => {
     console.log('User accepted cookies');
     localStorage.setItem("cookie_consent", "true");
     setShowBanner(false);
-    loadAnalytics();
+    enableAnalytics();
   };
 
   if (!showBanner) return null;

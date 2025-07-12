@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
-import AnalyticsLoader from "./Components/Utils/AnalyticsLoader";
+import GoogleAnalytics from "./Components/Utils/GoogleAnalytics";
 import AnalyticsTest from "./Components/Utils/AnalyticsTest";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   return (
     <div lang={i18n.language}>
       <LanguageInitializer />
-      <AnalyticsLoader />
+      <GoogleAnalytics />
       <AnalyticsTest />
       <Navbar />
       <div className="AppContainer">

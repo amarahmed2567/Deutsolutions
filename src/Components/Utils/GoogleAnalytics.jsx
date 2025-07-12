@@ -5,78 +5,53 @@ const GoogleAnalytics = () => {
     const consent = localStorage.getItem("cookie_consent");
     
     if (consent === "true") {
-      initializeGoogleAnalytics();
+      console.log('GoogleAnalytics: Consent found, enabling analytics...');
+      enableAnalytics();
+    } else {
+      console.log('GoogleAnalytics: No consent found, analytics disabled');
     }
   }, []);
 
-  const initializeGoogleAnalytics = () => {
-    // Google Analytics Measurement ID
-    const GA_MEASUREMENT_ID = 'G-NWCNB6N585';
+  const enableAnalytics = () => {
+    console.log('GoogleAnalytics: Enabling Google Analytics...');
     
-    console.log('Initializing Google Analytics with ID:', GA_MEASUREMENT_ID);
-    
-    // إنشاء dataLayer إذا لم يكن موجوداً
-    window.dataLayer = window.dataLayer || [];
-    
-    // تعريف gtag function
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    
-    // تعيين gtag كمتغير عام
-    window.gtag = gtag;
-    
-    // تهيئة gtag
-    gtag('js', new Date());
-    
-    // تحميل Google Analytics script
-    const script = document.createElement('script');
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    script.async = true;
-    
-    script.onload = () => {
-      console.log('Google Analytics script loaded successfully');
-      
-      // تكوين Google Analytics
-      gtag('config', GA_MEASUREMENT_ID, {
-        'page_title': document.title,
-        'page_location': window.location.href,
-        'send_page_view': true
-      });
-      
+    // تحقق من وجود gtag
+    if (window.gtag) {
       // تحديث إعدادات الموافقة
-      gtag('consent', 'update', {
+      window.gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
         'ad_personalization': 'granted',
         'analytics_storage': 'granted'
       });
       
+      // تكوين Google Analytics
+      window.gtag('config', 'G-NWCNB6N585', {
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'send_page_view': true
+      });
+      
       // إرسال حدث page_view
-      gtag('event', 'page_view', {
+      window.gtag('event', 'page_view', {
         'page_title': document.title,
         'page_location': window.location.href
       });
       
-      console.log('Google Analytics initialized successfully');
+      console.log('GoogleAnalytics: Google Analytics enabled successfully');
       
       // اختبار إرسال حدث
       setTimeout(() => {
-        gtag('event', 'test_event', {
+        window.gtag('event', 'test_event', {
           'event_category': 'test',
           'event_label': 'analytics_initialized',
           'value': 1
         });
-        console.log('Test event sent to Google Analytics');
+        console.log('GoogleAnalytics: Test event sent to Google Analytics');
       }, 2000);
-    };
-    
-    script.onerror = (error) => {
-      console.error('Failed to load Google Analytics script:', error);
-    };
-    
-    // إضافة script إلى head
-    document.head.appendChild(script);
+    } else {
+      console.error('GoogleAnalytics: gtag not found');
+    }
   };
 
   return null;
