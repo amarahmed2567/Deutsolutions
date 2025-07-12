@@ -10,9 +10,16 @@
       function gtag(){ dataLayer.push(arguments); }
       gtag('js', new Date());
 
-      if (localStorage.getItem("cookie_consent") === "true") {
-        gtag('config', 'G-NWCNB6N585');
-      }
+      gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied'
+      });
+
+      // if (localStorage.getItem("cookie_consent") === "true") {
+      //   gtag('config', 'G-NWCNB6N585');
+      // }
     </script>
     <title>Deutsolutions</title>
   </head>

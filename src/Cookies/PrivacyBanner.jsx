@@ -30,6 +30,12 @@ const PrivacyBanner = () => {
         function gtag() { window.dataLayer.push(arguments); }
         window.gtag = gtag; // لحفظه لاستخدام لاحق
         gtag('js', new Date());
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
         gtag('config', 'G-NWCNB6N585');
       };
     }
