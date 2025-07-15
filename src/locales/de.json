@@ -237,7 +237,26 @@
   "privacy": {
     "banner": {
       "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die Nutzung der Website stimmen Sie dem zu.",
-      "accept": "Akzeptieren"
+      "accept": "Akzeptieren",
+      "reject": "Ablehnen"
     }
+  },
+  "signup": {
+    "title": "Registrieren",
+    "subtitle": "Bitte füllen Sie Ihre Daten aus, um ein Konto zu erstellen",
+    "name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "selectService": "Dienstleistung wählen",
+    "service": {
+      "translation": "Übersetzung",
+      "migration": "Migration",
+      "ai": "KI",
+      "other": "Andere"
+    },
+    "submit": "Registrieren",
+    "submitting": "Wird registriert...",
+    "haveAccount": "Sie haben bereits ein Konto?",
+    "login": "Anmelden"
   }
 } 

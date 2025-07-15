@@ -4,7 +4,7 @@ import "./PrivacyBanner.css";
 
 const PrivacyBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
@@ -52,17 +52,45 @@ const PrivacyBanner = () => {
     enableAnalytics();
   };
 
+  const handleReject = () => {
+    localStorage.setItem("cookie_consent", "false");
+    setShowBanner(false);
+    // لا تفعّل Google Analytics
+  };
+
+  const [showAdvanced, setShowAdvanced] = useState(false);
+  const handleAdvanced = () => {
+    setShowAdvanced(true);
+  };
+
+  // لغات مدعومة
+  const languages = [
+    { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  ];
+
   if (!showBanner) return null;
 
   return (
-    <div className="cookie-banner">
-      <p>
-        {t('privacy.banner.message')}
-      </p>
-      <button onClick={handleAccept}>
-        {t('privacy.banner.accept')}
-      </button>
-    </div>
+    <>
+      <div className="cookie-banner-blur-bg" />
+      <div className="cookie-banner center-banner">
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '18px', minWidth: 240 }}>
+          <p style={{ margin: '0 0 18px 0', textAlign: 'center' }}>
+            {t('privacy.banner.message')}
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '100%' }}>
+            <button onClick={handleAccept} style={{ width: '100%' }}>
+              {t('privacy.banner.accept')}
+            </button>
+            <button onClick={handleReject} style={{ background: '#eee', color: '#222', width: '100%' }}>
+              {t('privacy.banner.reject', 'رفض')}
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

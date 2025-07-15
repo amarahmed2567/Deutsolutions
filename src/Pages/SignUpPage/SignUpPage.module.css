@@ -1,0 +1,130 @@
+.signupContainer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.signupFormSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 48px 32px;
+  min-width: 350px;
+  max-width: 480px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.04);
+}
+.signupTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+.signupSubtitle {
+  color: #7a7a7a;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+}
+.signupForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.input {
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f7f8fa;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #222;
+  outline: none;
+  background: #fff;
+}
+.signupBtn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signupBtn:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+.loginLink {
+  margin-top: 18px;
+  color: #222;
+  font-size: 1rem;
+}
+.loginLink a {
+  color: #222;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.aboutImageWrapper {
+    flex: 1 1 340px;
+    min-width: 320px;
+    max-width: 480px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutImage{
+    width: 556px;
+    height: 500px;
+    border-radius: 279px 25px 25px 25px ;
+    overflow: hidden;
+  }
+  .aboutImage .aboutVideo{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  
+  .topShape {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 90px;
+    height: 90px;
+    background: #111;
+    border-radius: 0 0 60px 0;
+    transform: rotate(180deg);
+    z-index: 3;
+  }
+  .bottomShape {
+    position: absolute;
+    bottom: 80px;
+    left: -40px;
+    width: 60px;
+    height: 60px;
+    background: #ffb434;
+    border-radius: 0 60px 0 0;
+    z-index: 3;
+  }
+@media (max-width: 900px) {
+  .signupContainer {
+    flex-direction: column;
+  }
+  .signupImageSection {
+    display: none;
+  }
+  .signupFormSection {
+    max-width: 100vw;
+    min-width: unset;
+    box-shadow: none;
+  }
+} 

@@ -236,7 +236,26 @@
   "privacy": {
     "banner": {
       "message": "We use cookies to improve your experience. By using the site, you agree to this.",
-      "accept": "Accept"
+      "accept": "Accept",
+      "reject": "Reject"
     }
+  },
+  "signup": {
+    "title": "Sign Up",
+    "subtitle": "Please fill in your details to create an account",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "selectService": "Select Service",
+    "service": {
+      "translation": "Translation",
+      "migration": "Migration",
+      "ai": "AI",
+      "other": "Other"
+    },
+    "submit": "Sign Up",
+    "submitting": "Signing Up...",
+    "haveAccount": "Already have an account?",
+    "login": "Login"
   }
 } 

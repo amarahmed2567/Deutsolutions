@@ -8,6 +8,7 @@ import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
 import NotFound from "./Pages/NotFound/NotFound";
 import PrivacyBanner from "./Cookies/PrivacyBanner"
 import Footer from "./Components/Footer/Footer";
+import SignupPage from "./Pages/SignUpPage/SignUpPage";
 import "./App.css"
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
@@ -70,6 +71,18 @@ function App() {
                 <ContactUsPage />
               </motion.div>
             } />
+         //signup Page
+            <Route path="/sign-up" element={
+              <motion.div
+                initial={{ opacity: 0, x: 80 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -80 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <SignupPage />
+              </motion.div>
+            } />
+            //NotFound Page
             <Route path="*" element={
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
