@@ -180,6 +180,10 @@
   opacity: 1;
   font-style: normal;
 }
+ :lang(ar) input[type="tel"]::placeholder {
+    text-align: right;
+    direction: rtl;
+  }
 .formInput:focus, .formTextarea:focus {
   border: 1.5px solid #050505;
   background: #fff;

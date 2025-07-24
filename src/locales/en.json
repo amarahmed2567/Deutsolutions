@@ -203,7 +203,10 @@
       "message": "Message",
       "messagePlaceholder": "Tell us more about your inquiry...",
       "send": "Send Message",
-      "sending": "Sending..."
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred while sending. Please try again."
+  
     },
     "info": {
       "title": "Contact Information",

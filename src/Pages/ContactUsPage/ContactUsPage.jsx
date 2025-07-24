@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import styles from "./ContactUsPage.module.css";
-
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { FaUser, FaEnvelope, FaRegCommentDots, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
 import { useTranslation } from "react-i18next";
-
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import ContactImg from "../../assets/images/Contact-us.jpg"
+import emailjs from '@emailjs/browser';
 const ContactUsPage = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // success | error | null
+  const [showToast, setShowToast] = useState(false);
+  // EmailJS config
+  const serviceId = "service_4fr5tpb";
+  const templateId = "template_mhbu6j6"; 
+  const userId = "SNx23VDRNGpxUGpNW";
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,15 +32,26 @@ const ContactUsPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
+    setSubmitStatus(null);
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((result) => {
+        setIsSubmitting(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: ""
+        });
+        setSubmitStatus('success');
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      }, (error) => {
+        setIsSubmitting(false);
+        setSubmitStatus('error');
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
       });
-    }, 1000);
   };
 
   return (
@@ -72,6 +85,16 @@ const ContactUsPage = () => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder={t("contact.form.email")}
+              required
+            />
+            <input
+              className={styles.formInput}
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+              placeholder={t("contact.form.phone")}
               required
             />
             <input
@@ -153,6 +176,46 @@ const ContactUsPage = () => {
           title="DEUTSOLUTIONS Location"
         ></iframe>
       </div>
+      {/* Toast Popup */}
+      {showToast && (
+        <div style={{
+          position: 'fixed',
+          left: '50%',
+          bottom: 40,
+          transform: 'translateX(-50%)',
+          minWidth: 280,
+          maxWidth: 400,
+          background: submitStatus === 'success' ? '#27ae60' : '#e74c3c',
+          color: '#fff',
+          borderRadius: 12,
+          boxShadow: '0 4px 24px rgba(0,0,0,0.13)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          padding: '16px 24px',
+          zIndex: 9999,
+          fontWeight: 500,
+          fontSize: 16,
+          animation: 'toastIn 0.5s cubic-bezier(.68,-0.55,.27,1.55)',
+        }}>
+          {submitStatus === 'success' ? (
+            <FaCheckCircle style={{fontSize: 24, flexShrink: 0}} />
+          ) : (
+            <FaTimesCircle style={{fontSize: 24, flexShrink: 0}} />
+          )}
+          <span>
+            {submitStatus === 'success'
+              ? t('contact.form.success')
+              : t('contact.form.error')}
+          </span>
+        </div>
+      )}
+      <style>{`
+      @keyframes toastIn {
+        from { opacity: 0; transform: translateX(-50%) translateY(40px) scale(0.95); }
+        to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+      }
+      `}</style>
     </div>
   );
 };

@@ -204,7 +204,10 @@
       "message": "Nachricht",
       "messagePlaceholder": "Erzählen Sie uns mehr über Ihre Anfrage...",
       "send": "Nachricht senden",
-      "sending": "Wird gesendet..."
+      "sending": "Wird gesendet...", 
+      "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  
     },
     "info": {
       "title": "Kontaktinformationen",
