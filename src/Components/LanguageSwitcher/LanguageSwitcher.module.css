@@ -114,6 +114,10 @@
   color: #000;
 }
 
+.langOption.active .langName {
+  color: #fff;
+}
+
 /* RTL Support */
 [dir="rtl"] .languageSwitcher {
   direction: rtl;
