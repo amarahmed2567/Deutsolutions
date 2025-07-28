@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styles from "./SignUpPage.module.css";
 import SignupImg from "../../assets/images/About.jpg";
 import { useTranslation } from "react-i18next";
+import { db } from "../../firebase";
+import { collection, addDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
   const { t } = useTranslation();
@@ -18,19 +21,24 @@ const SignUpPage = () => {
     service: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+  const handleSubmit = async (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+    try {
+      await addDoc(collection(db, "sign-up"), form);
       setForm({ name: "", email: "", phone: "", service: "" });
-    }, 1000);
+      navigate("/signup-success");
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
+    setIsSubmitting(false);
   };
 
   return (

@@ -14,6 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
+import SignupSuccess from "./Pages/SignUpPage/SignupSuccess";
 
 function App() {
   const location = useLocation();
@@ -82,6 +83,8 @@ function App() {
                 <SignupPage />
               </motion.div>
             } />
+            //SignupSuccess Page
+            <Route path="/signup-success" element={<SignupSuccess />} />
             //NotFound Page
             <Route path="*" element={
               <motion.div
