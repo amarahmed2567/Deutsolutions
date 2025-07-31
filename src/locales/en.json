@@ -94,6 +94,11 @@
     "subscribeDesc": "Get the latest insights on AI, digital transformation, and German migration opportunities.",
     "subscribePlaceholder": "Enter your email",
     "subscribeBtn": "Subscribe",
+    "subscribeSuccess": "Subscription Successful!",
+    "subscribeSuccessMessage": "Thank you for subscribing! You'll receive our latest updates and insights.",
+    "subscribeError": "Subscription Error",
+    "subscribeErrorMessage": "Something went wrong. Please try again.",
+    "subscribeLoading": "Subscribing...",
     "services": {
       "title": "Services",
       "items": [

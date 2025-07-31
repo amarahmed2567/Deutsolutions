@@ -95,6 +95,11 @@
     "subscribeDesc": "احصل على أحدث الرؤى حول الذكاء الاصطناعي والتحول الرقمي وفرص الهجرة إلى ألمانيا.",
     "subscribePlaceholder": "أدخل بريدك الإلكتروني",
     "subscribeBtn": "اشترك",
+    "subscribeSuccess": "تم الاشتراك بنجاح!",
+    "subscribeSuccessMessage": "شكراً لك على الاشتراك! ستتلقى أحدث التحديثات والرؤى منا.",
+    "subscribeError": "خطأ في الاشتراك",
+    "subscribeErrorMessage": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "subscribeLoading": "جاري الاشتراك...",
     "services": {
       "title": "الخدمات",
       "items": [

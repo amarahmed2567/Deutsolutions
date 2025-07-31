@@ -94,6 +94,11 @@
     "subscribeDesc": "Erhalten Sie die neuesten Einblicke zu KI, digitaler Transformation und Migrationsmöglichkeiten nach Deutschland.",
     "subscribePlaceholder": "Ihre E-Mail eingeben",
     "subscribeBtn": "Abonnieren",
+    "subscribeSuccess": "Anmeldung erfolgreich!",
+    "subscribeSuccessMessage": "Vielen Dank für Ihre Anmeldung! Sie erhalten unsere neuesten Updates und Einblicke.",
+    "subscribeError": "Anmeldefehler",
+    "subscribeErrorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "subscribeLoading": "Anmeldung läuft...",
     "services": {
       "title": "Dienstleistungen",
       "items": [

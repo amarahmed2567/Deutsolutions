@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,5 +19,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+// Function to add subscription to Firestore
+export const addSubscription = async (email) => {
+  try {
+    const docRef = await addDoc(collection(db, "subscriptions"), {
+      email: email,
+      timestamp: serverTimestamp(),
+      status: "active"
+    });
+    return { success: true, id: docRef.id };
+  } catch (error) {
+    console.error("Error adding subscription: ", error);
+    return { success: false, error: error.message };
+  }
+};
 
 export { db };

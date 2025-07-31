@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.svg";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { addSubscription } from "../../firebase";
+import SubscriptionPopup from "./SubscriptionPopup";
 
 const services = [
   "AI & Digital Solutions",
@@ -52,14 +54,78 @@ const languages = [
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [popup, setPopup] = useState({ isOpen: false, type: "", message: "" });
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    
+    if (!email.trim()) {
+      setPopup({
+        isOpen: true,
+        type: "error",
+        message: t('footer.subscribeErrorMessage')
+      });
+      return;
+    }
+
+    setIsLoading(true);
+    
+    try {
+      const result = await addSubscription(email.trim());
+      
+      if (result.success) {
+        setEmail("");
+        setPopup({
+          isOpen: true,
+          type: "success",
+          message: t('footer.subscribeSuccessMessage')
+        });
+      } else {
+        setPopup({
+          isOpen: true,
+          type: "error",
+          message: t('footer.subscribeErrorMessage')
+        });
+      }
+    } catch (error) {
+      setPopup({
+        isOpen: true,
+        type: "error",
+        message: t('footer.subscribeErrorMessage')
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const closePopup = () => {
+    setPopup({ isOpen: false, type: "", message: "" });
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.subscribeSection}>
         <h2 className={styles.subscribeTitle}>{t('footer.subscribeTitle')}</h2>
         <p className={styles.subscribeDesc}>{t('footer.subscribeDesc')}</p>
-        <form className={styles.subscribeForm} onSubmit={e => e.preventDefault()}>
-          <input type="email" placeholder={t('footer.subscribePlaceholder')} className={styles.subscribeInput} />
-          <button className={styles.subscribeBtn} type="submit">{t('footer.subscribeBtn')} <span>&rarr;</span></button>
+        <form className={styles.subscribeForm} onSubmit={handleSubscribe}>
+          <input 
+            type="email" 
+            placeholder={t('footer.subscribePlaceholder')} 
+            className={styles.subscribeInput}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            disabled={isLoading}
+          />
+          <button 
+            className={styles.subscribeBtn} 
+            type="submit"
+            disabled={isLoading}
+          >
+            {isLoading ? t('footer.subscribeLoading') : t('footer.subscribeBtn')} 
+            {!isLoading && <span>&rarr;</span>}
+          </button>
         </form>
       </div>
       <div className={styles.mainFooter}>
@@ -117,6 +183,13 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      
+      <SubscriptionPopup 
+        isOpen={popup.isOpen}
+        type={popup.type}
+        message={popup.message}
+        onClose={closePopup}
+      />
     </footer>
   );
 };
