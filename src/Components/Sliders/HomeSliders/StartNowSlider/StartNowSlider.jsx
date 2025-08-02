@@ -13,7 +13,7 @@ const StartNowSlider = () => {
       </div>
       <div className={styles.content}>
         <h2 className={styles.heading}>{t('home.takeTheNextStep')}</h2>
-        <Link to={'/sgin-up'} className={styles.BtnSmall}>{t('home.startYourJourney')}</Link>
+        <Link to={'/sign-up'} className={styles.BtnSmall}>{t('home.startYourJourney')}</Link>
       </div>
     </div>
   );

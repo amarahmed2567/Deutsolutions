@@ -100,7 +100,7 @@ import germanImg from "../../../../assets/images/DeutschKurs.jpg";
               >{t('services.learnMore')}</HashLink>
               <HashLink  
               smooth 
-              to={s.link} 
+              to={"/sign-up"} 
               className="cardBtn"
               scroll={el => {
                 const yOffset = -100; 

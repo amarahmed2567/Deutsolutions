@@ -162,7 +162,7 @@ const ServicesPage = () => {
                 ))}
               </div>
               <div className={styles.serviceDetails}>{s.details}</div>
-              <Link to={s.link} className={styles.cardBtn}>{t(s.btnKey)}</Link>
+              <Link to={"/sign-up"} className={styles.cardBtn}>{t(s.btnKey)}</Link>
             </div>
           </div>
         ))}
