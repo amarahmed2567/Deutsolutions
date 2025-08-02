@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import SEO from "../../Components/Utils/SEO";
 
 const SignUpPage = () => {
   const { t } = useTranslation();
@@ -42,10 +43,70 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className={styles.signupContainer}>
-      <div className={styles.signupFormSection}>
-        <h1 className={styles.signupTitle}>{t("signup.title")}</h1>
-        <p className={styles.signupSubtitle}>{t("signup.subtitle")}</p>
+    <>
+      <SEO 
+        title="Sign Up"
+        titleEn="Sign Up | DEUTSOLUTIONS - Join Our Services"
+        titleAr="سجل الآن | DEUTSOLUTIONS - انضم إلى خدماتنا"
+        titleDe="Registrieren | DEUTSOLUTIONS - Nutzen Sie unsere Dienstleistungen"
+        description="Join DEUTSOLUTIONS today! Sign up for our AI solutions, digital transformation services, German migration support, and language courses. Start your journey to success."
+        descriptionEn="Join DEUTSOLUTIONS today! Sign up for our AI solutions, digital transformation services, German migration support, and language courses. Start your journey to success."
+        descriptionAr="انضم إلى DEUTSOLUTIONS اليوم! سجل للحصول على حلول الذكاء الاصطناعي وخدمات التحول الرقمي ودعم الهجرة الألمانية ودورات اللغة. ابدأ رحلتك نحو النجاح."
+        descriptionDe="Schließen Sie sich heute DEUTSOLUTIONS an! Registrieren Sie sich für unsere KI-Lösungen, Digitalisierungsdienstleistungen, deutsche Migrationsunterstützung und Sprachkurse. Starten Sie Ihre Erfolgsreise."
+        keywords={[
+          'Sign Up DEUTSOLUTIONS',
+          'Register German Services',
+          'Join AI Solutions',
+          'German Migration Registration',
+          'Digital Transformation Sign Up',
+          'German Language Course Registration',
+          'Business Services Registration',
+          'Technology Consulting Sign Up',
+          'Immigration Services Registration',
+          'European Business Registration'
+        ]}
+        keywordsEn={[
+          'Sign Up DEUTSOLUTIONS',
+          'Register German Services',
+          'Join AI Solutions',
+          'German Migration Registration',
+          'Digital Transformation Sign Up',
+          'German Language Course Registration',
+          'Business Services Registration',
+          'Technology Consulting Sign Up',
+          'Immigration Services Registration',
+          'European Business Registration'
+        ]}
+        keywordsAr={[
+          'سجل DEUTSOLUTIONS',
+          'سجل الخدمات الألمانية',
+          'انضم لحلول الذكاء الاصطناعي',
+          'تسجيل الهجرة الألمانية',
+          'سجل التحول الرقمي',
+          'تسجيل دورة اللغة الألمانية',
+          'تسجيل خدمات الأعمال',
+          'سجل استشارات التكنولوجيا',
+          'تسجيل خدمات الهجرة',
+          'تسجيل الأعمال الأوروبية'
+        ]}
+        keywordsDe={[
+          'DEUTSOLUTIONS registrieren',
+          'Deutsche Dienstleistungen registrieren',
+          'KI-Lösungen beitreten',
+          'Deutsche Migrationsregistrierung',
+          'Digitalisierung registrieren',
+          'Deutschkursregistrierung',
+          'Geschäftsdienstregistrierung',
+          'Technologieberatung registrieren',
+          'Einwanderungsdienstregistrierung',
+          'Europäische Geschäftsregistrierung'
+        ]}
+        type="website"
+      />
+      <div className={styles.signupContainer}>
+        <div className={styles.signupFormSection}>
+          <h1 className={styles.signupTitle}>{t("signup.title")}</h1>
+          <p className={styles.signupSubtitle}>{t("signup.subtitle")}</p>
         <form className={styles.signupForm} onSubmit={handleSubmit}>
           <input
             className={styles.input}
@@ -103,6 +164,7 @@ const SignUpPage = () => {
       <div className={styles.bottomShape}></div>
     </div>
       </div>
+    </>
   );
 };
 

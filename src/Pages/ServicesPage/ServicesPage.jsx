@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import styles from "./ServicesPage.module.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SEO from "../../Components/Utils/SEO";
 
 const serviceData = [
   {
@@ -70,11 +71,71 @@ const ServicesPage = () => {
   }, []);
 
   return (
-    <div className={styles.servicesContainer}>
-      <div>
-        <h1 className="minTeitle">{t('services.title')}</h1>
-        <p className="minSubtitle">{t('services.subtitle')}</p>
-      </div>
+    <>
+      <SEO 
+        title="Our Services"
+        titleEn="Our Services | DEUTSOLUTIONS - AI, Digital Transformation & Migration"
+        titleAr="خدماتنا | DEUTSOLUTIONS - الذكاء الاصطناعي والتحول الرقمي والهجرة"
+        titleDe="Unsere Dienstleistungen | DEUTSOLUTIONS - KI, Digitalisierung & Migration"
+        description="Explore DEUTSOLUTIONS comprehensive services: AI solutions, digital transformation, German migration services, translation services, and German language courses. Professional expertise for your success."
+        descriptionEn="Explore DEUTSOLUTIONS comprehensive services: AI solutions, digital transformation, German migration services, translation services, and German language courses. Professional expertise for your success."
+        descriptionAr="اكتشف خدمات DEUTSOLUTIONS الشاملة: حلول الذكاء الاصطناعي والتحول الرقمي وخدمات الهجرة الألمانية وخدمات الترجمة ودورات اللغة الألمانية. خبرة مهنية لنجاحك."
+        descriptionDe="Entdecken Sie DEUTSOLUTIONS umfassende Dienstleistungen: KI-Lösungen, Digitalisierung, deutsche Migrationsdienste, Übersetzungsdienste und Deutschkurse. Professionelle Expertise für Ihren Erfolg."
+        keywords={[
+          'AI Services Germany',
+          'Digital Transformation Services',
+          'German Migration Services',
+          'Translation Services',
+          'German Language Courses',
+          'Business Consulting Germany',
+          'Technology Solutions Europe',
+          'Immigration Services Germany',
+          'Professional Translation',
+          'German Education Services'
+        ]}
+        keywordsEn={[
+          'AI Services Germany',
+          'Digital Transformation Services',
+          'German Migration Services',
+          'Translation Services',
+          'German Language Courses',
+          'Business Consulting Germany',
+          'Technology Solutions Europe',
+          'Immigration Services Germany',
+          'Professional Translation',
+          'German Education Services'
+        ]}
+        keywordsAr={[
+          'خدمات الذكاء الاصطناعي ألمانيا',
+          'خدمات التحول الرقمي',
+          'خدمات الهجرة الألمانية',
+          'خدمات الترجمة',
+          'دورات اللغة الألمانية',
+          'استشارات الأعمال ألمانيا',
+          'حلول التكنولوجيا أوروبا',
+          'خدمات الهجرة ألمانيا',
+          'الترجمة المهنية',
+          'خدمات التعليم الألمانية'
+        ]}
+        keywordsDe={[
+          'KI-Dienstleistungen Deutschland',
+          'Digitalisierungsdienstleistungen',
+          'Deutsche Migrationsdienste',
+          'Übersetzungsdienste',
+          'Deutschkurse',
+          'Geschäftsberatung Deutschland',
+          'Technologielösungen Europa',
+          'Einwanderungsdienste Deutschland',
+          'Professionelle Übersetzung',
+          'Deutsche Bildungsdienstleistungen'
+        ]}
+        type="website"
+      />
+      <div className={styles.servicesContainer}>
+        <div>
+          <h1 className="minTeitle">{t('services.title')}</h1>
+          <p className="minSubtitle">{t('services.subtitle')}</p>
+        </div>
       <div className={styles.servicesGrid}>
         {serviceData.map((s, i) => (
           <div
@@ -107,6 +168,7 @@ const ServicesPage = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 export default ServicesPage; 

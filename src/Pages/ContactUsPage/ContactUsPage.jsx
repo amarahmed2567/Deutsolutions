@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import ContactImg from "../../assets/images/Contact-us.jpg"
 import emailjs from '@emailjs/browser';
+import SEO from "../../Components/Utils/SEO";
 const ContactUsPage = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
@@ -55,11 +56,71 @@ const ContactUsPage = () => {
   };
 
   return (
-    <div className={styles.contactContainer}>
-       <div>
-        <h1 className="minTeitle">{t("contact.title")}</h1>
-        <p className="minSubtitle">{t("contact.subtitle")}</p>
-      </div>
+    <>
+      <SEO 
+        title="Contact Us"
+        titleEn="Contact Us | DEUTSOLUTIONS - Get Professional Support"
+        titleAr="اتصل بنا | DEUTSOLUTIONS - احصل على الدعم المهني"
+        titleDe="Kontakt | DEUTSOLUTIONS - Professionelle Unterstützung erhalten"
+        description="Get in touch with DEUTSOLUTIONS for AI solutions, digital transformation consulting, and German migration services. Contact our experts for professional guidance and support."
+        descriptionEn="Get in touch with DEUTSOLUTIONS for AI solutions, digital transformation consulting, and German migration services. Contact our experts for professional guidance and support."
+        descriptionAr="تواصل مع DEUTSOLUTIONS لحلول الذكاء الاصطناعي واستشارات التحول الرقمي وخدمات الهجرة الألمانية. اتصل بخبرائنا للحصول على إرشاد ودعم مهني."
+        descriptionDe="Kontaktieren Sie DEUTSOLUTIONS für KI-Lösungen, Digitalisierungsberatung und deutsche Migrationsdienste. Kontaktieren Sie unsere Experten für professionelle Beratung und Unterstützung."
+        keywords={[
+          'Contact DEUTSOLUTIONS',
+          'German Migration Contact',
+          'AI Consulting Contact',
+          'Digital Transformation Contact',
+          'German Business Support',
+          'Immigration Services Contact',
+          'Technology Consulting Germany',
+          'Professional Services Contact',
+          'German Language Support',
+          'European Business Contact'
+        ]}
+        keywordsEn={[
+          'Contact DEUTSOLUTIONS',
+          'German Migration Contact',
+          'AI Consulting Contact',
+          'Digital Transformation Contact',
+          'German Business Support',
+          'Immigration Services Contact',
+          'Technology Consulting Germany',
+          'Professional Services Contact',
+          'German Language Support',
+          'European Business Contact'
+        ]}
+        keywordsAr={[
+          'اتصل بـ DEUTSOLUTIONS',
+          'اتصال الهجرة الألمانية',
+          'اتصال استشارات الذكاء الاصطناعي',
+          'اتصال التحول الرقمي',
+          'دعم الأعمال الألمانية',
+          'اتصال خدمات الهجرة',
+          'استشارات التكنولوجيا ألمانيا',
+          'اتصال الخدمات المهنية',
+          'دعم اللغة الألمانية',
+          'اتصال الأعمال الأوروبية'
+        ]}
+        keywordsDe={[
+          'DEUTSOLUTIONS kontaktieren',
+          'Deutsche Migrationskontakt',
+          'KI-Beratungskontakt',
+          'Digitalisierungskontakt',
+          'Deutsche Geschäftsunterstützung',
+          'Einwanderungsdienstkontakt',
+          'Technologieberatung Deutschland',
+          'Professioneller Dienstkontakt',
+          'Deutsche Sprachunterstützung',
+          'Europäischer Geschäftskontakt'
+        ]}
+        type="website"
+      />
+      <div className={styles.contactContainer}>
+        <div>
+          <h1 className="minTeitle">{t("contact.title")}</h1>
+          <p className="minSubtitle">{t("contact.subtitle")}</p>
+        </div>
       <div className={styles.contactContentRow}>
         {/* Social Media Column */}
         {/* Contact Form Column */}
@@ -217,6 +278,7 @@ const ContactUsPage = () => {
       }
       `}</style>
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./SignUpPage.module.css";
+import SEO from "../../Components/Utils/SEO";
 
 const TrophySVG = () => (
   <svg width="100" height="100" viewBox="0 0 120 120" fill="none">
@@ -38,17 +39,65 @@ const SignupSuccess = () => {
   const navigate = useNavigate();
 
   return (
-    <div
-      style={{
-        minHeight: "80vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#fff",
-        padding: "24px 8px"
-      }}
-    >
+    <>
+      <SEO 
+        title="Sign Up Success"
+        titleEn="Sign Up Success | DEUTSOLUTIONS - Welcome!"
+        titleAr="تم التسجيل بنجاح | DEUTSOLUTIONS - مرحباً بك!"
+        titleDe="Registrierung erfolgreich | DEUTSOLUTIONS - Willkommen!"
+        description="Thank you for signing up with DEUTSOLUTIONS! Your registration was successful. We'll be in touch soon with our AI solutions, digital transformation services, and German migration support."
+        descriptionEn="Thank you for signing up with DEUTSOLUTIONS! Your registration was successful. We'll be in touch soon with our AI solutions, digital transformation services, and German migration support."
+        descriptionAr="شكراً لك على التسجيل مع DEUTSOLUTIONS! تم تسجيلك بنجاح. سنتواصل معك قريباً مع حلول الذكاء الاصطناعي وخدمات التحول الرقمي ودعم الهجرة الألمانية."
+        descriptionDe="Vielen Dank für Ihre Registrierung bei DEUTSOLUTIONS! Ihre Registrierung war erfolgreich. Wir werden uns bald mit unseren KI-Lösungen, Digitalisierungsdienstleistungen und deutscher Migrationsunterstützung bei Ihnen melden."
+        keywords={[
+          'Sign Up Success',
+          'Registration Complete',
+          'DEUTSOLUTIONS Welcome',
+          'German Services Registration',
+          'AI Solutions Registration',
+          'Digital Transformation Registration',
+          'Migration Services Registration'
+        ]}
+        keywordsEn={[
+          'Sign Up Success',
+          'Registration Complete',
+          'DEUTSOLUTIONS Welcome',
+          'German Services Registration',
+          'AI Solutions Registration',
+          'Digital Transformation Registration',
+          'Migration Services Registration'
+        ]}
+        keywordsAr={[
+          'تم التسجيل بنجاح',
+          'اكتمل التسجيل',
+          'مرحباً بك في DEUTSOLUTIONS',
+          'تسجيل الخدمات الألمانية',
+          'تسجيل حلول الذكاء الاصطناعي',
+          'تسجيل التحول الرقمي',
+          'تسجيل خدمات الهجرة'
+        ]}
+        keywordsDe={[
+          'Registrierung erfolgreich',
+          'Registrierung abgeschlossen',
+          'DEUTSOLUTIONS Willkommen',
+          'Deutsche Dienstregistrierung',
+          'KI-Lösungsregistrierung',
+          'Digitalisierungsregistrierung',
+          'Migrationsdienstregistrierung'
+        ]}
+        type="website"
+      />
+      <div
+        style={{
+          minHeight: "80vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#fff",
+          padding: "24px 8px"
+        }}
+      >
       <TrophySVG />
       <div style={{ fontWeight: "bold", fontSize: 20, color: "#222", margin: "18px 0 6px" }}>
         Beautifuly
@@ -98,6 +147,7 @@ const SignupSuccess = () => {
         }} />
       </div>
     </div>
+    </>
   );
 };
 
