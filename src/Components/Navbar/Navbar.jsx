@@ -52,12 +52,31 @@ const Navbar = () => {
         >
           {t('navigation.aboutUs')}
         </NavLink>
-        <NavLink
-          to="/services"
-          className={({ isActive }) => isActive ? styles.active : undefined}
-        >
-          {t('navigation.services')}
-        </NavLink>
+        <div style={{ position: 'relative' }}
+             onMouseEnter={() => setMenuOpen('services')}
+             onMouseLeave={() => setMenuOpen(false)}>
+          <NavLink
+            to="/services"
+            className={({ isActive }) => isActive ? styles.active : undefined}
+            onClick={() => setMenuOpen(menuOpen === 'services' ? false : 'services')}
+          >
+            {t('navigation.services')}
+          </NavLink>
+          <div className={`${styles.subnav} ${(menuOpen === 'services' || (menuOpen && window.innerWidth <= 768)) ? styles.show : ''}`}>
+            <NavLink to="/services#translation" className={styles['subnav-link']} onClick={() => setMenuOpen(false)}>
+              {t('services.items.translation.title')}
+            </NavLink>
+            <NavLink to="/services#migration" className={styles['subnav-link']} onClick={() => setMenuOpen(false)}>
+              {t('services.items.migration.title')}
+            </NavLink>
+            <NavLink to="/services#ai" className={styles['subnav-link']} onClick={() => setMenuOpen(false)}>
+              {t('services.items.ai.title')}
+            </NavLink>
+            <NavLink to="/services#german" className={styles['subnav-link']} onClick={() => setMenuOpen(false)}>
+              {t('services.items.german.title')}
+            </NavLink>
+          </div>
+        </div>
         <NavLink
           to="/contact-us"
           className={({ isActive }) => isActive ? styles.active : undefined}

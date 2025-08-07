@@ -138,7 +138,7 @@
         "Datenschutzrichtlinie",
         "Nutzungsbedingungen",
         "Cookie-Richtlinie",
-        "GDPR-Konformität",
+        "DSGVO-Konformität",
         "Datenschutz",
         "Haftungsausschluss"
       ]
@@ -266,5 +266,31 @@
     "submitting": "Wird registriert...",
     "haveAccount": "Sie haben bereits ein Konto?",
     "login": "Anmelden"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Datenschutzrichtlinie",
+      "content": "Bei DEUTSOLUTIONS mit Sitz in Dubai Silicon Oasis legen wir großen Wert auf den Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Daten erfassen, verwenden und schützen, wenn Sie unsere Website und Dienstleistungen (Übersetzung, Migrationsunterstützung, KI-Lösungen, Sprachtraining) nutzen.\n\nWir erfassen personenbezogene Daten wie Name, E-Mail-Adresse und Telefonnummer, wenn Sie uns kontaktieren oder unsere Dienste nutzen. Ihre Daten werden ausschließlich zur Bereitstellung und Verbesserung unserer Services, zur Beantwortung Ihrer Anfragen und zur Einhaltung gesetzlicher Vorschriften verwendet.\n\nWir verkaufen oder teilen Ihre Daten nicht mit Dritten, außer wenn dies gesetzlich vorgeschrieben ist oder zur Erfüllung unserer Dienstleistungen notwendig ist.\n\nBei Fragen zum Datenschutz kontaktieren Sie uns bitte unter deutsolutions@gmail.com oder +971 50 330 3847."
+    },
+    "termsOfService": {
+      "title": "Nutzungsbedingungen",
+      "content": "Willkommen bei DEUTSOLUTIONS. Durch die Nutzung unserer Website und Dienstleistungen stimmen Sie den folgenden Bedingungen zu:\n\n1. Dienstleistungen: Wir bieten Übersetzungen, Migrationsunterstützung, KI-Entwicklung und Sprachtraining an.\n2. Pflichten des Nutzers: Sie verpflichten sich, korrekte Angaben zu machen und unsere Dienste rechtmäßig zu nutzen.\n3. Urheberrecht: Alle Inhalte dieser Website sind Eigentum von DEUTSOLUTIONS.\n4. Haftungsbeschränkung: Wir bemühen uns um Genauigkeit, übernehmen jedoch keine Gewähr für Fehlerfreiheit.\n5. Kontakt: Bei Fragen wenden Sie sich an deutsolutions@gmail.com oder +971 50 330 3847.\n\nDiese Bedingungen unterliegen dem Recht der VAE."
+    },
+    "cookiePolicy": {
+      "title": "Cookie-Richtlinie",
+      "content": "DEUTSOLUTIONS verwendet Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Cookies helfen uns, den Datenverkehr zu analysieren und Inhalte zu personalisieren.\n\nSie können Cookies in Ihren Browsereinstellungen verwalten oder deaktivieren. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.\n\nFür weitere Informationen kontaktieren Sie uns unter deutsolutions@gmail.com."
+    },
+    "gdprCompliance": {
+      "title": "DSGVO-Konformität",
+      "content": "DEUTSOLUTIONS verpflichtet sich zum Datenschutz gemäß der Datenschutz-Grundverordnung (DSGVO).\n\nWir verarbeiten Ihre Daten rechtmäßig, transparent und zu legitimen Zwecken. Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten.\n\nFür Anfragen zur DSGVO oder zur Ausübung Ihrer Rechte schreiben Sie an deutsolutions@gmail.com."
+    },
+    "dataProtection": {
+      "title": "Datenschutz",
+      "content": "Bei DEUTSOLUTIONS behandeln wir Ihre Daten mit höchster Sorgfalt. Ihre personenbezogenen Informationen werden sicher gespeichert und sind nur autorisierten Mitarbeitern zugänglich.\n\nWir setzen technische und organisatorische Maßnahmen ein, um unbefugten Zugriff, Verlust oder Missbrauch Ihrer Daten zu verhindern.\n\nBei Fragen wenden Sie sich bitte an deutsolutions@gmail.com oder +971 50 330 3847."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": "Die Informationen auf der Website von DEUTSOLUTIONS dienen ausschließlich allgemeinen Informationszwecken. Trotz größter Sorgfalt übernehmen wir keine Gewähr für die Vollständigkeit oder Richtigkeit der Inhalte.\n\nDEUTSOLUTIONS haftet nicht für Verluste oder Schäden, die aus der Nutzung unserer Website oder Dienstleistungen entstehen.\n\nFür eine verbindliche Beratung kontaktieren Sie uns bitte unter deutsolutions@gmail.com."
+    }
   }
 } 

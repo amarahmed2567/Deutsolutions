@@ -15,6 +15,12 @@ import ScrollToTop from "./Components/Utils/ScrollToTop";
 import { useTranslation } from "react-i18next";
 import LanguageInitializer from "./Components/LanguageSwitcher/LanguageInitializer";
 import SignupSuccess from "./Pages/SignUpPage/SignupSuccess";
+import PrivacyPolicy from './Pages/Legal/PrivacyPolicy';
+import TermsOfService from './Pages/Legal/TermsOfService';
+import CookiePolicy from './Pages/Legal/CookiePolicy';
+import GDPRCompliance from './Pages/Legal/GDPRCompliance';
+import DataProtection from './Pages/Legal/DataProtection';
+import Disclaimer from './Pages/Legal/Disclaimer';
 
 function App() {
   const location = useLocation();
@@ -96,6 +102,12 @@ function App() {
                 <NotFound />
               </motion.div>
             } />
+            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+            <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/legal/gdpr-compliance" element={<GDPRCompliance />} />
+            <Route path="/legal/data-protection" element={<DataProtection />} />
+            <Route path="/legal/disclaimer" element={<Disclaimer />} />
           </Routes>
         </AnimatePresence>
       </div>

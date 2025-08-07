@@ -188,3 +188,59 @@
     }
   }
   
+.subnav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 0 0 8px 8px;
+  padding: 0.5rem 0;
+  z-index: 10001;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.subnav.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.subnav-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background 0.15s, color 0.15s;
+}
+
+.subnav-link:hover {
+  background: #f7f7f7;
+  color: var(--primary-color, #ff5e00);
+}
+
+/* Responsive: show subnav as part of mobile menu */
+@media (max-width: 768px) {
+  .subnav {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 0;
+    padding: 0;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    background: none;
+  }
+  .subnav-link {
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    font-size: 0.97rem;
+  }
+}
+  

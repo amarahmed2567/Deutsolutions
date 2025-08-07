@@ -5,6 +5,7 @@ import logo from "../../assets/images/logo.svg";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { addSubscription } from "../../firebase";
 import SubscriptionPopup from "./SubscriptionPopup";
+import { NavLink } from "react-router-dom";
 
 const services = [
   "AI & Digital Solutions",
@@ -135,9 +136,9 @@ const Footer = () => {
           </div>
           <div className={styles.brandDesc}>{t('footer.brandDesc')}</div>
           <div className={styles.contactInfo}>
-            <div><FaEnvelope className={styles.contactIcon}/> info@deutsolutions.com</div>
-            <div><FaPhone className={styles.contactIcon}/> +971 4 123 4567</div>
-            <div><FaMapMarkerAlt className={styles.contactIcon}/> Dubai Business Bay, UAE</div>
+            <div><FaEnvelope className={styles.contactIcon}/> deutsolutions@gmail.com</div>
+            <div><FaPhone className={styles.contactIcon}/> +971 50 330 3847</div>
+            <div><FaMapMarkerAlt className={styles.contactIcon}/> Dubai Silicon Oasis, UAE</div>
           </div>
           <div className={styles.socials}>
             {socialLinks.map(s => (
@@ -162,7 +163,14 @@ const Footer = () => {
           </div>
           <div className={styles.linksBlock}>
             <h4>{t('footer.legal.title')}</h4>
-            <ul>{t('footer.legal.items', { returnObjects: true }).map(item => <li key={item}>{item}</li>)}</ul>
+            <ul>
+              <li><NavLink to="/legal/privacy-policy">{t('footer.legal.items.0')}</NavLink></li>
+              <li><NavLink to="/legal/terms-of-service">{t('footer.legal.items.1')}</NavLink></li>
+              <li><NavLink to="/legal/cookie-policy">{t('footer.legal.items.2')}</NavLink></li>
+              <li><NavLink to="/legal/gdpr-compliance">{t('footer.legal.items.3')}</NavLink></li>
+              <li><NavLink to="/legal/data-protection">{t('footer.legal.items.4')}</NavLink></li>
+              <li><NavLink to="/legal/disclaimer">{t('footer.legal.items.5')}</NavLink></li>
+            </ul>
           </div>
         </div>
       </div>

@@ -265,5 +265,31 @@
     "submitting": "Signing Up...",
     "haveAccount": "Already have an account?",
     "login": "Login"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "content": "At DEUTSOLUTIONS, located at Dubai Silicon Oasis, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and services, including translation, migration support, AI solutions, and language training.\n\nWe collect personal data such as your name, email address, and phone number when you contact us or use our services. Your information is used solely to provide and improve our services, respond to your inquiries, and comply with legal obligations.\n\nWe do not sell or share your personal data with third parties except as required by law or to fulfill our services.\n\nFor any questions about your privacy, please contact us at deutsolutions@gmail.com or call +971 50 330 3847."
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "content": "Welcome to DEUTSOLUTIONS. By using our website and services, you agree to the following terms:\n\n1. Services: We provide translation, migration support, AI development, and language training.\n2. User Responsibilities: You agree to provide accurate information and use our services lawfully.\n3. Intellectual Property: All content on this site is owned by DEUTSOLUTIONS.\n4. Limitation of Liability: We strive for accuracy but do not guarantee error-free content.\n5. Contact: For questions, email deutsolutions@gmail.com or call +971 50 330 3847.\n\nThese terms are governed by UAE law."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "content": "DEUTSOLUTIONS uses cookies to enhance your experience on our website. Cookies help us analyze site traffic and personalize content.\n\nYou can manage or disable cookies in your browser settings. By continuing to use our site, you consent to our use of cookies.\n\nFor more information, contact us at deutsolutions@gmail.com."
+    },
+    "gdprCompliance": {
+      "title": "GDPR Compliance",
+      "content": "DEUTSOLUTIONS is committed to data protection and privacy in accordance with the General Data Protection Regulation (GDPR).\n\nWe process your data lawfully, transparently, and for legitimate purposes. You have the right to access, correct, or delete your data.\n\nTo exercise your rights or for GDPR-related inquiries, email deutsolutions@gmail.com."
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We take data protection seriously at DEUTSOLUTIONS. Your personal information is stored securely and only accessible to authorized personnel.\n\nWe implement technical and organizational measures to prevent unauthorized access, loss, or misuse of your data.\n\nFor any concerns, contact us at deutsolutions@gmail.com or call +971 50 330 3847."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "The information provided by DEUTSOLUTIONS on this website is for general informational purposes only. While we strive for accuracy, we make no warranties regarding completeness or reliability.\n\nDEUTSOLUTIONS is not liable for any losses or damages resulting from the use of our website or services.\n\nFor official advice, please contact us directly at deutsolutions@gmail.com."
+    }
   }
 } 

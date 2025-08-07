@@ -70,6 +70,7 @@ import germanImg from "../../../../assets/images/DeutschKurs.jpg";
          initialSlide={1} 
          autoplay={true}
          grabCursor={true}
+         loop={true}
          breakpoints={{
            768: { slidesPerView: 2 },
            1024: { slidesPerView: 3 },
