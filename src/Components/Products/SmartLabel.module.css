@@ -1,0 +1,583 @@
+.smartLabelPage {
+  width: 100%;
+}
+
+/* Common Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('/media/smart-label/images/Background.png') center/cover no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 16px;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Intro Section */
+.intro {
+  padding: 80px 16px;
+  background: #fff;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.introText h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.introText p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.introImage img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 80px 16px;
+  background: #f9f9f9;
+}
+
+.gallery h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 48px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem img:hover {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.videoSection {
+  padding: 80px 16px;
+  background: #fff;
+}
+
+.videoSection h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.videoIntro {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.videoWrapper {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.video {
+  width: 100%;
+  display: block;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 80px 16px;
+  background: #f9f9f9;
+}
+
+.benefits h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 48px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.table thead {
+  background: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
+  color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Solution Section */
+.solution {
+  padding: 80px 16px;
+  background: #fff;
+}
+
+.solution h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.solutionIntro {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin: 0 0 48px 0;
+}
+
+.solutionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.solutionCard {
+  background: #f9f9f9;
+  padding: 32px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solutionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.solutionCard h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.solutionCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.solutionImage {
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.solutionImage img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Section */
+.whyChoose {
+  padding: 80px 16px;
+  background: #f9f9f9;
+}
+
+.whyChoose h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.whyIntro {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+
+.featureList {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+}
+
+.feature ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature ul li {
+  padding: 8px 0 8px 28px;
+  position: relative;
+  color: #444;
+  line-height: 1.6;
+}
+
+.feature ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #F9B434;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Downloads Section */
+.downloads {
+  padding: 80px 16px;
+  background: #fff;
+}
+
+.downloads h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #222;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.downloadsIntro {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 48px;
+}
+
+.downloadGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.downloadCard {
+  background: #f9f9f9;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.downloadCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #F9B434;
+}
+
+.downloadIcon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.downloadCard h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.downloadCard p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Final CTA Section */
+.finalCta {
+  padding: 80px 16px;
+  background: linear-gradient(135deg, #222 0%, #444 100%);
+  text-align: center;
+}
+
+.finalCta h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #fff;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.finalCta p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 32px 0;
+  line-height: 1.6;
+}
+
+/* CTA Buttons */
+.cta {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.ctaLarge {
+  display: inline-block;
+  padding: 18px 48px;
+  background: linear-gradient(63.61deg, #F9B434 14.16%, #E90004 86.73%);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ctaLarge:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.ctaCenter {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .introGrid {
+    gap: 32px;
+  }
+  
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .solutionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 400px;
+    padding: 60px 16px;
+  }
+  
+  .intro,
+  .gallery,
+  .videoSection,
+  .benefits,
+  .solution,
+  .whyChoose,
+  .downloads,
+  .finalCta {
+    padding: 60px 16px;
+  }
+  
+  .introGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .galleryItem img {
+    height: 150px;
+  }
+  
+  .solutionGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .table {
+    font-size: 0.9rem;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 350px;
+    padding: 40px 12px;
+  }
+  
+  .intro,
+  .gallery,
+  .videoSection,
+  .benefits,
+  .solution,
+  .whyChoose,
+  .downloads,
+  .finalCta {
+    padding: 40px 12px;
+  }
+  
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .galleryItem img {
+    height: 200px;
+  }
+  
+  .feature {
+    padding: 24px;
+  }
+  
+  .solutionCard,
+  .downloadCard {
+    padding: 24px;
+  }
+  
+  .cta {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+  
+  .ctaLarge {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+  }
+}

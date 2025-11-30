@@ -21,6 +21,7 @@ import CookiePolicy from './Pages/Legal/CookiePolicy';
 import GDPRCompliance from './Pages/Legal/GDPRCompliance';
 import DataProtection from './Pages/Legal/DataProtection';
 import Disclaimer from './Pages/Legal/Disclaimer';
+import SmartLabel from './Components/Products/SmartLabel';
 
 function App() {
   const location = useLocation();
@@ -65,6 +66,17 @@ function App() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
                 <ServicesPage />
+              </motion.div>
+            } />
+            //SmartLabel Page
+            <Route path="/smart-label" element={
+              <motion.div
+                initial={{ opacity: 0, x: 80 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -80 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <SmartLabel />
               </motion.div>
             } />
             //ContactUs Page
