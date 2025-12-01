@@ -35,17 +35,20 @@
     gap: 2rem;
   }
   
-  .navbarLinks a {
+  .navbarLinks a,
+  .navLink {
     text-decoration: none;
     color: #222;
     font-size: 1rem;
     font-weight: 500;
     position: relative;
     transition: color 0.2s;
+    cursor: pointer;
   }
   
 
-  .navbarLinks a::after {
+  .navbarLinks a::after,
+  .navLink::after {
     content: '';
     display:none;
     margin: 0 auto;
@@ -57,7 +60,8 @@
     margin-top: 2px;
   }
   .navbarLinks a.active::after,
-  .navbarLinks a:hover::after {
+  .navbarLinks a:hover::after,
+  .navLink:hover::after {
     display: block;
     width: 100%;
   }
