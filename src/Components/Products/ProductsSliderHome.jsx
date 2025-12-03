@@ -35,6 +35,7 @@ const Products = () => {
             playsInline
           />
           <div className={styles.videoOverlay}>
+          <h2 className={styles.productsHeadline}> <span className={styles.highlight}>{t('products.title')}</span></h2>
             <h2 className={styles.overlayTitle}>
               {t("products.videoOverlay.title")}
             </h2>
