@@ -80,7 +80,7 @@ const HomePage = () => {
       />
       <Home />
       <motion.div {...sectionAnim}><CardsSlider/></motion.div>
-      <motion.div><ProductsSliderHome /></motion.div>
+      <motion.div {...sectionAnim}><ProductsSliderHome /></motion.div>
       <motion.div {...sectionAnim}><About/></motion.div>
       <motion.div {...sectionAnim}><Services /></motion.div>
       <motion.div {...sectionAnim}><StartNowSlider/></motion.div>
