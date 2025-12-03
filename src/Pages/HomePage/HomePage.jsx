@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../../Components/Home/Home";
 import About from "../../Components/About/About";
 import Services from "../../Components/Services/Services";
-import Products from "../../Components/Products/Products";
+import ProductsSliderHome from "../../Components/Products/ProductsSliderHome";
 import StartNowSlider from "../../Components/Sliders/HomeSliders/StartNowSlider/StartNowSlider";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import { motion } from "framer-motion";
@@ -80,7 +80,7 @@ const HomePage = () => {
       />
       <Home />
       <motion.div {...sectionAnim}><CardsSlider/></motion.div>
-      <motion.div><Products /></motion.div>
+      <motion.div><ProductsSliderHome /></motion.div>
       <motion.div {...sectionAnim}><About/></motion.div>
       <motion.div {...sectionAnim}><Services /></motion.div>
       <motion.div {...sectionAnim}><StartNowSlider/></motion.div>

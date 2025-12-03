@@ -581,3 +581,20 @@
     font-size: 1.1rem;
   }
 }
+
+
+.learnMoreBtn {
+  background: linear-gradient(90deg, #222 60%, #888 100%);
+  width: 40%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.7em 2em;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+  margin-top: 2rem;
+}

@@ -45,6 +45,30 @@
     transition: color 0.2s;
     cursor: pointer;
   }
+
+  .navLinkWithArrow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .arrowIcon {
+    display: block;
+    font-size: 0.7rem;
+    color: #666;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.2s;
+    padding: 0.25rem;
+    pointer-events: none;
+  }
+
+  .arrowIcon:hover {
+    color: #222;
+  }
+
+  .arrowIcon.arrowRotated {
+    transform: rotate(180deg);
+  }
   
 
   .navbarLinks a::after,
@@ -231,16 +255,33 @@
 
 /* Responsive: show subnav as part of mobile menu */
 @media (max-width: 768px) {
+  .navLinkWithArrow {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .arrowIcon {
+    pointer-events: auto;
+  }
+
   .subnav {
     position: static;
     box-shadow: none;
     border-radius: 0;
     min-width: 0;
     padding: 0;
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    transform: none !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: none;
     background: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .subnav.show {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
   }
   .subnav-link {
     padding: 0.75rem 1rem 0.75rem 2.5rem;

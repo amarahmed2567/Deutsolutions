@@ -25,7 +25,7 @@ const About = () => {
       <div className={styles.topShape}></div>
       <div className={styles.aboutImage}>
         <video 
-        className={styles.aboutVideo}
+         className={styles.aboutVideo}
          src={teamImg} 
          autoPlay
          muted

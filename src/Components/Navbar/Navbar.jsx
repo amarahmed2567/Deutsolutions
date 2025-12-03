@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -10,8 +10,10 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   const { t } = useTranslation();
   const { scrollYProgress } = useScroll();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hoveredSubmenu, setHoveredSubmenu] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,58 +43,122 @@ const Navbar = () => {
               <img src={Logo} alt="DEUTSOLUTIONS logo" />
             </a>
           </div>
-          <div className={`${styles.navbarLinks} ${menuOpen ? styles.active : ""}`}>
-            <NavLink to="/" end className={({ isActive }) => (isActive ? styles.active : undefined)}>
+          <div className={`${styles.navbarLinks} ${mobileMenuOpen ? styles.active : ""}`}>
+            <NavLink to="/" end className={({ isActive }) => (isActive ? styles.active : undefined)} onClick={() => setMobileMenuOpen(false)}>
               {t("navigation.home")}
             </NavLink>
-            <NavLink to="/about-us" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <NavLink to="/about-us" className={({ isActive }) => (isActive ? styles.active : undefined)} onClick={() => setMobileMenuOpen(false)}>
               {t("navigation.aboutUs")}
             </NavLink>
             <div
               style={{ position: "relative" }}
-              onMouseEnter={() => setMenuOpen("services")}
-              onMouseLeave={() => setMenuOpen(false)}
+              onMouseEnter={() => {
+                if (window.innerWidth > 768) {
+                  setHoveredSubmenu("services");
+                }
+              }}
+              onMouseLeave={() => {
+                if (window.innerWidth > 768) {
+                  setHoveredSubmenu(null);
+                }
+              }}
             >
-              <NavLink
-                to="/services"
-                className={({ isActive }) => (isActive ? styles.active : undefined)}
-                onClick={() => setMenuOpen(menuOpen === "services" ? false : "services")}
-              >
-                {t("navigation.services")}
-              </NavLink>
-              <div className={`${styles.subnav} ${(menuOpen === "services" || (menuOpen && window.innerWidth <= 768)) ? styles.show : ""}`}>
-                <NavLink to="/services#translation" className={styles["subnav-link"]} onClick={() => setMenuOpen(false)}>
+              <div className={styles.navLinkWithArrow}>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? styles.active : undefined)}
+                  onClick={(e) => {
+                    if (window.innerWidth <= 768) {
+                      e.preventDefault();
+                      setOpenSubmenu(openSubmenu === "services" ? null : "services");
+                    }
+                  }}
+                >
+                  {t("navigation.services")}
+                </NavLink>
+                <span
+                  className={`${styles.arrowIcon} ${(hoveredSubmenu === "services" || openSubmenu === "services") ? styles.arrowRotated : ""}`}
+                  onClick={() => {
+                    if (window.innerWidth <= 768) {
+                      setOpenSubmenu(openSubmenu === "services" ? null : "services");
+                    }
+                  }}
+                >
+                  <FaChevronDown />
+                </span>
+              </div>
+              <div className={`${styles.subnav} ${(hoveredSubmenu === "services" || openSubmenu === "services") ? styles.show : ""}`}>
+                <NavLink to="/services#translation" className={styles["subnav-link"]} onClick={() => {
+                  setMobileMenuOpen(false);
+                  setOpenSubmenu(null);
+                }}>
                   {t("services.items.translation.title")}
                 </NavLink>
-                <NavLink to="/services#migration" className={styles["subnav-link"]} onClick={() => setMenuOpen(false)}>
+                <NavLink to="/services#migration" className={styles["subnav-link"]} onClick={() => {
+                  setMobileMenuOpen(false);
+                  setOpenSubmenu(null);
+                }}>
                   {t("services.items.migration.title")}
                 </NavLink>
-                <NavLink to="/services#ai" className={styles["subnav-link"]} onClick={() => setMenuOpen(false)}>
+                <NavLink to="/services#ai" className={styles["subnav-link"]} onClick={() => {
+                  setMobileMenuOpen(false);
+                  setOpenSubmenu(null);
+                }}>
                   {t("services.items.ai.title")}
                 </NavLink>
-                <NavLink to="/services#german" className={styles["subnav-link"]} onClick={() => setMenuOpen(false)}>
+                <NavLink to="/services#german" className={styles["subnav-link"]} onClick={() => {
+                  setMobileMenuOpen(false);
+                  setOpenSubmenu(null);
+                }}>
                   {t("services.items.german.title")}
                 </NavLink>
               </div>
             </div>
             <div
               style={{ position: "relative" }}
-              onMouseEnter={() => setMenuOpen("products")}
-              onMouseLeave={() => setMenuOpen(false)}
+              onMouseEnter={() => {
+                if (window.innerWidth > 768) {
+                  setHoveredSubmenu("products");
+                }
+              }}
+              onMouseLeave={() => {
+                if (window.innerWidth > 768) {
+                  setHoveredSubmenu(null);
+                }
+              }}
             >
-              <span
-                className={styles.navLink}
-                onClick={() => setMenuOpen(menuOpen === "products" ? false : "products")}
-              >
-                Products
-              </span>
-              <div className={`${styles.subnav} ${(menuOpen === "products" || (menuOpen && window.innerWidth <= 768)) ? styles.show : ""}`}>
-                <NavLink to="/smart-label" className={styles["subnav-link"]} onClick={() => setMenuOpen(false)}>
-                  Smart Label
+              <div className={styles.navLinkWithArrow}>
+                <span
+                  className={styles.navLink}
+                  onClick={() => {
+                    if (window.innerWidth <= 768) {
+                      setOpenSubmenu(openSubmenu === "products" ? null : "products");
+                    }
+                  }}
+                >
+                  {t("navigation.products")}
+                </span>
+                <span
+                  className={`${styles.arrowIcon} ${(hoveredSubmenu === "products" || openSubmenu === "products") ? styles.arrowRotated : ""}`}
+                  onClick={() => {
+                    if (window.innerWidth <= 768) {
+                      setOpenSubmenu(openSubmenu === "products" ? null : "products");
+                    }
+                  }}
+                >
+                  <FaChevronDown />
+                </span>
+              </div>
+              <div className={`${styles.subnav} ${(hoveredSubmenu === "products" || openSubmenu === "products") ? styles.show : ""}`}>
+                <NavLink to="/smart-label" className={styles["subnav-link"]} onClick={() => {
+                  setMobileMenuOpen(false);
+                  setOpenSubmenu(null);
+                }}>
+                  {t("navigation.smartLabel")}
                 </NavLink>
               </div>
             </div>
-            <NavLink to="/contact-us" className={({ isActive }) => (isActive ? styles.active : undefined)}>
+            <NavLink to="/contact-us" className={({ isActive }) => (isActive ? styles.active : undefined)} onClick={() => setMobileMenuOpen(false)}>
               {t("navigation.contactUs")}
             </NavLink>
             <div className={styles.languageSwitcherContainer}>
@@ -100,8 +166,13 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.mobileControls}>
-            <div className={styles.navbarMenuIcon} onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <FaTimes /> : <FaBars />}
+            <div className={styles.navbarMenuIcon} onClick={() => {
+              setMobileMenuOpen(!mobileMenuOpen);
+              if (mobileMenuOpen) {
+                setOpenSubmenu(null);
+              }
+            }}>
+              {mobileMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
             <div className={styles.mobileLanguageSwitcher}>
               <LanguageSwitcher />

@@ -3,7 +3,9 @@
     "home": "Startseite",
     "aboutUs": "Über uns",
     "services": "Dienstleistungen",
-    "contactUs": "Kontakt"
+    "products": "Produkte",
+    "contactUs": "Kontakt",
+    "smartLabel": "Smart Label"
   },
   "home": {
     "hero": {
@@ -20,6 +22,146 @@
       "countries": "Länder"
     },
     "animatedWords": ["Übersetzung", "KI", "Bildung", "Automatisierung"]
+  },
+  "smartLabel": {
+    "hero": {
+      "title": "Optimieren Sie Ihre Filialprozesse mit den elektronischen Preisschildern von DeutSolutions",
+      "subtitle": "Schluss mit Papieretiketten, die Zeit und Geld kosten. Starten Sie jetzt mit perfekter Preissicherheit, dynamischen Aktionen und schlanken Abläufen."
+    },
+    "intro": {
+      "title": "Die Zukunft der Preisgestaltung im Handel ist digital",
+      "text": "In der sich rasant verändernden Handelswelt sind Preisgenauigkeit, zeitnahe Aktionen und optimierte Personalkosten entscheidend. DeutSolutions Smart Labels ersetzen statische Papieretiketten durch intelligente, zentral gesteuerte Displays und revolutionieren so das Regalmanagement.",
+      "imageAlt": "Smart Label Display"
+    },
+    "gallery": {
+      "title": "Smart-Label-Display-Varianten",
+      "imageAltBase": "Display"
+    },
+    "video": {
+      "title": "Erleben Sie die Zukunft der Preisgestaltung im Handel",
+      "intro": "Sie haben bereits von der Leistung und dem Potenzial von Smart Labels gelesen – jetzt ist es Zeit zu sehen, wie diese Technologie in der Praxis funktioniert. Dieses kurze Video mit einer Live-Demonstration im Einzelhandel macht dynamische Preise, perfekte Genauigkeit und operative Effizienz greifbar.",
+      "fallback": "Ihr Browser unterstützt das Video-Tag nicht.",
+      "cta": "Besprechen Sie Ihre Anforderungen"
+    },
+    "benefits": {
+      "title": "Die wichtigsten Vorteile auf einen Blick",
+      "table": {
+        "feature": "Funktion",
+        "oldPaperTags": "Klassische Papieretiketten",
+        "smartLabels": "DeutSolutions Smart Labels",
+        "impact": "Auswirkung im Handel",
+        "rows": {
+          "pricingAccuracy": {
+            "label": "Preisgenauigkeit",
+            "old": "Manuelle Eingabe, hohe Fehlerquote",
+            "smart": "100 % mit dem Kassensystem synchronisiert",
+            "impact": "Vermeidet Schwund und Streitfälle mit Kunden."
+          },
+          "priceUpdates": {
+            "label": "Preisaktualisierung",
+            "old": "Stundenlange Handarbeit",
+            "smart": "Sofortige Updates für die gesamte Filiale",
+            "impact": "Ermöglicht dynamische Preise und Blitzaktionen."
+          },
+          "laborCost": {
+            "label": "Personalkosten",
+            "old": "Hohe, wiederkehrende Aufwände",
+            "smart": "Nahezu null für Preisänderungen",
+            "impact": "Mitarbeiter können sich auf Kundenservice konzentrieren."
+          },
+          "dataDisplay": {
+            "label": "Informationsanzeige",
+            "old": "Begrenzt auf Preis und Artikelname",
+            "smart": "Beliebiger Text, Bilder, QR-Codes",
+            "impact": "Bietet umfangreiche Produktinfos und Loyalty-Integration."
+          },
+          "shelfLife": {
+            "label": "Lebensdauer",
+            "old": "Einweg, viel Abfall",
+            "smart": "Mehrjährige Einsatzdauer",
+            "impact": "Nachhaltig und reduziert den Papierverbrauch."
+          }
+        }
+      }
+    },
+    "solution": {
+      "title": "Unsere Komplettlösung",
+      "intro": "Wir verkaufen nicht nur Labels – wir liefern ein vollständig betreutes System.",
+      "imageAlt": "Komplettlösung",
+      "cards": {
+        "consulting": {
+          "title": "Beratung & Planung",
+          "text": "Unsere Experten analysieren Ihr Filiallayout und empfehlen die optimale Netzwerkstruktur und passende Labelgrößen."
+        },
+        "hardware": {
+          "title": "Hardware & Installation",
+          "text": "Wir liefern modernste ESL-Tags, Access Points und übernehmen die professionelle Installation für einen schnellen Go-Live."
+        },
+        "software": {
+          "title": "Software & Integration",
+          "text": "Unser intuitives DeutSolutions-CMS ermöglicht einfache Steuerung von Preisregeln und Aktionen und integriert sich nahtlos in Ihre bestehenden Systeme."
+        },
+        "support": {
+          "title": "Laufender Support",
+          "text": "24/7 technischer Support und Wartung für einen störungsfreien Betrieb."
+        }
+      },
+      "cta": "Besprechen Sie Ihre Anforderungen"
+    },
+    "whyChoose": {
+      "title": "Warum DeutSolutions Smart Labels?",
+      "intro": "Wir bieten eine vollständige, durchgängige Digital-Label-Lösung, die für schnelle Einführung und maximale Zuverlässigkeit entwickelt wurde.",
+      "features": {
+        "dynamicPricing": {
+          "title": "1. Dynamische Preise in Echtzeit",
+          "text": "Mit unserem System ändern Sie Preise in Sekunden statt in Stunden.",
+          "items": [
+            "Zeitabhängige Preisstrategien (z. B. Happy-Hour-Angebote) umsetzen",
+            "Automatische Preisreduzierung bei verderblichen Waren kurz vor Ablauf",
+            "Sofort auf Preisänderungen des Wettbewerbs reagieren – ganz ohne Mehraufwand"
+          ]
+        },
+        "reliability": {
+          "title": "2. Höchste Zuverlässigkeit und Display-Qualität",
+          "text": "Mit modernster E-Ink/E-Paper-Technologie bieten unsere Labels:",
+          "items": [
+            "Ultra-niedriger Energieverbrauch: Batterien halten bis zu 5–7 Jahre und minimieren Wartung",
+            "Kristallklare Darstellung: Hoher Kontrast, 180-Grad-Blickwinkel und mehrere Farbvarianten (Schwarz, Weiß, Rot/Gelb)",
+            "Sichere Kommunikation: Ein dediziertes RF/BLE-Netzwerk sorgt für schnelle, zuverlässige und verschlüsselte Updates in der gesamten Filiale"
+          ]
+        },
+        "integration": {
+          "title": "3. Nahtlose Integration",
+          "text": "Unsere leistungsstarke API und ein erfahrenes Integrationsteam binden das ESL-System direkt in Ihre bestehende IT-Landschaft ein:",
+          "items": [
+            "Kassensystem (POS)",
+            "Warenwirtschafts- / ERP-System",
+            "E-Commerce-Plattform (für Preisparität)"
+          ]
+        }
+      }
+    },
+    "downloads": {
+      "title": "Erfahren Sie mehr über unsere Lösung",
+      "intro": "Sie haben gesehen, wie DeutSolutions Smart Labels Preisgenauigkeit sichern, dynamische Aktionen ermöglichen und Betriebskosten senken. Machen Sie jetzt den nächsten Schritt und verstehen Sie das volle Potenzial für Ihr Geschäft. Unsere Unterlagen bieten alle Details vom ersten Interesse bis zur Implementierung.",
+      "flyer": {
+        "title": "Flyer herunterladen",
+        "text": "Schneller Überblick über unsere Smart-Label-Lösung"
+      },
+      "presentation": {
+        "title": "Präsentation herunterladen",
+        "text": "Detaillierte Präsentation mit Praxisbeispielen"
+      },
+      "technical": {
+        "title": "Technische Daten herunterladen",
+        "text": "Vollständige technische Spezifikationen"
+      }
+    },
+    "finalCta": {
+      "title": "Bereit für digitale Regaletiketten?",
+      "text": "Machen Sie den ersten Schritt zu fehlerfreier Preisgestaltung und maximaler Effizienz. Erleben Sie das System live und berechnen Sie Ihren möglichen ROI.",
+      "cta": "Besprechen Sie Ihre Anforderungen"
+    }
   },
   "about": {
     "title": "Über uns",
@@ -291,6 +433,13 @@
     "disclaimer": {
       "title": "Haftungsausschluss",
       "content": "Die Informationen auf der Website von DEUTSOLUTIONS dienen ausschließlich allgemeinen Informationszwecken. Trotz größter Sorgfalt übernehmen wir keine Gewähr für die Vollständigkeit oder Richtigkeit der Inhalte.\n\nDEUTSOLUTIONS haftet nicht für Verluste oder Schäden, die aus der Nutzung unserer Website oder Dienstleistungen entstehen.\n\nFür eine verbindliche Beratung kontaktieren Sie uns bitte unter deutsolutions@gmail.com."
+    }
+  },
+  "products": {
+    "learnMore": "Smart Labels jetzt entdecken",
+    "videoOverlay": {
+      "title": "Die Zukunft der Preisgestaltung ist digital",
+      "text": "In einer sich schnell verändernden Handelslandschaft sind Preisgenauigkeit, zeitnahe Aktionen und optimierte Personalkosten entscheidend. DeutSolutions Smart Labels ersetzen statische Papieretiketten durch intelligente, zentral gesteuerte Displays und verändern grundlegend, wie Sie Ihre Regale managen."
     }
   }
 } 
