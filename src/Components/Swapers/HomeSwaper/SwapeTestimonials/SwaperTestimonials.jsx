@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay,Pagination } from "swiper/modules";
 import TestimontalsData from "./Testimonials.json";
 import "swiper/css";
 import "./SwaperTestimonials.css";
@@ -10,12 +10,13 @@ const SwaperTestimonials = () => {
   const testimonials = TestimontalsData.testimonials;
   return (
     <Swiper
-      modules={[Pagination]}
+      modules={[Pagination,Autoplay]}
       spaceBetween={500}
       slidesPerView={1}
       centeredSlides={true}
       initialSlide={2}
       grabCursor={true}
+      autoplay={true}
       pagination={{ clickable: true }}
       breakpoints={{
         768: { slidesPerView: 2 },

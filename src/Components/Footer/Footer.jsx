@@ -6,6 +6,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaEnvelop
 import { addSubscription } from "../../firebase";
 import SubscriptionPopup from "./SubscriptionPopup";
 import { NavLink } from "react-router-dom";
+import Clients from "../Clients/Clients";
 
 const services = [
   "AI & Digital Solutions",
@@ -107,6 +108,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
+      <Clients/>
       <div className={styles.subscribeSection}>
         <h2 className={styles.subscribeTitle}>{t('footer.subscribeTitle')}</h2>
         <p className={styles.subscribeDesc}>{t('footer.subscribeDesc')}</p>

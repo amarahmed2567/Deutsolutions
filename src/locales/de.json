@@ -212,25 +212,12 @@
   "testimonials": {
     "title": "Kundenstimmen",
     "subtitle": "Was unsere Kunden sagen",
-    "description": "Echte Geschichten von Menschen, denen wir geholfen haben — bei Einwanderung, Übersetzung und Technologie.",
-    "items": [
-      {
-        "name": "Ahmed S.",
-        "country": "Ägypten",
-        "text": "Ihr Team hat mir beim Umzug nach Deutschland ohne Stress geholfen. Alles war reibungslos und professionell. Vielen Dank!"
-      },
-      {
-        "name": "Lisa M.",
-        "country": "Deutschland",
-        "text": "Der KI-Agent, den Sie entwickelt haben, spart uns täglich Stunden. Hocheffizient und einfach zu bedienen!"
-      },
-      {
-        "name": "Khalid R.",
-        "country": "Dubai",
-        "text": "Wir brauchten dringend beglaubigte Übersetzungen — bekamen sie schnell und punktgenau. Ausgezeichneter Service!"
-      }
-    ]
+    "description": "Echte Geschichten von Menschen, denen wir geholfen haben — bei Einwanderung, Übersetzung und Technologie."
   },
+  "clients":{
+    "clientstitle":"Unsere Kunden",
+    "clientsDesc":"Mit Stolz unterstützen wir Privatpersonen und Unternehmen dabei, ihre globalen Kommunikationsziele zu erreichen. Unsere Kunden vertrauen auf unsere Erfahrung, um Dokumente in präzise, kulturell angepasste und offiziell anerkannte Übersetzungen zu verwandeln.",
+    "clientssubtitle":"Weltweit vertraut"},
   "footer": {
     "subscribeTitle": "Bleiben Sie mit DEUTSOLUTIONS auf dem Laufenden",
     "subscribeDesc": "Erhalten Sie die neuesten Einblicke zu KI, digitaler Transformation und Migrationsmöglichkeiten nach Deutschland.",

@@ -43,7 +43,8 @@ const Home = () => {
         <div className={HeroImage}>
         <DotLottieReact
          className={HerImg}
-          src="https://lottie.host/f57517fb-64dd-431b-b9a3-4a80d070090e/ML7CF5MMxU.lottie"
+          src="https://lottie.host/dc07ab64-cce3-4fba-8d5f-8f87d218c1db/A0tSAg3i4V.lottie"
+          // https://lottie.host/f57517fb-64dd-431b-b9a3-4a80d070090e/ML7CF5MMxU.lottie
           loop
           autoplay
         />

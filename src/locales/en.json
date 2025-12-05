@@ -212,24 +212,12 @@
   "testimonials": {
     "title": "Testimonials",
     "subtitle": "What Our Clients Say",
-    "description": "Real stories from people we've helped — in migration, translation, and tech.",
-    "items": [
-      {
-        "name": "Ahmed S.",
-        "country": "Egypt",
-        "text": "Your team helped me move to Germany without stress. Everything was smooth and professional. Thank you!"
-      },
-      {
-        "name": "Lisa M.",
-        "country": "Germany",
-        "text": "The AI agent you built saved us hours every day. Highly efficient and easy to use!"
-      },
-      {
-        "name": "Khalid R.",
-        "country": "Dubai",
-        "text": "We needed urgent certified translations — got them fast and spot on. Excellent service!"
-      }
-    ]
+    "description": "Real stories from people we've helped — in migration, translation, and tech."
+  },
+   "clients":{
+    "clientstitle":"Our Clients",
+    "clientsDesc":"We proudly support individuals and businesses in achieving their global communication goals. Our clients rely on our expertise to transform documents into precise, culturally adapted, and officially recognized translations.",
+    "clientssubtitle":"Trusted Worldwide"
   },
   "footer": {
     "subscribeTitle": "Stay Updated with DEUTSOLUTIONS",
