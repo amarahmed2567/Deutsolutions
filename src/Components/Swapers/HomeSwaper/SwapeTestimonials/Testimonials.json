@@ -1,0 +1,103 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Lukas Weber",
+      "role": "Operations Manager",
+      "company_name": "NovaLogistics GmbH",
+      "focus_areas": ["Automation", "AI"],
+      "title": "Order processing automation and error reduction",
+      "text": "We worked with deutsolutions to automate our order and invoicing workflows. Within just three months, our order processing time dropped by more than 40%, and manual errors practically disappeared. The team understood our business needs, not just the technology, and that made all the difference.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 2,
+      "name": "Emily Carter",
+      "role": "Customer Service Lead",
+      "company_name": "BrightNet Internet Services",
+      "focus_areas": ["AI", "Automation", "Customer Support"],
+      "title": "AI chatbot for 24/7 customer support",
+      "text": "deutsolutions implemented an AI-powered chatbot that now answers our customers' questions 24/7 in both Arabic and English. The number of tickets that reach the human support team dropped significantly, and customers get answers in seconds. The experience was structured and clear from requirements all the way to go-live.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Hannah König",
+      "role": "Director",
+      "company_name": "CodeCraft Online Academy",
+      "focus_areas": ["AI", "Education"],
+      "title": "Personalized learning platform with analytics",
+      "text": "We collaborated with deutsolutions to build an intelligent learning system that adapts content to each student's level. We saw a clear improvement in engagement and course completion rates. The admin dashboard they built helped us understand student behavior and continuously improve our content.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 4,
+      "name": "Michael Braun",
+      "role": "Retail Operations Manager",
+      "company_name": "FreshMart Supermarkets GmbH",
+      "focus_areas": ["Smart Labels", "Dynamic Pricing", "Retail Automation"],
+      "title": "Smart labels and real-time price updates",
+      "text": "deutsolutions deployed a smart labels system for pricing across our branches. Now we can update prices or launch promotions in seconds from a central system instead of sending staff to change each shelf manually. This saved us a lot of time and allowed us to respond to stock levels and competition much faster.",
+      "rating": 4,
+      "language": "en"
+    },
+    {
+      "id": 5,
+      "name": "Julia Schneider",
+      "role": "Chief Executive Officer",
+      "company_name": "Insight Consulting Group",
+      "focus_areas": ["Digital Transformation"],
+      "title": "End-to-end digital transformation",
+      "text": "Our company used to rely heavily on paper and disconnected tools. With deutsolutions, we migrated to a modern CRM, task management system, and automated reporting. Internal communication became clearer, project tracking is much easier, and information loss is almost zero now.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 6,
+      "name": "Youssef Ibrahim",
+      "role": "Mechanical Engineer",
+      "company_name": null,
+      "focus_areas": ["Migration to Germany", "Career Coaching"],
+      "title": "From local engineer to employed in Germany",
+      "text": "I applied for migration to Germany through deutsolutions. They guided me step by step: degree recognition, preparing a German CV, and interview coaching. In less than a year, I signed an employment contract with a German company. Their support and follow-up continued even after I arrived in Germany.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 7,
+      "name": "Eman Ali",
+      "role": "Nurse",
+      "company_name": "Public Hospital (Germany)",
+      "focus_areas": ["German Language Training", "Healthcare Preparation"],
+      "title": "German language course tailored for nurses",
+      "text": "I took a German language course with deutsolutions that was tailored to the healthcare sector. The content was very practical and focused on real-life situations in hospitals rather than only grammar. When I arrived in Germany, I was able to communicate with patients and colleagues confidently and felt truly prepared.",
+      "rating": 4,
+      "language": "en"
+    },
+    {
+      "id": 8,
+      "name": "Khaled Mostafa",
+      "role": "Owner",
+      "company_name": "Global Trade Import & Export",
+      "focus_areas": ["Translation", "Legal and Commercial Documents"],
+      "title": "Accurate Arabic/English–German translation for contracts",
+      "text": "We rely on deutsolutions for translating our contracts and agreements with German partners. The translations are highly accurate and aligned with legal and commercial terminology. This helped us avoid misunderstandings in several large deals, and we now consider them our primary partner for any documents in German.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 9,
+      "name": "Leon Wagner",
+      "role": "IT Specialist Trainee",
+      "company_name": "TechPath IT Ausbildung Program, Munich",
+      "focus_areas": ["Migration to Germany", "IT Ausbildung", "Career Coaching"],
+      "title": "Securing an IT Ausbildung contract in Germany",
+      "text": "After finishing high school, I wanted to start an IT Ausbildung in Germany but had no idea where to begin. deutsolutions helped me choose the right specialization, prepare my documents in German, and get ready for interviews. Within a few months, I received an Ausbildung contract as an IT specialist in Munich. Their guidance made the whole process clear and achievable.",
+      "rating": 5,
+      "language": "en"
+    }
+  ]
+}
