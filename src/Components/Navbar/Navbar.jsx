@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
+import { HashLink} from "react-router-hash-link";
 import { motion, useScroll } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Logo from "../../assets/images/logo.svg";
@@ -88,30 +89,66 @@ const Navbar = () => {
                 </span>
               </div>
               <div className={`${styles.subnav} ${(hoveredSubmenu === "services" || openSubmenu === "services") ? styles.show : ""}`}>
-                <NavLink to="/services#translation" className={styles["subnav-link"]} onClick={() => {
-                  setMobileMenuOpen(false);
-                  setOpenSubmenu(null);
-                }}>
-                  {t("services.items.translation.title")}
-                </NavLink>
-                <NavLink to="/services#migration" className={styles["subnav-link"]} onClick={() => {
-                  setMobileMenuOpen(false);
-                  setOpenSubmenu(null);
-                }}>
-                  {t("services.items.migration.title")}
-                </NavLink>
-                <NavLink to="/services#ai" className={styles["subnav-link"]} onClick={() => {
-                  setMobileMenuOpen(false);
-                  setOpenSubmenu(null);
-                }}>
-                  {t("services.items.ai.title")}
-                </NavLink>
-                <NavLink to="/services#german" className={styles["subnav-link"]} onClick={() => {
-                  setMobileMenuOpen(false);
-                  setOpenSubmenu(null);
-                }}>
-                  {t("services.items.german.title")}
-                </NavLink>
+                <HashLink 
+              smooth  
+               to="/services#translation"
+              className={styles["subnav-link"]}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setOpenSubmenu(null);
+              }}
+              scroll={el => {
+                const yOffset = -100;
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              >   {t("services.items.translation.title")}</HashLink>
+                 
+                <HashLink 
+              smooth  
+               to="/services#migration"
+              className={styles["subnav-link"]}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setOpenSubmenu(null);
+              }}
+              scroll={el => {
+                const yOffset = -100;
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              >  {t("services.items.migration.title")}</HashLink>
+
+                <HashLink 
+              smooth  
+               to="/services#ai"
+              className={styles["subnav-link"]}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setOpenSubmenu(null);
+              }}
+              scroll={el => {
+                const yOffset = -100;
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              >  {t("services.items.ai.title")}</HashLink>
+
+                <HashLink 
+              smooth  
+               to="/services#german"
+              className={styles["subnav-link"]}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setOpenSubmenu(null);
+              }}
+              scroll={el => {
+                const yOffset = -100;
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }}
+              > {t("services.items.german.title")}</HashLink>
+          
               </div>
             </div>
             <div
