@@ -16,10 +16,10 @@ import { FaRobot, FaBookOpen } from "react-icons/fa";
 import "./SwaperServicesSection.css"
 
 //image
-import migrationImg from "../../../../assets/images/migration.jpg";
-import aiImg from "../../../../assets/images/ai.jpg";
+import migrationImg from "../../../../assets/images/migration2 .jpg";
+import aiImg from "../../../../assets/images/KI.jpg";
 import translationImg from "../../../../assets/images/Trans.jpg";
-import germanImg from "../../../../assets/images/DeutschKurs.jpg";
+import germanImg from "../../../../assets/images/learn.webp";
 
 
   const SwaperServicesSection = () => {

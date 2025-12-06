@@ -79,12 +79,12 @@ const HomePage = () => {
         type="website"
       />
       <Home />
-      <motion.div {...sectionAnim}><CardsSlider/></motion.div>
-      <motion.div {...sectionAnim}><ProductsSliderHome /></motion.div>
-      <motion.div {...sectionAnim}><About/></motion.div>
-      <motion.div {...sectionAnim}><Services /></motion.div>
-      <motion.div {...sectionAnim}><StartNowSlider/></motion.div>
-      <motion.div {...sectionAnim}><Testimonials/></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><CardsSlider/></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><ProductsSliderHome /></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><Services /></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><About/></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><StartNowSlider/></motion.div>
+      <motion.div {...sectionAnim} className="ComponentsRow"><Testimonials/></motion.div>
     </>
   );
 };

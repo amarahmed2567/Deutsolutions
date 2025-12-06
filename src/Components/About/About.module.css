@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1.8rem;
-  padding: 1.8rem 0;
-  margin-bottom: 1.8rem;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+  margin-bottom: 2.5rem;
 }
 
 .aboutContent {
@@ -13,15 +13,15 @@
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
   line-height: 1;
 }
 .aboutHeadline {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .aboutSubTitle{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .aboutHeadline .highlight {
@@ -33,7 +33,7 @@
 }
 
 .aboutText {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #222;
   font-style: italic;
   line-height: 1.6;
@@ -45,11 +45,11 @@
   width: 40%;
   color: #fff;
   font-weight: 700;
-  font-size: 0.9rem;
-  padding: 0.6em 1.8em;
+  font-size: 1.05rem;
+  padding: 0.7em 2em;
   border: none;
   border-radius: 8px;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s, transform 0.2s;
@@ -107,21 +107,21 @@
 /* Tablet Responsive */
 @media (max-width: 1024px) {
   .aboutSection {
-    gap: 1.5rem;
-    padding: 1.5rem 0;
+    gap: 2rem;
+    padding: 2rem 0;
   }
   .aboutContent {
     max-width: 450px;
   }
   .aboutHeadline {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .aboutText {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .learnMoreBtn {
     width: 45%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.6em 1.8em;
   }
   .aboutImage {
@@ -142,7 +142,7 @@
   .aboutSection {
     flex-direction: column;
     align-items: center;
-    gap: 1.8rem;
+    gap: 2.5rem;
   }
   .aboutContent {
     max-width: 100%;
@@ -150,7 +150,7 @@
     align-items: center;
   }
   .aboutHeadline {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   .aboutText {
@@ -172,27 +172,27 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .aboutSection {
-    gap: 1.5rem;
-    padding: 1.2rem 0;
+    gap: 2rem;
+    padding: 1.5rem 0;
     align-items: center;
   }
   .aboutContent {
-    gap: 1rem;
+    gap: 1.2rem;
     text-align: center;
     align-items: center;
   }
   .aboutHeadline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .aboutText {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     text-align: center;
   }
   .learnMoreBtn {
     width: 60%;
-    font-size: 0.85rem;
-    padding: 0.8rem 1.5em;
+    font-size: 0.95rem;
+    padding: 1rem 1.5em;
   }
   .aboutImage {
     width: 400px;
@@ -214,27 +214,27 @@
 
 @media (max-width: 480px) {
   .aboutSection {
-    gap: 1.2rem;
-    padding: 0.8rem 0;
+    gap: 1.5rem;
+    padding: 1rem 0;
     align-items: center;
   }
   .aboutContent {
-    gap: 0.8rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
   }
   .aboutHeadline {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   .aboutText {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
   }
   .learnMoreBtn {
     width: 70%;
-    font-size: 0.8rem;
-    padding: .7rem 1.2em;
+    font-size: 0.9rem;
+    padding: .8rem 1.2em;
   }
   .aboutImage {
     width: 350px;
@@ -257,7 +257,7 @@
 /* Small Mobile */
 @media (max-width: 360px) {
   .aboutSection {
-    gap: 1rem;
+    gap: 1.2rem;
     align-items: center;
   }
   .aboutContent {
@@ -265,16 +265,16 @@
     align-items: center;
   }
   .aboutHeadline {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   .aboutText {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
   }
   .learnMoreBtn {
     width: 80%;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     padding: 0.4em 1em;
   }
   .aboutImage {

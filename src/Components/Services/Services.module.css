@@ -1,6 +1,6 @@
 
 .header{
-  text-align: start;
+  text-align: center;
   padding: 1.5rem 0;
 }
 :lang(ar)  .headline {
@@ -34,6 +34,7 @@
   font-size: 0.9rem;
   color: #222;
   font-style: italic;
+  margin: 0 auto;
   line-height: 1.6;
   width: 60%;
 }

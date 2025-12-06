@@ -138,8 +138,8 @@ const Footer = () => {
           </div>
           <div className={styles.brandDesc}>{t('footer.brandDesc')}</div>
           <div className={styles.contactInfo}>
-            <div><FaEnvelope className={styles.contactIcon}/> deutsolutions@gmail.com</div>
-            <div><FaPhone className={styles.contactIcon}/> +971 50 330 3847</div>
+            <div><FaEnvelope className={styles.contactIcon}/> info@deutsolutions.com</div>
+            <div><FaPhone className={styles.contactIcon}/> +971 55 467 6933</div>
             <div><FaMapMarkerAlt className={styles.contactIcon}/> Dubai Silicon Oasis, UAE</div>
           </div>
           <div className={styles.socials}>

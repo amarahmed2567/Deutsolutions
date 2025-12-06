@@ -1,12 +1,11 @@
 .testimonialsSection {
   width: 100%;
     color: #111;
-    padding: 3.5rem 0 3rem 0;
   }
   
   .header {
     margin-bottom: 2.5rem;
-    text-align: start;
+    text-align: center;
     line-height: 1.7;
   }
   :lang(ar) .header{
@@ -32,6 +31,7 @@
     font-size: 0.9rem;
     color: #222;
     font-style: italic;
+    margin: 0 auto;
     line-height: 1.6;
   }
   

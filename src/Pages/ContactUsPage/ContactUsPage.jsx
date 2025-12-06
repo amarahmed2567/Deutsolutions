@@ -219,7 +219,7 @@ const ContactUsPage = () => {
           <div style={{background:'#fff',borderRadius:16,padding:24,minWidth:220,boxShadow:'0 2px 10px rgba(0,0,0,0.07)',display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
             <FaPhone style={{fontSize:'2rem',color:'#e67700'}}/>
             <div style={{fontWeight:'bold'}}>{t("contact.info.phoneTitle")}</div>
-            <div>{t("contact.info.phoneValue")}</div>
+            <div>+971 55 467 6933</div>
           </div>
         </div>
 

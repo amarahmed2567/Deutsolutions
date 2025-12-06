@@ -1,13 +1,13 @@
 /* ,,,,,, */
 
-  .HeroSection {
+.HeroSection {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     min-height: 100vh;
-    padding: 5rem 0 0 0;
-    gap: 1.5rem;
+    padding: 8rem 0 0 0;
+    gap: 2rem;
    
   }
   
@@ -56,13 +56,13 @@
 
   .HeroImage {
     flex: 1 1 350px;
-    min-width: 320px;
+    min-width: 420px;
     max-width: 600px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: start;
-    min-height: 420px;
+    min-height: 300px;
   }
 
   .HeroImage .HerImg{
@@ -122,8 +122,8 @@
   /* Mobile Responsive */
   @media (max-width: 768px) {
     .HeroSection {
-      gap: 1.5rem;
-      padding: 0.8rem 0;
+      gap: 2rem;
+      padding: 1rem 0;
       align-items: center;
     }
     .HeroContent {
@@ -131,38 +131,38 @@
       align-items: center;
     }
     .HeroContent-text {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     .Subtext {
-      font-size: 0.85rem;
+      font-size: 1rem;
       text-align: center;
     }
     .CtaButton {
       width: 70%;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
       padding: 0.5em 1.5em;
     }
     .StatsRow {
-      margin-top: 2rem;
-      gap: 1.2rem;
+      margin-top: 3rem;
+      gap: 1.5rem;
       flex-wrap: wrap;
       justify-content: center;
     }
     .StatsNumber {
-      font-size: 0.95rem;
+      font-size: 1.1rem;
       text-align: center;
     }
     .HeroImage {
       min-width: 200px;
-      min-height: 100px;
+      min-height: 200px;
     }
   }
 
   @media (max-width: 480px) {
     .HeroSection {
-      padding-top: 3.5rem;
-      gap: 1.2rem;
+      padding-top: 5rem;
+      gap: 1.5rem;
       align-items: center;
     }
     .HeroContent {
@@ -170,25 +170,25 @@
       align-items: center;
     }
     .HeroContent-text {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     .Subtext {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       text-align: center;
     }
     .CtaButton {
       width: 70%;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       padding: 0.5em 1.2em;
     }
     .StatsRow {
-      margin-top: 1.5rem;
-      gap: 0.8rem;
+      margin-top: 2rem;
+      gap: 1rem;
       justify-content: center;
     }
     .StatsNumber {
-      font-size: 0.9rem;
+      font-size: 1rem;
       text-align: center;
     }
     .HeroImage {
@@ -204,24 +204,24 @@
       align-items: center;
     }
     .HeroContent h1 {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     .Subtext {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       text-align: center;
     }
     .CtaButton {
       width: 70%;
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       padding: 0.4em 1em;
     }
     .StatsRow {
-      gap: 0.6rem;
+      gap: 0.8rem;
       justify-content: center;
     }
     .StatsNumber {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       text-align: center;
     }
   } 

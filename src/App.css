@@ -58,6 +58,9 @@ body{
   margin: 0 auto 2.5rem auto;
   text-align: center;
 }
+.ComponentsRow{
+  margin-bottom: 4rem;
+}
 /* Responsive Container */
 @media (max-width: 1200px) {
   .AppContainer {
