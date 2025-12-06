@@ -8,7 +8,7 @@
     min-height: 100vh;
     padding: 8rem 0 0 0;
     gap: 2rem;
-   
+    background-attachment: fixed;
   }
   
   .HeroContent {
@@ -162,7 +162,7 @@
   @media (max-width: 480px) {
     .HeroSection {
       padding-top: 5rem;
-      gap: 1.5rem;
+      gap: .4rem;
       align-items: center;
     }
     .HeroContent {

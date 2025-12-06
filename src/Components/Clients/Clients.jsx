@@ -56,7 +56,7 @@ const { t } = useTranslation();
           delay: 1500,
           disableOnInteraction: false,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Navigation]}
         className={MySwiper}
       >

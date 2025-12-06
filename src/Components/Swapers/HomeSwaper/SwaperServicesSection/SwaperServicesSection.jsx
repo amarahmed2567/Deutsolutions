@@ -64,7 +64,7 @@ import germanImg from "../../../../assets/images/learn.webp";
     <>
       <Swiper
          modules={[Pagination,Autoplay]}
-         spaceBetween={100}
+         spaceBetween={70}
          slidesPerView={1}
          centeredSlides={true} 
          initialSlide={1} 

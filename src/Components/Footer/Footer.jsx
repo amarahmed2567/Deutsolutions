@@ -159,10 +159,10 @@ const Footer = () => {
             <h4>{t('footer.company.title')}</h4>
             <ul>{t('footer.company.items', { returnObjects: true }).map(item => <li key={item}>{item}</li>)}</ul>
           </div>
-          <div className={styles.linksBlock}>
+          {/* <div className={styles.linksBlock}>
             <h4>{t('footer.support.title')}</h4>
             <ul>{t('footer.support.items', { returnObjects: true }).map(item => <li key={item}>{item}</li>)}</ul>
-          </div>
+          </div> */}
           <div className={styles.linksBlock}>
             <h4>{t('footer.legal.title')}</h4>
             <ul>
