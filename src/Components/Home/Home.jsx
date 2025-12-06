@@ -2,10 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import style from "./Home.module.css"
 import AnimatedText from "./AnimatedSubText/AnimatedText"
-import Map from "../../assets/svg/map.svg"
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import NetworkSphere from "./NetworkSphere"
 const {HeroSection,HeroContent,HeroContentText,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage,HerImg} = style
 const Home = () => {
   const { t } = useTranslation();
@@ -41,13 +41,14 @@ const Home = () => {
           </div>
         </div>
         <div className={HeroImage}>
-        <DotLottieReact
+        {/* <DotLottieReact
          className={HerImg}
           src="https://lottie.host/dc07ab64-cce3-4fba-8d5f-8f87d218c1db/A0tSAg3i4V.lottie"
           // https://lottie.host/f57517fb-64dd-431b-b9a3-4a80d070090e/ML7CF5MMxU.lottie
           loop
           autoplay
-        />
+        /> */}
+         <NetworkSphere />
         </div>
       </motion.section>
     )

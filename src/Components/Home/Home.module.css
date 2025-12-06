@@ -59,10 +59,12 @@
     min-width: 420px;
     max-width: 600px;
     position: relative;
+    top: -25vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
     min-height: 300px;
+    
   }
 
   .HeroImage .HerImg{

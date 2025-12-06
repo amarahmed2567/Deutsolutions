@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
 const SEO = ({ 
@@ -130,7 +130,8 @@ const SEO = ({
   const currentDescription = descriptions[currentLang] || descriptions.en;
 
   return (
-    <Helmet>
+    // <Helmet>
+    <>
       {/* Basic Meta Tags */}
       <title>{currentTitle}</title>
       <meta name="description" content={currentDescription} />
@@ -193,7 +194,8 @@ const SEO = ({
           ]
         })}
       </script>
-    </Helmet>
+    {/* </Helmet> */}
+    </>
   );
 };
 

@@ -6,6 +6,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaEnvelop
 import { addSubscription } from "../../firebase";
 import SubscriptionPopup from "./SubscriptionPopup";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Clients from "../Clients/Clients";
 
 const services = [
@@ -59,6 +60,12 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [popup, setPopup] = useState({ isOpen: false, type: "", message: "" });
+
+  // Map footer service items to their hash links by index (works for all languages)
+  const getServiceHashLink = (index) => {
+    const hashLinks = ["ai", "translation", "migration", "german", "german", null];
+    return hashLinks[index] || null;
+  };
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
@@ -153,7 +160,30 @@ const Footer = () => {
         <div className={styles.linksCol}>
           <div className={styles.linksBlock}>
             <h4>{t('footer.services.title')}</h4>
-            <ul>{t('footer.services.items', { returnObjects: true }).map(item => <li key={item}>{item}</li>)}</ul>
+            <ul>
+              {t('footer.services.items', { returnObjects: true }).map((item, index) => {
+                const hashLink = getServiceHashLink(index);
+                return (
+                  <li key={item}>
+                    {hashLink ? (
+                      <HashLink
+                        smooth
+                        to={`/services#${hashLink}`}
+                        scroll={el => {
+                          const yOffset = -100;
+                          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                          window.scrollTo({ top: y, behavior: 'smooth' });
+                        }}
+                      >
+                        {item}
+                      </HashLink>
+                    ) : (
+                      item
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className={styles.linksBlock}>
             <h4>{t('footer.company.title')}</h4>
