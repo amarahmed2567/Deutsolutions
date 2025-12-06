@@ -11,27 +11,27 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 48px 32px;
+  padding: 3.5rem 2.5rem;
   min-width: 350px;
   max-width: 480px;
   box-shadow: 0 2px 24px rgba(0,0,0,0.04);
 }
 .signupTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #222;
 }
 .signupSubtitle {
   color: #7a7a7a;
-  margin-bottom: 32px;
-  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
 }
 .signupForm {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.4rem;
 }
 .input {
   padding: 14px 16px;
@@ -51,10 +51,10 @@
   color: #fff;
   border: none;
   border-radius: 8px;
-  padding: 14px 0;
-  font-size: 1.1rem;
+  padding: 12px 0;
+  font-size: 0.95rem;
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 6px;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -63,9 +63,9 @@
   cursor: not-allowed;
 }
 .loginLink {
-  margin-top: 18px;
+  margin-top: 1.4rem;
   color: #222;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .loginLink a {
   color: #222;

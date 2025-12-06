@@ -1,17 +1,17 @@
 
 .header{
   text-align: start;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 :lang(ar)  .headline {
   line-height: 1;
 }
 .headline {
-  font-size:2rem;
+  font-size:1.6rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   line-height: 1.2;
-  gap: 1.5rem;
+  gap: 1.2rem;
   }
 
 .gradient {
@@ -21,17 +21,17 @@
   background-clip: text;
   font-weight: 800;
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 
 }
 .bold {
   font-weight: 700;
   color: #000000;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 .subtext {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #222;
   font-style: italic;
   line-height: 1.6;
@@ -47,61 +47,26 @@
 /* Tablet Responsive */
 @media (max-width: 1024px) {
   .servicesSection {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   .headline {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .bold {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .subtext {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .servicesSection {
-    padding: 3rem 0;
+    padding: 2.2rem 0;
     min-height: auto;
   }
-  .headline {
-    font-size: 1.6rem;
-  }
-  .bold {
-    font-size: 1.7rem;
-  }
-  .subtext {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .servicesSection {
-    padding: 2rem 0;
-  }
-  .header{
-    text-align: center;
-  }
-  .headline {
-    font-size: 1.4rem;
-  }
-  .bold {
-    font-size: 1.5rem;
-  }
-  .subtext {
-
-    width: 100%;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 360px) {
   .headline {
     font-size: 1.3rem;
   }
@@ -110,6 +75,41 @@
   }
   .subtext {
     font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesSection {
+    padding: 1.5rem 0;
+  }
+  .header{
+    text-align: center;
+  }
+  .headline {
+    font-size: 1.2rem;
+  }
+  .bold {
+    font-size: 1.2rem;
+  }
+  .subtext {
+
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .headline {
+    font-size: 1.1rem;
+  }
+  .bold {
+    font-size: 1.1rem;
+  }
+  .subtext {
+    font-size: 0.75rem;
   }
 }
 

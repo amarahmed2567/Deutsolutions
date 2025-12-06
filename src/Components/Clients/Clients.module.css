@@ -1,18 +1,18 @@
 .ClientsSection{
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 .headercon{
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     width: 100%;
   }
   :lang(ar)  .headline ,.headercon{
     line-height: 1.2;
   }
   .headline {
-    font-size:2rem;
+    font-size:1.6rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     line-height: 1.2;
     }
   
@@ -23,21 +23,21 @@
     background-clip: text;
     font-weight: 800;
     display: inline-block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   
   }
   .bold {
     font-weight: 700;
     color: #000000;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
   }
   .subtext {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #5f5e5e;
     font-style: italic;
     line-height: 1.6;
-    margin: .7rem auto;
+    margin: .5rem auto;
     width: 70%;
   }
 

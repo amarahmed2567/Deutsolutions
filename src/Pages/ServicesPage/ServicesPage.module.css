@@ -1,21 +1,21 @@
 .servicesContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 2rem 1rem;
 }
 .servicesGrid {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  padding: 2rem 0;
+  gap: 1.8rem;
+  padding: 1.5rem 0;
 }
 .serviceRow {
   display: flex;
   align-items:stretch;
   justify-content: start;
   min-width: 100%;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 .serviceCard {
   display: flex;
@@ -72,7 +72,7 @@
   margin-right: 0.7rem;
 }
 .serviceName {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   font-style: italic;
   background: var(--primary-color);
@@ -82,25 +82,25 @@
   margin-bottom: 0.2rem;
 }
 .serviceDesc {
-  font-size: 1.01rem;
+  font-size: 0.9rem;
   color: #444d5c;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
 }
 .serviceDetails {
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   color: #222;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.9rem;
   line-height: 1.6;
 }
 .cardBtn {
   background: linear-gradient(90deg, #222 60%, #888 100%);
   color: #fff;
   font-weight: 700;
-  font-size: 1.08rem;
-  padding: 0.7em 2em;
+  font-size: 0.9rem;
+  padding: 0.6em 1.8em;
   border: none;
   border-radius: 8px;
-  margin: 0.7rem 0 0 0;
+  margin: 0.6rem 0 0 0;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s, transform 0.2s;
@@ -114,8 +114,8 @@
 .serviceFeatures {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
-  margin: 1rem 0 0.5rem 0;
+  gap: 1.2rem;
+  margin: 0.8rem 0 0.4rem 0;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -128,9 +128,9 @@
   padding: 0.2rem 0.5rem;
 }
 .featureIcon {
-  font-size: 2.1rem;
-  width: 2.7rem;
-  height: 2.7rem;
+  font-size: 1.8rem;
+  width: 2.3rem;
+  height: 2.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,13 +139,13 @@
   margin-right: 0.3rem;
 }
 .featureValue {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: bold;
   color: #222;
   margin-bottom: 0.1rem;
 }
 .featureLabel {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #444d5c;
   text-align: center;
 }
