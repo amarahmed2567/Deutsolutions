@@ -90,7 +90,7 @@ const Navbar = () => {
               </div>
               <div className={`${styles.subnav} ${(hoveredSubmenu === "services" || openSubmenu === "services") ? styles.show : ""}`}>
                 {t('footer.services.items', { returnObjects: true }).map((item, index) => {
-                  const hashLinks = ["ai", "translation", "migration", "german", "german", "quality", "consultation", "outsourcing"];
+                  const hashLinks = ["ai", "translation", "migration", "german", "german", "quality"];
                   const hashLink = hashLinks[index] || null;
                   
                   return hashLink ? (

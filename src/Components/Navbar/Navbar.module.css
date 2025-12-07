@@ -46,13 +46,6 @@
     cursor: pointer;
   }
 
-  /* Arabic text spacing fixes */
-  :global(:lang(ar)) .navbarLinks a,
-  :global(:lang(ar)) .navLink {
-    line-height: 1.4;
-    letter-spacing: 0;
-  }
-
   .navLinkWithArrow {
     display: flex;
     align-items: center;
@@ -245,21 +238,15 @@
   transform: translateY(0);
 }
 
-  .subnav-link {
-    display: block;
-    padding: 0.75rem 1.5rem;
-    color: #222;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: background 0.15s, color 0.15s;
-  }
-
-  /* Arabic text spacing fixes for subnav */
-  :global(:lang(ar)) .subnav-link {
-    line-height: 1.4;
-    letter-spacing: 0;
-  }
+.subnav-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background 0.15s, color 0.15s;
+}
 
 .subnav-link:hover {
   background: #f7f7f7;

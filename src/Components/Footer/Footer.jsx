@@ -251,84 +251,12 @@ const Footer = () => {
           <div className={styles.linksBlock}>
             <h4>{t('footer.legal.title')}</h4>
             <ul>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#privacy-policy"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.0')}
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#terms-of-service"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.1')}
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#cookie-policy"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.2')}
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#gdpr-compliance"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.3')}
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#data-protection"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.4')}
-                </HashLink>
-              </li>
-              <li>
-                <HashLink
-                  smooth
-                  to="/legal#disclaimer"
-                  scroll={el => {
-                    const yOffset = -100;
-                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                  }}
-                >
-                  {t('footer.legal.items.5')}
-                </HashLink>
-              </li>
+              <li><NavLink to="/legal/privacy-policy">{t('footer.legal.items.0')}</NavLink></li>
+              <li><NavLink to="/legal/terms-of-service">{t('footer.legal.items.1')}</NavLink></li>
+              <li><NavLink to="/legal/cookie-policy">{t('footer.legal.items.2')}</NavLink></li>
+              <li><NavLink to="/legal/gdpr-compliance">{t('footer.legal.items.3')}</NavLink></li>
+              <li><NavLink to="/legal/data-protection">{t('footer.legal.items.4')}</NavLink></li>
+              <li><NavLink to="/legal/disclaimer">{t('footer.legal.items.5')}</NavLink></li>
             </ul>
           </div>
         </div>

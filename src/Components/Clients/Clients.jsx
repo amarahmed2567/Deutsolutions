@@ -36,7 +36,7 @@ const { t } = useTranslation();
 
   return (
     <>
-     <section className={ClientsSection} id="clients">
+     <section className={ClientsSection} id="#Clients">
            <div className={headercon}>
           <h2 className={header}>
             <span className={gradient}>{t('clients.clientstitle')}</span>
