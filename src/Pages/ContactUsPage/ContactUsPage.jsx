@@ -208,7 +208,7 @@ const ContactUsPage = () => {
             <FaMapMarkerAlt className={styles.contactCardIcon}/>
             <div className={styles.contactCardTitle}>{t("contact.info.addressTitle")}</div>
             <div className={styles.contactCardContent}>Technohub 1, Dubai Silicon Oasis Near Axiom HQ and RIT University - Dubai - United Arab Emirates</div>
-            <div className={styles.contactCardContent}>Frankfurter Str. 100, 65760 Eschborn, Germany</div>
+            <div className={styles.contactCardContent}>Eschborn, Germany</div>
           </div>
           <div className={styles.contactCard}>
             <FaPhone className={styles.contactCardIcon}/>

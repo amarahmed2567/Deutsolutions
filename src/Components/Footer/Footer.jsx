@@ -150,7 +150,7 @@ const Footer = () => {
               <FaPhone className={styles.contactIcon}/> +971 55 467 6933 <br/>
               <FaPhone className={styles.contactIcon + ' ' + styles.dispaynone}/> +49 1575 8499615 </div>
             <div><FaMapMarkerAlt className={styles.contactIcon}/> Dubai Silicon Oasis, UAE</div>
-            <div><FaMapMarkerAlt className={styles.contactIcon+ ' ' + styles.dispaynone}/> Frankfurter Str. 100, 65760 Eschborn</div>
+            <div><FaMapMarkerAlt className={styles.contactIcon+ ' ' + styles.dispaynone}/>Eschborn, Germany</div>
           </div>
           <div className={styles.socials}>
             {socialLinks.map(s => (
