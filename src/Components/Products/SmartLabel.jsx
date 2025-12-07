@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./SmartLabel.module.css";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ProductsVideo from "./ProductsVideo"
 
 const SmartLabel = () => {
   const { t } = useTranslation();
@@ -37,6 +38,9 @@ const SmartLabel = () => {
           </div>
         </div>
       </section>
+
+    {/* products video */}
+    <ProductsVideo />
 
       {/* Display Gallery */}
       <section className={styles.gallery}>
