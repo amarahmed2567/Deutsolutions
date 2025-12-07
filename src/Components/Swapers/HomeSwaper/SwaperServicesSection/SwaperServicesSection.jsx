@@ -10,7 +10,7 @@ import "../Swipe.css"
 
 //react Icons
 import { MdAirplaneTicket, MdTranslate } from "react-icons/md";
-import { FaRobot, FaBookOpen } from "react-icons/fa";
+import { FaRobot, FaBookOpen, FaCheckCircle } from "react-icons/fa";
 
 //css styles
 import "./SwaperServicesSection.css"
@@ -20,6 +20,7 @@ import migrationImg from "../../../../assets/images/migration2 .jpg";
 import aiImg from "../../../../assets/images/KI.jpg";
 import translationImg from "../../../../assets/images/Trans.jpg";
 import germanImg from "../../../../assets/images/learn.webp";
+import qualityImg from "../../../../assets/images/quality.png";
 
 
   const SwaperServicesSection = () => {
@@ -57,6 +58,14 @@ import germanImg from "../../../../assets/images/learn.webp";
       desc: t('services.items.german.description'),
       btn: t('services.items.german.button'),
       link:"/services#german"
+    },
+    {
+      title: t('services.items.quality.title'),
+      img: qualityImg,
+      icon: <FaCheckCircle className="Icon" style={{color: '#6c5ce7'}} />,
+      desc: t('services.items.quality.description'),
+      btn: t('services.items.quality.button'),
+      link:"/services#quality"
     }
   ];
   

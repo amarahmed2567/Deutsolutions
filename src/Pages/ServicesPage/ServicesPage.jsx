@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage } from "react-icons/fa";
+import { FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage, FaCheckCircle, FaShieldAlt } from "react-icons/fa";
 import translationImg from "../../assets/images/Trans.jpg";
 import migrationImg from "../../assets/images/migration2 .jpg";
 import aiImg from "../../assets/images/KI.jpg";
 import germanImg from "../../assets/images/learn.webp";
+import qualityImg from "../../assets/images/quality.png";
 import { Link } from "react-router-dom";
 import styles from "./ServicesPage.module.css";
 import AOS from 'aos';
@@ -59,6 +60,18 @@ const serviceData = [
       { icon: <FaUserGraduate color="#009e60" />, value: '1,000+', label: 'Students' },
       { icon: <FaLanguage color="#009e60" />, value: 'All Levels', label: 'Courses' },
       { icon: <FaSmile color="#009e60" />, value: '99%', label: 'Satisfaction' },
+    ]
+  },
+  {
+    img: qualityImg,
+    titleKey: 'services.items.quality.title',
+    descKey: 'services.items.quality.description',
+    btnKey: 'services.items.quality.button',
+    link: "quality",
+    features: [
+      { icon: <FaCheckCircle color="#6c5ce7" />, value: '100%', label: 'Accuracy' },
+      { icon: <FaShieldAlt color="#6c5ce7" />, value: 'ISO', label: 'Certified' },
+      { icon: <FaSmile color="#6c5ce7" />, value: '99%', label: 'Satisfaction' },
     ]
   }
 ];

@@ -7,25 +7,25 @@ import { IoVolumeMuteSharp, IoVolumeHighSharp } from "react-icons/io5";
 
 const Products = () => {
   const { t } = useTranslation();
-  const videoRef = useRef(null);
-  // Start muted so browsers allow autoplay, user can enable sound via the button
-  const [isMuted, setIsMuted] = useState(true);
+  // const videoRef = useRef(null);
+  // // Start muted so browsers allow autoplay, user can enable sound via the button
+  // const [isMuted, setIsMuted] = useState(true);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = isMuted;
-    }
-  }, [isMuted]);
+  // useEffect(() => {
+  //   if (videoRef.current) {
+  //     videoRef.current.muted = isMuted;
+  //   }
+  // }, [isMuted]);
 
-  const toggleMute = () => {
-    setIsMuted((prev) => !prev);
-  };
+  // const toggleMute = () => {
+  //   setIsMuted((prev) => !prev);
+  // };
 
   return (
     <section className={styles.intro}>
       <div className={styles.container}>
         <div className={styles.introVideo}>
-          <video
+          {/* <video
             ref={videoRef}
             className={styles.productVideo}
             src={productVideo}
@@ -33,7 +33,11 @@ const Products = () => {
             muted={isMuted}
             loop
             playsInline
-          />
+          /> */}
+           <div
+            className={styles.productImg}
+            src={productVideo}
+          ></div>
           <div className={styles.videoOverlay}>
           <h2 className={styles.productsHeadline}> <span className={styles.highlight}>{t('products.title')}</span></h2>
             <h2 className={styles.overlayTitle}>
@@ -52,14 +56,14 @@ const Products = () => {
               {t("products.learnMore")}
             </Link>
           </div>
-          <button
+          {/* <button
             type="button"
             className={styles.muteButton}
             onClick={toggleMute}
             aria-label={isMuted ? "Unmute video" : "Mute video"}
           >
             {isMuted ? <IoVolumeMuteSharp /> : <IoVolumeHighSharp />}
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

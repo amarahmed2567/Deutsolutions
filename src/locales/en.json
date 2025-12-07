@@ -205,6 +205,12 @@
         "description": "Beginner-friendly German lessons, tailored for migrants.",
         "longDescription": "Beginner-friendly German lessons, tailored for migrants. Our courses cover all levels and focus on practical communication and cultural understanding. Learn from experienced instructors using modern teaching methods and interactive materials. Whether you are preparing for work, study, or daily life in Germany, our coaching helps you gain confidence and fluency in the German language.",
         "button": "Start Now"
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "Comprehensive quality control and assurance services to ensure excellence in all deliverables.",
+        "longDescription": "Our Quality Assurance services ensure that every project meets the highest standards of excellence. We provide comprehensive quality control, testing, and validation services across all our offerings. From translation accuracy to software reliability, our QA team meticulously reviews and validates every deliverable. With ISO-certified processes and rigorous quality checks, we guarantee that your projects are error-free, compliant, and exceed expectations. Trust us to maintain the German precision and excellence that defines our brand.",
+        "button": "Start Now"
       }
     },
     "learnMore": "learn more"
@@ -244,11 +250,8 @@
       "title": "Company",
       "items": [
         "About Us",
-        "Our Process",
-        "Success Stories",
-        "Careers",
-        "Partners",
-        "Blog"
+        "Our Process",  
+        "Partners" 
       ]
     },
     "support": {

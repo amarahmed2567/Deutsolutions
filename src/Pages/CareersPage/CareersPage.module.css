@@ -1,0 +1,261 @@
+.pageContainer {
+  padding-top: 2.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.pageContainer > div:first-child {
+  text-align: center;
+  margin-bottom: 2.2rem;
+  padding: 0 1rem;
+}
+
+.introSection {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.introText {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.benefitsSection {
+  margin: 4rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2.5rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefitCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.benefitIcon {
+  font-size: 3rem;
+  color: #E90004;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.benefitTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.benefitDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+}
+
+.positionsSection {
+  margin: 5rem 0;
+  padding-top: 3rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+.positionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.positionCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.positionCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: #E90004;
+}
+
+.positionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.positionTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  flex: 1;
+}
+
+.positionType {
+  background: #f0f0f0;
+  color: #666;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.positionDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detailItem {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.detailItem strong {
+  color: #222;
+  margin-right: 0.5rem;
+}
+
+.applyBtn {
+  background: linear-gradient(135deg, #E90004 0%, #F9B434 100%);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.applyBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(233, 0, 4, 0.3);
+}
+
+.ctaSection {
+  margin-top: 5rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #f0f0f0;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.ctaButton {
+  background: linear-gradient(135deg, #222 0%, #444 100%);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(135deg, #E90004 0%, #F9B434 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(233, 0, 4, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding-top: 1.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .pageContainer > div:first-child {
+    margin-bottom: 1.5rem;
+  }
+  
+  .introText {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .positionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .positionHeader {
+    flex-direction: column;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .ctaSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}
+
+

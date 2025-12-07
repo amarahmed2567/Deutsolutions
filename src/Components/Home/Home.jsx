@@ -48,6 +48,7 @@ const Home = () => {
           loop
           autoplay
         /> */}
+
          <NetworkSphere />
         </div>
       </motion.section>

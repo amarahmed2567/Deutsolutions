@@ -205,6 +205,12 @@
         "description": "Anfängerfreundliche Deutschstunden, maßgeschneidert für Einwanderer.",
         "longDescription": "Deutschkurse für Anfänger, speziell für Migranten konzipiert. Unsere Kurse decken alle Niveaus ab und legen den Fokus auf praktische Kommunikation und kulturelles Verständnis. Lernen Sie mit erfahrenen Lehrkräften, modernen Methoden und interaktiven Materialien. Ob für Arbeit, Studium oder Alltag in Deutschland – unser Coaching hilft Ihnen, Selbstvertrauen und Sprachgewandtheit in Deutsch zu gewinnen.",
         "button": "Jetzt starten"
+      },
+      "quality": {
+        "title": "Qualitätssicherung",
+        "description": "Umfassende Qualitätskontrolle und -sicherung, um Exzellenz in allen Lieferungen zu gewährleisten.",
+        "longDescription": "Unsere Qualitätssicherungsdienste stellen sicher, dass jedes Projekt die höchsten Exzellenzstandards erfüllt. Wir bieten umfassende Qualitätskontrolle, Tests und Validierungsdienste für alle unsere Angebote. Von Übersetzungsgenauigkeit bis hin zur Softwarezuverlässigkeit überprüft und validiert unser QA-Team jede Lieferung sorgfältig. Mit ISO-zertifizierten Prozessen und rigorosen Qualitätsprüfungen garantieren wir, dass Ihre Projekte fehlerfrei, konform und überdurchschnittlich sind. Vertrauen Sie uns, die deutsche Präzision und Exzellenz zu bewahren, die unsere Marke auszeichnet.",
+        "button": "Jetzt starten"
       }
     },
     "learnMore": "Mehr erfahren"
@@ -244,10 +250,7 @@
       "items": [
         "Über uns",
         "Unser Prozess",
-        "Erfolgsgeschichten",
-        "Karriere",
-        "Partner",
-        "Blog"
+        "Partner"
       ]
     },
     "support": {

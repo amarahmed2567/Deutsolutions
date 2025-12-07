@@ -79,7 +79,6 @@ const HomePage = () => {
         type="website"
       />
       <Home />
-      <motion.div {...sectionAnim} className="ComponentsRow"><CardsSlider/></motion.div>
       <motion.div {...sectionAnim} className="ComponentsRow"><ProductsSliderHome /></motion.div>
       <motion.div {...sectionAnim} className="ComponentsRow"><Services /></motion.div>
       <motion.div {...sectionAnim} className="ComponentsRow"><About/></motion.div>

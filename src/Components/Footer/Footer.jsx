@@ -63,7 +63,7 @@ const Footer = () => {
 
   // Map footer service items to their hash links by index (works for all languages)
   const getServiceHashLink = (index) => {
-    const hashLinks = ["ai", "translation", "migration", "german", "german", null];
+    const hashLinks = ["ai", "translation", "migration", "german", "german", "quality"];
     return hashLinks[index] || null;
   };
 
