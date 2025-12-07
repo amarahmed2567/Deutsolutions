@@ -9,6 +9,22 @@
     padding: 8rem 0 0 0;
     gap: 2rem;
     background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+.VantaBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    z-index: 0;
+    pointer-events: none;
   }
   
   .HeroContent {
@@ -17,6 +33,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+    z-index: 1;
     }
   :lang(ar) .HeroContent {
       line-height: 1.6;
@@ -64,7 +82,7 @@
     align-items: flex-start;
     justify-content: start;
     min-height: 300px;
-    
+    z-index: 1;
   }
 
   .HeroImage .HerImg{
