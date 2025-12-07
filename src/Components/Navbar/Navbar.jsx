@@ -89,66 +89,30 @@ const Navbar = () => {
                 </span>
               </div>
               <div className={`${styles.subnav} ${(hoveredSubmenu === "services" || openSubmenu === "services") ? styles.show : ""}`}>
-                <HashLink 
-              smooth  
-               to="/services#translation"
-              className={styles["subnav-link"]}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setOpenSubmenu(null);
-              }}
-              scroll={el => {
-                const yOffset = -100;
-                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-              }}
-              >   {t("services.items.translation.title")}</HashLink>
-                 
-                <HashLink 
-              smooth  
-               to="/services#migration"
-              className={styles["subnav-link"]}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setOpenSubmenu(null);
-              }}
-              scroll={el => {
-                const yOffset = -100;
-                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-              }}
-              >  {t("services.items.migration.title")}</HashLink>
-
-                <HashLink 
-              smooth  
-               to="/services#ai"
-              className={styles["subnav-link"]}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setOpenSubmenu(null);
-              }}
-              scroll={el => {
-                const yOffset = -100;
-                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-              }}
-              >  {t("services.items.ai.title")}</HashLink>
-
-                <HashLink 
-              smooth  
-               to="/services#german"
-              className={styles["subnav-link"]}
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setOpenSubmenu(null);
-              }}
-              scroll={el => {
-                const yOffset = -100;
-                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-              }}
-              > {t("services.items.german.title")}</HashLink>
-          
+                {t('footer.services.items', { returnObjects: true }).map((item, index) => {
+                  const hashLinks = ["ai", "translation", "migration", "german", "german", "quality"];
+                  const hashLink = hashLinks[index] || null;
+                  
+                  return hashLink ? (
+                    <HashLink
+                      key={item}
+                      smooth
+                      to={`/services#${hashLink}`}
+                      className={styles["subnav-link"]}
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setOpenSubmenu(null);
+                      }}
+                      scroll={el => {
+                        const yOffset = -100;
+                        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                      }}
+                    >
+                      {item}
+                    </HashLink>
+                  ) : null;
+                })}
               </div>
             </div>
             <div
