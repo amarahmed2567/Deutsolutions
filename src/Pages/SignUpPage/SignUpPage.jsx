@@ -13,6 +13,11 @@ const SignUpPage = () => {
     { value: "translation", label: t("signup.service.translation") },
     { value: "migration", label: t("signup.service.migration") },
     { value: "ai", label: t("signup.service.ai") },
+    { value: "languageLearning", label: t("signup.service.languageLearning") },
+    { value: "corporateTraining", label: t("signup.service.corporateTraining") },
+    { value: "qualityAssurance", label: t("signup.service.qualityAssurance") },
+    { value: "consultation", label: t("signup.service.consultation") },
+    { value: "outsourcing", label: t("signup.service.outsourcing") },
     { value: "other", label: t("signup.service.other") },
   ];
   const [form, setForm] = useState({

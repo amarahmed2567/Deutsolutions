@@ -218,15 +218,71 @@
   cursor: not-allowed;
 }
 
-.mapSection {
-  width: 100vw;
-  position: relative;
-  left: 64%;
-  transform: translateX(-50%);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  overflow: hidden;
+.contactInfoCards {
+  display: flex;
+  gap: 24px;
+  padding: 2rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 32px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contactCard {
   background: #fff;
-  margin: 0;
+  border-radius: 16px;
+  max-height: min-content;
+  padding: 28px 24px;
+  min-width: 220px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contactCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.contactCardIcon {
+  font-size: 2rem;
+  color: #e67700;
+  margin-bottom: 4px;
+  
+}
+
+.contactCardTitle {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.contactCardContent {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+:lang(ar) .contactCardContent {
+  text-align: center;
+  direction: rtl;
+}
+
+.mapSection {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  background: #fff;
   padding: 0;
 }
 
@@ -283,8 +339,5 @@
    height: 100%;
   border-radius: 230px 15px 15px 15px ;
     overflow: hidden;
-  }
-  .mapSection {
-  left: 54%;
   }
 }

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage, FaCheckCircle, FaShieldAlt } from "react-icons/fa";
+import { FaGlobe, FaFileAlt, FaSmile, FaPlane, FaProjectDiagram, FaBrain, FaUserGraduate, FaLanguage, FaCheckCircle, FaShieldAlt, FaComments, FaHandshake } from "react-icons/fa";
 import translationImg from "../../assets/images/Trans.jpg";
 import migrationImg from "../../assets/images/migration2 .jpg";
 import aiImg from "../../assets/images/KI.jpg";
 import germanImg from "../../assets/images/learn.webp";
 import qualityImg from "../../assets/images/quality.png";
+import consultingImg from "../../assets/images/Consultation.webp";
+import outsourcingImg from "../../assets/images/Outsourcing.avif";
 import { Link } from "react-router-dom";
 import styles from "./ServicesPage.module.css";
 import AOS from 'aos';
@@ -72,6 +74,30 @@ const serviceData = [
       { icon: <FaCheckCircle color="#6c5ce7" />, value: '100%', label: 'Accuracy' },
       { icon: <FaShieldAlt color="#6c5ce7" />, value: 'ISO', label: 'Certified' },
       { icon: <FaSmile color="#6c5ce7" />, value: '99%', label: 'Satisfaction' },
+    ]
+  },
+  {
+    img: consultingImg,
+    titleKey: 'services.items.consultation.title',
+    descKey: 'services.items.consultation.description',
+    btnKey: 'services.items.consultation.button',
+    link: "consultation",
+    features: [
+      { icon: <FaComments color="#ff6b6b" />, value: '500+', label: 'Consultations' },
+      { icon: <FaProjectDiagram color="#ff6b6b" />, value: '15+', label: 'Years Exp.' },
+      { icon: <FaSmile color="#ff6b6b" />, value: '98%', label: 'Success Rate' },
+    ]
+  },
+  {
+    img: outsourcingImg,
+    titleKey: 'services.items.outsourcing.title',
+    descKey: 'services.items.outsourcing.description',
+    btnKey: 'services.items.outsourcing.button',
+    link: "outsourcing",
+    features: [
+      { icon: <FaHandshake color="#4ecdc4" />, value: '200+', label: 'Projects' },
+      { icon: <FaGlobe color="#4ecdc4" />, value: 'Global', label: 'Reach' },
+      { icon: <FaSmile color="#4ecdc4" />, value: '97%', label: 'Satisfaction' },
     ]
   }
 ];

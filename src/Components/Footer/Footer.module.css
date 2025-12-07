@@ -21,6 +21,12 @@
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
+
+/* Arabic text spacing fixes */
+:global(:lang(ar)) .subscribeTitle {
+  line-height: 1.3;
+  letter-spacing: 0;
+}
 .subscribeDesc {
   color: #555;
   font-size: 0.95rem;
@@ -31,6 +37,11 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+:global(:lang(ar)) .subscribeDesc {
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 .subscribeForm {
   display: flex;
@@ -142,6 +153,11 @@
   letter-spacing: 0.5px;
   color: #181818;
 }
+
+:global(:lang(ar)) .brandName {
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 .brandDesc {
   color: #555;
   font-size: 0.9rem;
@@ -152,6 +168,11 @@
   margin-bottom: 6px;
   margin-top: 0.8rem;
 }
+
+:global(:lang(ar)) .brandDesc {
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 .contactInfo {
   color: #181818;
   font-size: 0.9rem;
@@ -159,6 +180,11 @@
   flex-direction: column;
   gap: 5px;
   margin-bottom: 6px;
+}
+
+:global(:lang(ar)) .contactInfo {
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 .contactIcon {
   color: #e67700;
@@ -189,7 +215,9 @@
   color: #fff;
   transform: scale(1.08);
 }
-
+.dispaynone{
+  visibility: hidden;
+}
 .linksCol {
   flex: 3 1 700px;
   display: flex;
@@ -207,6 +235,11 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+:global(:lang(ar)) .linksBlock h4 {
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 .linksBlock ul {
   list-style: none;
   padding: 0;
@@ -218,6 +251,11 @@
   margin-bottom: 6px;
   transition: color 0.2s;
   cursor: pointer;
+}
+
+:global(:lang(ar)) .linksBlock li {
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 .linksBlock li:hover {
   color: #ff5e00;
@@ -236,6 +274,11 @@
   flex-wrap: wrap;
   gap: 10px;
   background: #181818;
+}
+
+:global(:lang(ar)) .bottomFooter {
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 .languages {
   display: flex;

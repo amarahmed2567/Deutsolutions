@@ -16,6 +16,7 @@ const SwaperTestimonials = () => {
       centeredSlides={true}
       initialSlide={2}
       grabCursor={true}
+      loop={true}
       autoplay={true}
       pagination={{ clickable: true }}
       breakpoints={{

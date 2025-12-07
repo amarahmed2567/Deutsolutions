@@ -10,7 +10,7 @@ import "../Swipe.css"
 
 //react Icons
 import { MdAirplaneTicket, MdTranslate } from "react-icons/md";
-import { FaRobot, FaBookOpen, FaCheckCircle } from "react-icons/fa";
+import { FaRobot, FaBookOpen, FaCheckCircle, FaComments, FaHandshake } from "react-icons/fa";
 
 //css styles
 import "./SwaperServicesSection.css"
@@ -21,7 +21,8 @@ import aiImg from "../../../../assets/images/KI.jpg";
 import translationImg from "../../../../assets/images/Trans.jpg";
 import germanImg from "../../../../assets/images/learn.webp";
 import qualityImg from "../../../../assets/images/quality.png";
-
+import consultingImg from "../../../../assets/images/Consultation.webp";
+import outsourcingImg from "../../../../assets/images/Outsourcing.avif";
 
   const SwaperServicesSection = () => {
   const { t } = useTranslation();
@@ -66,6 +67,22 @@ import qualityImg from "../../../../assets/images/quality.png";
       desc: t('services.items.quality.description'),
       btn: t('services.items.quality.button'),
       link:"/services#quality"
+    },
+    {
+      title: t('services.items.consultation.title'),
+      img: consultingImg,
+      icon: <FaComments className="Icon" style={{color: '#ff6b6b'}} />,
+      desc: t('services.items.consultation.description'),
+      btn: t('services.items.consultation.button'),
+      link:"/services#consultation"
+    },
+    {
+      title: t('services.items.outsourcing.title'),
+      img: outsourcingImg,
+      icon: <FaHandshake className="Icon" style={{color: '#4ecdc4'}} />,
+      desc: t('services.items.outsourcing.description'),
+      btn: t('services.items.outsourcing.button'),
+      link:"/services#outsourcing"
     }
   ];
   

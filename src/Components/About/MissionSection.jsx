@@ -25,7 +25,7 @@ const missions = [
 const MissionSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="mission-section">
+    <section className="mission-section" id="mission">
         <div className="mission-content">
         <h2 className="mission-title">{t("mission.title")}</h2>
       <p className="mission-desc">{t("mission.intro")}</p>

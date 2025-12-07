@@ -63,7 +63,7 @@ const Footer = () => {
 
   // Map footer service items to their hash links by index (works for all languages)
   const getServiceHashLink = (index) => {
-    const hashLinks = ["ai", "translation", "migration", "german", "german", "quality"];
+    const hashLinks = ["ai", "translation", "migration", "german", "german", "quality", "consultation", "outsourcing"];
     return hashLinks[index] || null;
   };
 
@@ -146,8 +146,11 @@ const Footer = () => {
           <div className={styles.brandDesc}>{t('footer.brandDesc')}</div>
           <div className={styles.contactInfo}>
             <div><FaEnvelope className={styles.contactIcon}/> info@deutsolutions.com</div>
-            <div><FaPhone className={styles.contactIcon}/> +971 55 467 6933</div>
+            <div>
+              <FaPhone className={styles.contactIcon}/> +971 55 467 6933 <br/>
+              <FaPhone className={styles.contactIcon + ' ' + styles.dispaynone}/> +49 1575 8499615 </div>
             <div><FaMapMarkerAlt className={styles.contactIcon}/> Dubai Silicon Oasis, UAE</div>
+            <div><FaMapMarkerAlt className={styles.contactIcon+ ' ' + styles.dispaynone}/> Frankfurter Str. 100, 65760 Eschborn</div>
           </div>
           <div className={styles.socials}>
             {socialLinks.map(s => (
@@ -186,8 +189,60 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.linksBlock}>
+            <h4>{t('footer.products.title')}</h4>
+            <ul>
+              <li><NavLink to="/smart-label">{t('navigation.smartLabel')}</NavLink></li>
+            </ul>
+          </div>
+          <div className={styles.linksBlock}>
             <h4>{t('footer.company.title')}</h4>
-            <ul>{t('footer.company.items', { returnObjects: true }).map(item => <li key={item}>{item}</li>)}</ul>
+            <ul>
+              {t('footer.company.items', { returnObjects: true }).map((item, index) => {
+                if (index === 0) {
+                  // About Us - link to about page
+                  return (
+                    <li key={item}>
+                      <NavLink to="/about-us">{item}</NavLink>
+                    </li>
+                  );
+                } else if (index === 1) {
+                  // Our Mission - link to mission section
+                  return (
+                    <li key={item}>
+                      <HashLink
+                        smooth
+                        to="/about-us#mission"
+                        scroll={el => {
+                          const yOffset = -100;
+                          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                          window.scrollTo({ top: y, behavior: 'smooth' });
+                        }}
+                      >
+                        {item}
+                      </HashLink>
+                    </li>
+                  );
+                } else if (index === 2) {
+                  // Our Clients - link to clients section
+                  return (
+                    <li key={item}>
+                      <HashLink
+                        smooth
+                        to="/about-us#clients"
+                        scroll={el => {
+                          const yOffset = -100;
+                          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                          window.scrollTo({ top: y, behavior: 'smooth' });
+                        }}
+                      >
+                        {item}
+                      </HashLink>
+                    </li>
+                  );
+                }
+                return <li key={item}>{item}</li>;
+              })}
+            </ul>
           </div>
           {/* <div className={styles.linksBlock}>
             <h4>{t('footer.support.title')}</h4>
@@ -196,18 +251,90 @@ const Footer = () => {
           <div className={styles.linksBlock}>
             <h4>{t('footer.legal.title')}</h4>
             <ul>
-              <li><NavLink to="/legal/privacy-policy">{t('footer.legal.items.0')}</NavLink></li>
-              <li><NavLink to="/legal/terms-of-service">{t('footer.legal.items.1')}</NavLink></li>
-              <li><NavLink to="/legal/cookie-policy">{t('footer.legal.items.2')}</NavLink></li>
-              <li><NavLink to="/legal/gdpr-compliance">{t('footer.legal.items.3')}</NavLink></li>
-              <li><NavLink to="/legal/data-protection">{t('footer.legal.items.4')}</NavLink></li>
-              <li><NavLink to="/legal/disclaimer">{t('footer.legal.items.5')}</NavLink></li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#privacy-policy"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.0')}
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#terms-of-service"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.1')}
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#cookie-policy"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.2')}
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#gdpr-compliance"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.3')}
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#data-protection"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.4')}
+                </HashLink>
+              </li>
+              <li>
+                <HashLink
+                  smooth
+                  to="/legal#disclaimer"
+                  scroll={el => {
+                    const yOffset = -100;
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                  }}
+                >
+                  {t('footer.legal.items.5')}
+                </HashLink>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div className={styles.bottomFooter}>
-        <span>&copy; 2025 DEUTSOLUTIONS. {t('footer.copyright')}</span>
+        <span>&copy; 2020 DEUTSOLUTIONS. {t('footer.copyright')}</span>
         <div className={styles.languages}>
           {t('footer.availableIn')}
           {languages.map(lang => (

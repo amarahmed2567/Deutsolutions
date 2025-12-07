@@ -13,6 +13,9 @@
 .hero {
   background: url('/media/smart-label/images/Background.png') center/cover no-repeat;
   min-height: 500px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +92,7 @@
 /* Gallery Section */
 .gallery {
   padding: 80px 16px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
 }
 
 .gallery h2 {
@@ -157,7 +160,7 @@
 /* Benefits Section */
 .benefits {
   padding: 80px 16px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
 }
 
 .benefits h2 {
@@ -274,7 +277,7 @@
 /* Why Choose Section */
 .whyChoose {
   padding: 80px 16px;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
 }
 
 .whyChoose h2 {

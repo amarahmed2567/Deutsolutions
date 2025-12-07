@@ -21,7 +21,14 @@
       "translations": "Translations",
       "countries": "Countries"
     },
-    "animatedWords": ["Translation", "AI", "Education", "Automation"]
+    "animatedWords": [ "AI & Digital Solutions",
+                      "Legal Translation",
+                      "Migration Services",
+                      "Language Learning",
+                      "Corporate Training",
+                      "Quality Assurance and Testing",
+                      "Consultation",
+                      "Outsourcing"]
   },
   "smartLabel": {
     "hero": {
@@ -183,13 +190,13 @@
     "description": "From smart translation to AI-powered automation and full migration support we're here to make things simple, fast, and human.",
     "items": {
       "translation": {
-        "title": "Translation",
+        "title": "Legal Translation",
         "description": "Culturally relevant translation between Arabic, English, and German.",
         "longDescription": "From visa guidance to document preparation, we support you at every step of your migration journey to Germany. Our experts make the process smooth and stress-free. We provide certified and culturally accurate translation services for legal, technical, and business documents. Our team ensures your message is clear and effective in Arabic, English, and German. Our German language coaching is designed for all levels, with a focus on practical communication and cultural understanding. Start your language journey with us.\n\nWe also offer fast turnaround times and competitive pricing to meet your urgent needs. Our experienced linguists and consultants are dedicated to delivering high-quality results, whether you are an individual, a business, or an institution. Trust us to bridge language and cultural gaps, making your communication seamless and effective across borders.",
         "button": "Start Now"
       },
       "migration": {
-        "title": "Migration Support",
+        "title": "Migration Services",
         "description": "Visa guidance, document translation, and full support to help you move to Germany smoothly.",
         "longDescription": "Visa guidance, document translation, and full support to help you move to Germany smoothly. Our team assists you at every stage, from preparing your documents to settling in your new home. We offer personalized consultations, up-to-date legal advice, and step-by-step support to ensure a stress-free migration process. With our extensive experience and network, we make your transition to Germany efficient and successful, whether you are moving for work, study, or family reunification.",
         "button": "Start Now"
@@ -207,9 +214,21 @@
         "button": "Start Now"
       },
       "quality": {
-        "title": "Quality Assurance",
+        "title": "Quality Assurance and Testing",
         "description": "Comprehensive quality control and assurance services to ensure excellence in all deliverables.",
         "longDescription": "Our Quality Assurance services ensure that every project meets the highest standards of excellence. We provide comprehensive quality control, testing, and validation services across all our offerings. From translation accuracy to software reliability, our QA team meticulously reviews and validates every deliverable. With ISO-certified processes and rigorous quality checks, we guarantee that your projects are error-free, compliant, and exceed expectations. Trust us to maintain the German precision and excellence that defines our brand.",
+        "button": "Start Now"
+      },
+      "consultation": {
+        "title": "Consultation",
+        "description": "Expert consulting services to guide your business decisions and strategic planning.",
+        "longDescription": "Our Consultation services provide expert guidance to help you make informed business decisions and develop effective strategies. Whether you need advice on digital transformation, market entry, business development, or technology implementation, our experienced consultants are here to help. We offer personalized consultations tailored to your specific needs, combining German precision with local market insights. From initial assessment to implementation support, we guide you through every step of your journey to success.",
+        "button": "Start Now"
+      },
+      "outsourcing": {
+        "title": "Outsourcing",
+        "description": "Comprehensive outsourcing solutions to help you focus on your core business.",
+        "longDescription": "Our Outsourcing services provide comprehensive solutions to help you focus on your core business while we handle the rest. From IT services and software development to customer support and administrative tasks, we offer flexible outsourcing options tailored to your needs. Our team of skilled professionals ensures high-quality deliverables, cost-effective solutions, and seamless integration with your existing operations. With our German standards of excellence and commitment to quality, you can trust us to deliver results that exceed your expectations.",
         "button": "Start Now"
       }
     },
@@ -240,18 +259,26 @@
       "items": [
         "AI & Digital Solutions",
         "Legal Translation",
-        "German Migration",
+        "Migration Services",
         "Language Learning",
         "Corporate Training",
-        "Quality Assurance"
+        "Quality Assurance and Testing",
+        "Consultation",
+        "Outsourcing"
+      ]
+    },
+    "products": {
+      "title": "Products",
+      "items": [
+        "Smart Label"
       ]
     },
     "company": {
       "title": "Company",
       "items": [
         "About Us",
-        "Our Process",  
-        "Partners" 
+        "Our Mission",
+        "Our Clients"
       ]
     },
     "support": {
@@ -276,7 +303,7 @@
         "Disclaimer"
       ]
     },
-    "brandDesc": "Bridging Dubai, the Middle East, and Europe with next-generation digital, AI, and language transformation solutions. Founded by German excellence, powered by innovation.",
+    "brandDesc": "Bridging the Middle East and Europe with next-generation digital, AI, and language transformation solutions. Founded on German excellence, powered by innovation.",
     "copyright": "All rights reserved.",
     "availableIn": "Available in:"
   },
@@ -389,9 +416,14 @@
     "phone": "Phone Number",
     "selectService": "Select Service",
     "service": {
-      "translation": "Translation",
-      "migration": "Migration",
-      "ai": "AI",
+      "translation": "Legal Translation",
+      "migration": "Migration Services",
+      "ai":"AI & Digital Solutions",
+      "languageLearning": "Language Learning",
+      "corporateTraining": "Corporate Training",
+      "qualityAssurance": "Quality Assurance and Testing",
+      "consultation": "Consultation",
+      "outsourcing": "Outsourcing",
       "other": "Other"
     },
     "submit": "Sign Up",
@@ -400,29 +432,31 @@
     "login": "Login"
   },
   "legal": {
+    "title": "Legal Information",
+    "subtitle": "Our legal policies and terms",
     "privacyPolicy": {
       "title": "Privacy Policy",
-      "content": "At DEUTSOLUTIONS, located at Dubai Silicon Oasis, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and services, including translation, migration support, AI solutions, and language training.\n\nWe collect personal data such as your name, email address, and phone number when you contact us or use our services. Your information is used solely to provide and improve our services, respond to your inquiries, and comply with legal obligations.\n\nWe do not sell or share your personal data with third parties except as required by law or to fulfill our services.\n\nFor any questions about your privacy, please contact us at deutsolutions@gmail.com or call +971 50 330 3847."
+      "content": "At DEUTSOLUTIONS, located at Dubai Silicon Oasis, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website and services, including translation, migration support, AI solutions, and language training.\n\nWe collect personal data such as your name, email address, and phone number when you contact us or use our services. Your information is used solely to provide and improve our services, respond to your inquiries, and comply with legal obligations.\n\nWe do not sell or share your personal data with third parties except as required by law or to fulfill our services.\n\nFor any questions about your privacy, please contact us at info@deutsolutions.com or call +971 55 467 6933."
     },
     "termsOfService": {
       "title": "Terms of Service",
-      "content": "Welcome to DEUTSOLUTIONS. By using our website and services, you agree to the following terms:\n\n1. Services: We provide translation, migration support, AI development, and language training.\n2. User Responsibilities: You agree to provide accurate information and use our services lawfully.\n3. Intellectual Property: All content on this site is owned by DEUTSOLUTIONS.\n4. Limitation of Liability: We strive for accuracy but do not guarantee error-free content.\n5. Contact: For questions, email deutsolutions@gmail.com or call +971 50 330 3847.\n\nThese terms are governed by UAE law."
+      "content": "Welcome to DEUTSOLUTIONS. By using our website and services, you agree to the following terms:\n\n1. Services: We provide translation, migration support, AI development, and language training.\n2. User Responsibilities: You agree to provide accurate information and use our services lawfully.\n3. Intellectual Property: All content on this site is owned by DEUTSOLUTIONS.\n4. Limitation of Liability: We strive for accuracy but do not guarantee error-free content.\n5. Contact: For questions, email info@deutsolutions.com or call +971 55 467 6933.\n\nThese terms are governed by UAE law."
     },
     "cookiePolicy": {
       "title": "Cookie Policy",
-      "content": "DEUTSOLUTIONS uses cookies to enhance your experience on our website. Cookies help us analyze site traffic and personalize content.\n\nYou can manage or disable cookies in your browser settings. By continuing to use our site, you consent to our use of cookies.\n\nFor more information, contact us at deutsolutions@gmail.com."
+      "content": "DEUTSOLUTIONS uses cookies to enhance your experience on our website. Cookies help us analyze site traffic and personalize content.\n\nYou can manage or disable cookies in your browser settings. By continuing to use our site, you consent to our use of cookies.\n\nFor more information, contact us at info@deutsolutions.com."
     },
     "gdprCompliance": {
       "title": "GDPR Compliance",
-      "content": "DEUTSOLUTIONS is committed to data protection and privacy in accordance with the General Data Protection Regulation (GDPR).\n\nWe process your data lawfully, transparently, and for legitimate purposes. You have the right to access, correct, or delete your data.\n\nTo exercise your rights or for GDPR-related inquiries, email deutsolutions@gmail.com."
+      "content": "DEUTSOLUTIONS is committed to data protection and privacy in accordance with the General Data Protection Regulation (GDPR).\n\nWe process your data lawfully, transparently, and for legitimate purposes. You have the right to access, correct, or delete your data.\n\nTo exercise your rights or for GDPR-related inquiries, email info@deutsolutions.com."
     },
     "dataProtection": {
       "title": "Data Protection",
-      "content": "We take data protection seriously at DEUTSOLUTIONS. Your personal information is stored securely and only accessible to authorized personnel.\n\nWe implement technical and organizational measures to prevent unauthorized access, loss, or misuse of your data.\n\nFor any concerns, contact us at deutsolutions@gmail.com or call +971 50 330 3847."
+      "content": "We take data protection seriously at DEUTSOLUTIONS. Your personal information is stored securely and only accessible to authorized personnel.\n\nWe implement technical and organizational measures to prevent unauthorized access, loss, or misuse of your data.\n\nFor any concerns, contact us at info@deutsolutions.com or call +971 55 467 6933."
     },
     "disclaimer": {
       "title": "Disclaimer",
-      "content": "The information provided by DEUTSOLUTIONS on this website is for general informational purposes only. While we strive for accuracy, we make no warranties regarding completeness or reliability.\n\nDEUTSOLUTIONS is not liable for any losses or damages resulting from the use of our website or services.\n\nFor official advice, please contact us directly at deutsolutions@gmail.com."
+      "content": "The information provided by DEUTSOLUTIONS on this website is for general informational purposes only. While we strive for accuracy, we make no warranties regarding completeness or reliability.\n\nDEUTSOLUTIONS is not liable for any losses or damages resulting from the use of our website or services.\n\nFor official advice, please contact us directly at info@deutsolutions.com."
     }
   },
   "products": {

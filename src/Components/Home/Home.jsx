@@ -6,11 +6,17 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import NetworkSphere from "./NetworkSphere"
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 const {HeroSection,HeroContent,HeroContentText,MinVarText,Subtext,StatsRow,StatsNumber,StatsNumberText,HeroImage,HerImg,VantaBackground,HeroContainer} = style
 const Home = () => {
   const { t } = useTranslation();
   const vantaRef = useRef(null);
   const vantaEffect = useRef(null);
+  const { ref: statsRef, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true
+  });
 
   useEffect(() => {
     const initVanta = () => {
@@ -82,15 +88,24 @@ const Home = () => {
               {t('home.hero.description')}
             </p>
             <Link to={'/sign-up'} className="btn-larg">{t('home.hero.cta')}</Link>
-            <div className={StatsRow}>
+            <div ref={statsRef} className={StatsRow}>
               <div>
-                <span className={StatsNumber}>100+</span><br /> <span className={StatsNumberText}>{t('home.stats.clients')}</span>
+                <span className={StatsNumber}>
+                  {inView && <CountUp start={0} end={10000} duration={2} suffix="+" />}
+                  {!inView && "0+"}
+                </span><br /> <span className={StatsNumberText}>{t('home.stats.clients')}</span>
               </div>
               <div>
-                <span className={StatsNumber}>500+</span><br /> <span className={StatsNumberText}>{t('home.stats.translations')}</span> 
+                <span className={StatsNumber}>
+                  {inView && <CountUp start={0} end={3000} duration={2.5} suffix="+" />}
+                  {!inView && "0+"}
+                </span><br /> <span className={StatsNumberText}>{t('home.stats.translations')}</span> 
               </div>
               <div>
-                <span className={StatsNumber}>7+</span><br /> <span className={StatsNumberText}>{t('home.stats.countries')}</span> 
+                <span className={StatsNumber}>
+                  {inView && <CountUp start={0} end={35} duration={2} suffix="+" />}
+                  {!inView && "0+"}
+                </span><br /> <span className={StatsNumberText}>{t('home.stats.countries')}</span> 
               </div>
             </div>
           </div>

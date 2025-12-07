@@ -21,7 +21,16 @@
       "translations": "Übersetzungen",
       "countries": "Länder"
     },
-    "animatedWords": ["Übersetzung", "KI", "Bildung", "Automatisierung"]
+    "animatedWords": [
+      "KI- & Digital-Lösungen",
+      "Juristische Übersetzungen",
+      " Migrationsservices",
+      "Sprachkurse",
+      "Firmentrainings",
+      "Qualitätssicherung und Testing",
+      "Beratung",
+      "Outsourcing"
+    ]
   },
   "smartLabel": {
     "hero": {
@@ -183,13 +192,13 @@
     "description": "Von intelligenter Übersetzung bis hin zu KI-gestützter Automatisierung und vollständiger Einwanderungsunterstützung sind wir hier, um Dinge einfach, schnell und menschlich zu machen.",
     "items": {
       "translation": {
-        "title": "Übersetzung",
+        "title": "Juristische Übersetzung",
         "description": "Kulturell relevante Übersetzung zwischen Arabisch, Englisch und Deutsch.",
         "longDescription": "Von der Visaberatung bis zur Dokumentenvorbereitung unterstützen wir Sie bei jedem Schritt Ihrer Migrationsreise nach Deutschland. Unsere Experten sorgen dafür, dass der Prozess reibungslos und stressfrei verläuft. Wir bieten zertifizierte und kulturell präzise Übersetzungsdienste für juristische, technische und geschäftliche Dokumente. Unser Team stellt sicher, dass Ihre Botschaft auf Arabisch, Englisch und Deutsch klar und wirkungsvoll ist. Unser Deutschunterricht ist für alle Niveaus geeignet und legt den Fokus auf praktische Kommunikation und kulturelles Verständnis. Starten Sie Ihre Sprachreise mit uns.\n\nWir bieten außerdem schnelle Bearbeitungszeiten und wettbewerbsfähige Preise, um Ihre dringenden Anforderungen zu erfüllen. Unsere erfahrenen Linguisten und Berater sind bestrebt, qualitativ hochwertige Ergebnisse zu liefern – egal ob Sie Privatperson, Unternehmen oder Institution sind. Vertrauen Sie uns, Sprach- und Kulturbarrieren zu überwinden und Ihre Kommunikation über Grenzen hinweg nahtlos und effektiv zu gestalten.",
         "button": "Jetzt starten"
       },
       "migration": {
-        "title": "Migrationsunterstützung",
+        "title": "Migrationsservices",
         "description": "Visaberatung, Dokumentenübersetzung und vollständige Unterstützung, um Ihnen einen reibungslosen Umzug nach Deutschland zu ermöglichen.",
         "longDescription": "Visaberatung, Dokumentenübersetzung und umfassende Unterstützung, damit Ihr Umzug nach Deutschland reibungslos verläuft. Unser Team begleitet Sie in jeder Phase – von der Vorbereitung Ihrer Unterlagen bis zur Eingewöhnung in Ihrem neuen Zuhause. Wir bieten persönliche Beratung, aktuelle rechtliche Hinweise und Schritt-für-Schritt-Begleitung für einen stressfreien Migrationsprozess. Dank unserer langjährigen Erfahrung und unseres Netzwerks gestalten wir Ihren Übergang nach Deutschland effizient und erfolgreich – egal ob Sie zum Arbeiten, Studieren oder für den Familiennachzug kommen.",
         "button": "Jetzt starten"
@@ -207,9 +216,21 @@
         "button": "Jetzt starten"
       },
       "quality": {
-        "title": "Qualitätssicherung",
+        "title": "Qualitätssicherung und Testing",
         "description": "Umfassende Qualitätskontrolle und -sicherung, um Exzellenz in allen Lieferungen zu gewährleisten.",
         "longDescription": "Unsere Qualitätssicherungsdienste stellen sicher, dass jedes Projekt die höchsten Exzellenzstandards erfüllt. Wir bieten umfassende Qualitätskontrolle, Tests und Validierungsdienste für alle unsere Angebote. Von Übersetzungsgenauigkeit bis hin zur Softwarezuverlässigkeit überprüft und validiert unser QA-Team jede Lieferung sorgfältig. Mit ISO-zertifizierten Prozessen und rigorosen Qualitätsprüfungen garantieren wir, dass Ihre Projekte fehlerfrei, konform und überdurchschnittlich sind. Vertrauen Sie uns, die deutsche Präzision und Exzellenz zu bewahren, die unsere Marke auszeichnet.",
+        "button": "Jetzt starten"
+      },
+      "consultation": {
+        "title": "Beratung",
+        "description": "Expertenberatungsdienste zur Unterstützung Ihrer Geschäftsentscheidungen und strategischen Planung.",
+        "longDescription": "Unsere Beratungsdienste bieten fachkundige Anleitung, um Ihnen bei fundierten Geschäftsentscheidungen und der Entwicklung effektiver Strategien zu helfen. Ob Sie Beratung zu Digitalisierung, Markteintritt, Geschäftsentwicklung oder Technologieimplementierung benötigen, unsere erfahrenen Berater sind hier, um zu helfen. Wir bieten personalisierte Beratungen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind und deutsche Präzision mit lokalen Markteinblicken kombinieren. Von der ersten Bewertung bis zur Implementierungsunterstützung begleiten wir Sie durch jeden Schritt Ihrer Reise zum Erfolg.",
+        "button": "Jetzt starten"
+      },
+      "outsourcing": {
+        "title": "Outsourcing",
+        "description": "Umfassende Outsourcing-Lösungen, damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+        "longDescription": "Unsere Outsourcing-Dienste bieten umfassende Lösungen, damit Sie sich auf Ihr Kerngeschäft konzentrieren können, während wir den Rest übernehmen. Von IT-Diensten und Softwareentwicklung bis hin zu Kundensupport und administrativen Aufgaben bieten wir flexible Outsourcing-Optionen, die auf Ihre Bedürfnisse zugeschnitten sind. Unser Team aus qualifizierten Fachkräften gewährleistet hochwertige Lieferungen, kosteneffektive Lösungen und nahtlose Integration in Ihre bestehenden Abläufe. Mit unseren deutschen Exzellenzstandards und unserem Engagement für Qualität können Sie uns vertrauen, Ergebnisse zu liefern, die Ihre Erwartungen übertreffen.",
         "button": "Jetzt starten"
       }
     },
@@ -239,18 +260,26 @@
       "items": [
         "KI- & Digital-Lösungen",
         "Juristische Übersetzungen",
-        "Deutschland Migration",
+        " Migrationsservices",
         "Sprachkurse",
         "Firmentrainings",
-        "Qualitätssicherung"
+        "Qualitätssicherung und Testing",
+        "Beratung",
+        "Outsourcing"
+      ]
+    },
+    "products": {
+      "title": "Produkte",
+      "items": [
+        "Smart Label"
       ]
     },
     "company": {
       "title": "Unternehmen",
       "items": [
         "Über uns",
-        "Unser Prozess",
-        "Partner"
+        "Unsere Mission",
+        "Unsere Kunden"
       ]
     },
     "support": {
@@ -275,7 +304,7 @@
         "Haftungsausschluss"
       ]
     },
-    "brandDesc": "Wir verbinden Dubai, den Nahen Osten und Europa mit digitalen Lösungen der nächsten Generation, KI und Sprachdienstleistungen. Gegründet auf deutscher Exzellenz, angetrieben von Innovation.",
+    "brandDesc": "Wir verbinden den Nahen Osten und Europa mit digitalen Lösungen der nächsten Generation, KI und Sprachdienstleistungen. Gegründet auf deutscher Exzellenz, angetrieben durch Innovation.",
     "copyright": "Alle Rechte vorbehalten.",
     "availableIn": "Verfügbar in:",
     "quickLinks": "Schnelllinks"
@@ -389,9 +418,14 @@
     "phone": "Telefonnummer",
     "selectService": "Dienstleistung wählen",
     "service": {
-      "translation": "Übersetzung",
-      "migration": "Migration",
-      "ai": "KI",
+      "translation": "Juristische Übersetzung",
+      "migration": "Migrationsservices",
+      "ai": "KI- & Digital-Lösungen",
+      "languageLearning": "Sprachkurse",
+      "corporateTraining": "Firmentrainings",
+      "qualityAssurance": "Qualitätssicherung und Testing",
+      "consultation": "Beratung",
+      "outsourcing": "Outsourcing",
       "other": "Andere"
     },
     "submit": "Registrieren",
@@ -400,29 +434,31 @@
     "login": "Anmelden"
   },
   "legal": {
+    "title": "Rechtliche Informationen",
+    "subtitle": "Unsere rechtlichen Richtlinien und Bedingungen",
     "privacyPolicy": {
       "title": "Datenschutzrichtlinie",
-      "content": "Bei DEUTSOLUTIONS mit Sitz in Dubai Silicon Oasis legen wir großen Wert auf den Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Daten erfassen, verwenden und schützen, wenn Sie unsere Website und Dienstleistungen (Übersetzung, Migrationsunterstützung, KI-Lösungen, Sprachtraining) nutzen.\n\nWir erfassen personenbezogene Daten wie Name, E-Mail-Adresse und Telefonnummer, wenn Sie uns kontaktieren oder unsere Dienste nutzen. Ihre Daten werden ausschließlich zur Bereitstellung und Verbesserung unserer Services, zur Beantwortung Ihrer Anfragen und zur Einhaltung gesetzlicher Vorschriften verwendet.\n\nWir verkaufen oder teilen Ihre Daten nicht mit Dritten, außer wenn dies gesetzlich vorgeschrieben ist oder zur Erfüllung unserer Dienstleistungen notwendig ist.\n\nBei Fragen zum Datenschutz kontaktieren Sie uns bitte unter deutsolutions@gmail.com oder +971 50 330 3847."
+      "content": "Bei DEUTSOLUTIONS mit Sitz in Dubai Silicon Oasis legen wir großen Wert auf den Schutz Ihrer Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Daten erfassen, verwenden und schützen, wenn Sie unsere Website und Dienstleistungen (Übersetzung, Migrationsunterstützung, KI-Lösungen, Sprachtraining) nutzen.\n\nWir erfassen personenbezogene Daten wie Name, E-Mail-Adresse und Telefonnummer, wenn Sie uns kontaktieren oder unsere Dienste nutzen. Ihre Daten werden ausschließlich zur Bereitstellung und Verbesserung unserer Services, zur Beantwortung Ihrer Anfragen und zur Einhaltung gesetzlicher Vorschriften verwendet.\n\nWir verkaufen oder teilen Ihre Daten nicht mit Dritten, außer wenn dies gesetzlich vorgeschrieben ist oder zur Erfüllung unserer Dienstleistungen notwendig ist.\n\nBei Fragen zum Datenschutz kontaktieren Sie uns bitte unter info@deutsolutions.com oder +971 55 467 6933."
     },
     "termsOfService": {
       "title": "Nutzungsbedingungen",
-      "content": "Willkommen bei DEUTSOLUTIONS. Durch die Nutzung unserer Website und Dienstleistungen stimmen Sie den folgenden Bedingungen zu:\n\n1. Dienstleistungen: Wir bieten Übersetzungen, Migrationsunterstützung, KI-Entwicklung und Sprachtraining an.\n2. Pflichten des Nutzers: Sie verpflichten sich, korrekte Angaben zu machen und unsere Dienste rechtmäßig zu nutzen.\n3. Urheberrecht: Alle Inhalte dieser Website sind Eigentum von DEUTSOLUTIONS.\n4. Haftungsbeschränkung: Wir bemühen uns um Genauigkeit, übernehmen jedoch keine Gewähr für Fehlerfreiheit.\n5. Kontakt: Bei Fragen wenden Sie sich an deutsolutions@gmail.com oder +971 50 330 3847.\n\nDiese Bedingungen unterliegen dem Recht der VAE."
+      "content": "Willkommen bei DEUTSOLUTIONS. Durch die Nutzung unserer Website und Dienstleistungen stimmen Sie den folgenden Bedingungen zu:\n\n1. Dienstleistungen: Wir bieten Übersetzungen, Migrationsunterstützung, KI-Entwicklung und Sprachtraining an.\n2. Pflichten des Nutzers: Sie verpflichten sich, korrekte Angaben zu machen und unsere Dienste rechtmäßig zu nutzen.\n3. Urheberrecht: Alle Inhalte dieser Website sind Eigentum von DEUTSOLUTIONS.\n4. Haftungsbeschränkung: Wir bemühen uns um Genauigkeit, übernehmen jedoch keine Gewähr für Fehlerfreiheit.\n5. Kontakt: Bei Fragen wenden Sie sich an info@deutsolutions.com oder +971 55 467 6933.\n\nDiese Bedingungen unterliegen dem Recht der VAE."
     },
     "cookiePolicy": {
       "title": "Cookie-Richtlinie",
-      "content": "DEUTSOLUTIONS verwendet Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Cookies helfen uns, den Datenverkehr zu analysieren und Inhalte zu personalisieren.\n\nSie können Cookies in Ihren Browsereinstellungen verwalten oder deaktivieren. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.\n\nFür weitere Informationen kontaktieren Sie uns unter deutsolutions@gmail.com."
+      "content": "DEUTSOLUTIONS verwendet Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Cookies helfen uns, den Datenverkehr zu analysieren und Inhalte zu personalisieren.\n\nSie können Cookies in Ihren Browsereinstellungen verwalten oder deaktivieren. Durch die weitere Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.\n\nFür weitere Informationen kontaktieren Sie uns unter info@deutsolutions.com."
     },
     "gdprCompliance": {
       "title": "DSGVO-Konformität",
-      "content": "DEUTSOLUTIONS verpflichtet sich zum Datenschutz gemäß der Datenschutz-Grundverordnung (DSGVO).\n\nWir verarbeiten Ihre Daten rechtmäßig, transparent und zu legitimen Zwecken. Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten.\n\nFür Anfragen zur DSGVO oder zur Ausübung Ihrer Rechte schreiben Sie an deutsolutions@gmail.com."
+      "content": "DEUTSOLUTIONS verpflichtet sich zum Datenschutz gemäß der Datenschutz-Grundverordnung (DSGVO).\n\nWir verarbeiten Ihre Daten rechtmäßig, transparent und zu legitimen Zwecken. Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten.\n\nFür Anfragen zur DSGVO oder zur Ausübung Ihrer Rechte schreiben Sie an info@deutsolutions.com."
     },
     "dataProtection": {
       "title": "Datenschutz",
-      "content": "Bei DEUTSOLUTIONS behandeln wir Ihre Daten mit höchster Sorgfalt. Ihre personenbezogenen Informationen werden sicher gespeichert und sind nur autorisierten Mitarbeitern zugänglich.\n\nWir setzen technische und organisatorische Maßnahmen ein, um unbefugten Zugriff, Verlust oder Missbrauch Ihrer Daten zu verhindern.\n\nBei Fragen wenden Sie sich bitte an deutsolutions@gmail.com oder +971 50 330 3847."
+      "content": "Bei DEUTSOLUTIONS behandeln wir Ihre Daten mit höchster Sorgfalt. Ihre personenbezogenen Informationen werden sicher gespeichert und sind nur autorisierten Mitarbeitern zugänglich.\n\nWir setzen technische und organisatorische Maßnahmen ein, um unbefugten Zugriff, Verlust oder Missbrauch Ihrer Daten zu verhindern.\n\nBei Fragen wenden Sie sich bitte an info@deutsolutions.com oder +971 55 467 6933."
     },
     "disclaimer": {
       "title": "Haftungsausschluss",
-      "content": "Die Informationen auf der Website von DEUTSOLUTIONS dienen ausschließlich allgemeinen Informationszwecken. Trotz größter Sorgfalt übernehmen wir keine Gewähr für die Vollständigkeit oder Richtigkeit der Inhalte.\n\nDEUTSOLUTIONS haftet nicht für Verluste oder Schäden, die aus der Nutzung unserer Website oder Dienstleistungen entstehen.\n\nFür eine verbindliche Beratung kontaktieren Sie uns bitte unter deutsolutions@gmail.com."
+      "content": "Die Informationen auf der Website von DEUTSOLUTIONS dienen ausschließlich allgemeinen Informationszwecken. Trotz größter Sorgfalt übernehmen wir keine Gewähr für die Vollständigkeit oder Richtigkeit der Inhalte.\n\nDEUTSOLUTIONS haftet nicht für Verluste oder Schäden, die aus der Nutzung unserer Website oder Dienstleistungen entstehen.\n\nFür eine verbindliche Beratung kontaktieren Sie uns bitte unter info@deutsolutions.com."
     }
   },
   "products": {

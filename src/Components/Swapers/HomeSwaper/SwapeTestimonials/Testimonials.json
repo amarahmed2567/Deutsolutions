@@ -98,6 +98,28 @@
       "text": "After finishing high school, I wanted to start an IT Ausbildung in Germany but had no idea where to begin. deutsolutions helped me choose the right specialization, prepare my documents in German, and get ready for interviews. Within a few months, I received an Ausbildung contract as an IT specialist in Munich. Their guidance made the whole process clear and achievable.",
       "rating": 5,
       "language": "en"
+    },
+    {
+      "id": 10,
+      "name": "Thomas Müller",
+      "role": "Retail Operations Director",
+      "company_name": "Lidl",
+      "focus_areas": ["Smart Labels", "Retail Automation", "Dynamic Pricing"],
+      "title": "Smart Labels implementation across multiple stores",
+      "text": "We partnered with deutsolutions to implement their Smart Labels solution across our retail network. The system has revolutionized our pricing operations, allowing us to update prices instantly across all locations. The reduction in manual labor and pricing errors has been remarkable. The team's expertise and support throughout the implementation process were exceptional, and the ROI has exceeded our expectations.",
+      "rating": 5,
+      "language": "en"
+    },
+    {
+      "id": 11,
+      "name": "Dr. Sarah Hoffmann",
+      "role": "Quality Assurance Manager",
+      "company_name": "Audi",
+      "focus_areas": ["Quality Assurance", "Testing", "Process Improvement"],
+      "title": "Comprehensive quality assurance and testing services",
+      "text": "deutsolutions provided excellent quality assurance and testing services for our digital transformation project. Their meticulous approach to testing and quality control ensured that our systems met the highest standards. The team's attention to detail and commitment to excellence aligned perfectly with our quality requirements. The comprehensive testing process they implemented helped us identify and resolve issues early, saving time and resources.",
+      "rating": 4,
+      "language": "en"
     }
   ]
 }

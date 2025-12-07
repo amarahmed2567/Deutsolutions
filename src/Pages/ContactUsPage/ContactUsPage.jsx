@@ -197,29 +197,24 @@ const ContactUsPage = () => {
       </div>
       </div>
 
-      {/* Social  */}
-      <div style={{
-          display: 'flex',
-          gap: '24px',
-          padding:'2rem 0',
-          justifyContent: 'center',
-          flexWrap: 'wrap',
-          margin: '32px 0'
-        }}>
-      <div style={{background:'#fff',borderRadius:16,padding:24,minWidth:220,boxShadow:'0 2px 10px rgba(0,0,0,0.07)',display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
-  <FaMapMarkerAlt style={{fontSize:'2rem',color:'#e67700' }}/>
-            <div style={{fontWeight:'bold'}}>{t("contact.info.addressTitle")}</div>
-            <div>{t("contact.info.addressValue")}</div>
+      {/* Contact Info Cards */}
+      <div className={styles.contactInfoCards}>
+          <div className={styles.contactCard}>
+            <FaEnvelope className={styles.contactCardIcon}/>
+            <div className={styles.contactCardTitle}>{t("contact.info.emailTitle")}</div>
+            <div className={styles.contactCardContent}>info@deutsolutions.com</div>
           </div>
-          <div style={{background:'#fff',borderRadius:16,padding:24,minWidth:220,boxShadow:'0 2px 10px rgba(0,0,0,0.07)',display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
-            <FaEnvelope style={{fontSize:'2rem',color:'#e67700'}}/>
-            <div style={{fontWeight:'bold'}}>{t("contact.info.emailTitle")}</div>
-            <div>{t("contact.info.emailValue")}</div>
+          <div className={styles.contactCard}>
+            <FaMapMarkerAlt className={styles.contactCardIcon}/>
+            <div className={styles.contactCardTitle}>{t("contact.info.addressTitle")}</div>
+            <div className={styles.contactCardContent}>Technohub 1, Dubai Silicon Oasis Near Axiom HQ and RIT University - Dubai - United Arab Emirates</div>
+            <div className={styles.contactCardContent}>Frankfurter Str. 100, 65760 Eschborn, Germany</div>
           </div>
-          <div style={{background:'#fff',borderRadius:16,padding:24,minWidth:220,boxShadow:'0 2px 10px rgba(0,0,0,0.07)',display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
-            <FaPhone style={{fontSize:'2rem',color:'#e67700'}}/>
-            <div style={{fontWeight:'bold'}}>{t("contact.info.phoneTitle")}</div>
-            <div>+971 55 467 6933</div>
+          <div className={styles.contactCard}>
+            <FaPhone className={styles.contactCardIcon}/>
+            <div className={styles.contactCardTitle}>{t("contact.info.phoneTitle")}</div>
+            <div className={styles.contactCardContent}>+971 55 467 6933</div>
+            <div className={styles.contactCardContent}>+49 1575 8499615</div>
           </div>
         </div>
 
@@ -227,7 +222,7 @@ const ContactUsPage = () => {
       <div className={styles.mapSection}>
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1783!2d55.2708!3d25.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEyJzE3LjMiTiA1NcKwMTYnMTUuMCJF!5e0!3m2!1sen!2sae!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.4130576493494!2d55.37993956030075!3d25.121722477852146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f643f4e40c241%3A0xbcdf6002138a125!2sDubai%20Technology%20Entrepreneur%20Campus%20-%20Dtec!5e0!3m2!1sar!2seg!4v1765128624258!5m2!1sar!2seg"
           width="100%"
           height="340"
           style={{ border: 0, boxShadow: '0 4px 24px rgba(0,0,0,0.07)',filter:" brightness(50%)"}}

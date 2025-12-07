@@ -23,7 +23,9 @@
     z-index: 0;
     pointer-events: none;
   }
-
+:lang(ar) .VantaBackground {
+  direction: ltr;
+}
 .HeroContainer {
     display: flex;
     flex-wrap: wrap;

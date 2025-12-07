@@ -7,13 +7,13 @@ import "./StatsCards.css";
 
 const stats = [
   {
-    icon: <FaAward className="stat-icon" />, number: 500 ,suffix: "+", labelKey: "about.stats.projects"
+    icon: <FaAward className="stat-icon" />, number: 3000 ,suffix: "+", labelKey: "about.stats.projects"
   },
   {
-    icon: <FaMapMarkerAlt className="stat-icon" />, number: 50,suffix: "+", labelKey: "about.stats.countries"
+    icon: <FaMapMarkerAlt className="stat-icon" />, number: 35,suffix: "+", labelKey: "about.stats.countries"
   },
   {
-    icon: <FaUsers className="stat-icon" />, number: 1000 ,suffix: "+", labelKey: "about.stats.clients"
+    icon: <FaUsers className="stat-icon" />, number: 10000 ,suffix: "+", labelKey: "about.stats.clients"
   },
   {
     icon: <FaBullseye className="stat-icon" />, number: 99,suffix: "%", labelKey: "about.stats.success"
