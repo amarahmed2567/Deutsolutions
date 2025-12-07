@@ -3,11 +3,72 @@ import styles from "./SmartLabel.module.css";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ProductsVideo from "./ProductsVideo"
+import SEO from "../Utils/SEO";
 
 const SmartLabel = () => {
   const { t } = useTranslation();
 
   return (
+    <>
+      <SEO 
+        title="Smart Label"
+        titleEn="Smart Label | DEUTSOLUTIONS - Dynamic Pricing Solution"
+        titleAr="العلامة الذكية | DEUTSOLUTIONS - حل التسعير الديناميكي"
+        titleDe="Smart Label | DEUTSOLUTIONS - Dynamische Preisgestaltungslösung"
+        description="DEUTSOLUTIONS Smart Label - Revolutionary dynamic pricing solution for retail. Update prices instantly across all locations with our innovative e-ink display technology."
+        descriptionEn="DEUTSOLUTIONS Smart Label - Revolutionary dynamic pricing solution for retail. Update prices instantly across all locations with our innovative e-ink display technology."
+        descriptionAr="DEUTSOLUTIONS Smart Label - حل تسعير ديناميكي ثوري للبيع بالتجزئة. قم بتحديث الأسعار فورًا عبر جميع المواقع باستخدام تقنية عرض الحبر الإلكتروني المبتكرة."
+        descriptionDe="DEUTSOLUTIONS Smart Label - Revolutionäre dynamische Preisgestaltungslösung für den Einzelhandel. Aktualisieren Sie Preise sofort an allen Standorten mit unserer innovativen E-Ink-Display-Technologie."
+        keywords={[
+          'Smart Label',
+          'Dynamic Pricing',
+          'E-ink Display',
+          'Retail Technology',
+          'Digital Price Tags',
+          'Electronic Shelf Labels',
+          'Retail Automation',
+          'Price Management System',
+          'Smart Retail Solutions',
+          'E-commerce Pricing'
+        ]}
+        keywordsEn={[
+          'Smart Label',
+          'Dynamic Pricing',
+          'E-ink Display',
+          'Retail Technology',
+          'Digital Price Tags',
+          'Electronic Shelf Labels',
+          'Retail Automation',
+          'Price Management System',
+          'Smart Retail Solutions',
+          'E-commerce Pricing'
+        ]}
+        keywordsAr={[
+          'العلامة الذكية',
+          'التسعير الديناميكي',
+          'عرض الحبر الإلكتروني',
+          'تكنولوجيا البيع بالتجزئة',
+          'علامات الأسعار الرقمية',
+          'ملصقات الرف الإلكترونية',
+          'أتمتة البيع بالتجزئة',
+          'نظام إدارة الأسعار',
+          'حلول البيع بالتجزئة الذكية',
+          'تسعير التجارة الإلكترونية'
+        ]}
+        keywordsDe={[
+          'Smart Label',
+          'Dynamische Preisgestaltung',
+          'E-Ink-Display',
+          'Einzelhandelstechnologie',
+          'Digitale Preisschilder',
+          'Elektronische Regaletiketten',
+          'Einzelhandelsautomatisierung',
+          'Preisverwaltungssystem',
+          'Intelligente Einzelhandelslösungen',
+          'E-Commerce-Preisgestaltung'
+        ]}
+        type="product"
+      />
     <div className={styles.smartLabelPage} id="smart-label">
       {/* Hero Section */}
       <section className={styles.hero}>
@@ -67,7 +128,12 @@ const SmartLabel = () => {
             {t("smartLabel.video.intro")}
           </p>
           <div className={styles.videoWrapper}>
-            <video controls className={styles.video}>
+            <video 
+              controls 
+              className={styles.video}
+              title={t("smartLabel.video.title")}
+              aria-label={t("smartLabel.video.title")}
+            >
               <source src="/media/smart-label/videos/video.mp4" type="video/mp4" />
               {t("smartLabel.video.fallback")}
             </video>
@@ -276,6 +342,7 @@ const SmartLabel = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

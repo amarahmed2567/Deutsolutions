@@ -1,6 +1,7 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 const SEO = ({ 
   title, 
@@ -21,7 +22,12 @@ const SEO = ({
   keywordsDe = []
 }) => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const currentLang = i18n.language;
+  
+  // Get base URL
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://deutsolutions.com';
+  const currentUrl = url || `${baseUrl}${location.pathname}`;
   
   // Base keywords for all pages
   const baseKeywords = [
@@ -129,9 +135,108 @@ const SEO = ({
   const currentTitle = titles[currentLang] || titles.en;
   const currentDescription = descriptions[currentLang] || descriptions.en;
 
+  // Generate language alternate URLs
+  const getAlternateUrl = (lang) => {
+    const path = location.pathname;
+    // Remove language prefix if exists
+    const cleanPath = path.replace(/^\/(en|ar|de)/, '') || '/';
+    return `${baseUrl}/${lang}${cleanPath === '/' ? '' : cleanPath}`;
+  };
+
+  // Generate breadcrumbs based on path
+  const generateBreadcrumbs = () => {
+    const path = location.pathname;
+    const pathSegments = path.split('/').filter(Boolean);
+    const breadcrumbs = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      }
+    ];
+
+    let currentPath = '';
+    pathSegments.forEach((segment, index) => {
+      currentPath += `/${segment}`;
+      const name = segment
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+      breadcrumbs.push({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": name,
+        "item": `${baseUrl}${currentPath}`
+      });
+    });
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbs
+    };
+  };
+
+  // Structured data for Organization
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DEUTSOLUTIONS",
+    "url": baseUrl,
+    "logo": `${baseUrl}/logo-icon-small.png`,
+    "description": currentDescription,
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Technohub 1, Dubai Silicon Oasis",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Frankfurter Str. 100",
+        "addressLocality": "Eschborn",
+        "postalCode": "65760",
+        "addressCountry": "DE"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "info@deutsolutions.com",
+      "telephone": "+971-55-467-6933",
+      "availableLanguage": ["English", "Arabic", "German"]
+    },
+    "sameAs": [
+      "https://facebook.com/deutsolutions",
+      "https://twitter.com/deutsolutions",
+      "https://linkedin.com/company/deutsolutions",
+      "https://instagram.com/deutsolutions",
+      "https://youtube.com/deutsolutions"
+    ]
+  };
+
+  // WebSite schema with SearchAction
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DEUTSOLUTIONS",
+    "url": baseUrl,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${baseUrl}/search?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
-    // <Helmet>
-    <>
+    <Helmet>
       {/* Basic Meta Tags */}
       <title>{currentTitle}</title>
       <meta name="description" content={currentDescription} />
@@ -144,58 +249,48 @@ const SEO = ({
       <meta property="og:title" content={currentTitle} />
       <meta property="og:description" content={currentDescription} />
       <meta property="og:type" content={type} />
-      <meta property="og:url" content={url || window.location.href} />
-      <meta property="og:image" content={image} />
+      <meta property="og:url" content={currentUrl} />
+      <meta property="og:image" content={`${baseUrl}${image}`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="DEUTSOLUTIONS" />
       <meta property="og:locale" content={currentLang === 'ar' ? 'ar_AR' : currentLang === 'de' ? 'de_DE' : 'en_US'} />
+      {currentLang !== 'en' && <meta property="og:locale:alternate" content="en_US" />}
+      {currentLang !== 'ar' && <meta property="og:locale:alternate" content="ar_AR" />}
+      {currentLang !== 'de' && <meta property="og:locale:alternate" content="de_DE" />}
       
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={currentTitle} />
       <meta name="twitter:description" content={currentDescription} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={`${baseUrl}${image}`} />
+      <meta name="twitter:site" content="@deutsolutions" />
+      <meta name="twitter:creator" content="@deutsolutions" />
       
       {/* Additional SEO Meta Tags */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#2563eb" />
-      <meta name="msapplication-TileColor" content="#2563eb" />
+      <meta name="theme-color" content="#ff5e00" />
+      <meta name="msapplication-TileColor" content="#ff5e00" />
       
       {/* Canonical URL */}
-      <link rel="canonical" href={url || window.location.href} />
+      <link rel="canonical" href={currentUrl} />
       
       {/* Language Alternates */}
-      <link rel="alternate" hreflang="en" href={url.replace(/\/[a-z]{2}\//, '/en/')} />
-      <link rel="alternate" hreflang="ar" href={url.replace(/\/[a-z]{2}\//, '/ar/')} />
-      <link rel="alternate" hreflang="de" href={url.replace(/\/[a-z]{2}\//, '/de/')} />
-      <link rel="alternate" hreflang="x-default" href={url.replace(/\/[a-z]{2}\//, '/en/')} />
+      <link rel="alternate" hreflang="en" href={getAlternateUrl('en')} />
+      <link rel="alternate" hreflang="ar" href={getAlternateUrl('ar')} />
+      <link rel="alternate" hreflang="de" href={getAlternateUrl('de')} />
+      <link rel="alternate" hreflang="x-default" href={getAlternateUrl('en')} />
       
       {/* Structured Data */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "DEUTSOLUTIONS",
-          "url": "https://deutsolutions.com",
-          "logo": "https://deutsolutions.com/logo-icon-small.png",
-          "description": currentDescription,
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "Germany"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer service",
-            "availableLanguage": ["English", "Arabic", "German"]
-          },
-          "sameAs": [
-            "https://facebook.com/deutsolutions",
-            "https://twitter.com/deutsolutions",
-            "https://linkedin.com/company/deutsolutions"
-          ]
-        })}
+        {JSON.stringify(organizationSchema)}
       </script>
-    {/* </Helmet> */}
-    </>
+      <script type="application/ld+json">
+        {JSON.stringify(websiteSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(generateBreadcrumbs())}
+      </script>
+    </Helmet>
   );
 };
 

@@ -24,8 +24,10 @@ function App() {
   return (
     <div lang={i18n.language}>
       <LanguageInitializer />
-      <Navbar />
-      <div className="AppContainer">
+      <header>
+        <Navbar />
+      </header>
+      <main className="AppContainer">
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
@@ -118,9 +120,11 @@ function App() {
             <Route path="/legal/disclaimer" element={<LegalPage />} />
           </Routes>
         </AnimatePresence>
-      </div>
+      </main>
       <PrivacyBanner />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
